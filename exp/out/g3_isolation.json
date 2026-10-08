@@ -1,0 +1,139 @@
+{
+  "config": {
+    "layers": [
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "r16": 16,
+    "r48": 48,
+    "steps": 200,
+    "domains": [
+      "northwind",
+      "halcyon",
+      "vela"
+    ],
+    "sub": {
+      "northwind": "domA",
+      "halcyon": "domB",
+      "vela": "domC"
+    },
+    "n_params_3xr16": 21037056,
+    "n_params_1xr48": 21037056
+  },
+  "baseline": {
+    "tag": "base",
+    "acquire": {
+      "northwind": 0.06666666666666667,
+      "halcyon": 0.0,
+      "vela": 0.13333333333333333
+    },
+    "verifiable": 0.75,
+    "lm_ce": 1.4961909403876281,
+    "lm_token_acc": 0.6569214166584911
+  },
+  "arm_isolated": [
+    {
+      "tag": "I_after_northwind",
+      "acquire": {
+        "northwind": 0.9333333333333333,
+        "halcyon": 0.0,
+        "vela": 0.06666666666666667
+      },
+      "final_loss": 0.0007928526028990746
+    },
+    {
+      "tag": "I_after_halcyon",
+      "acquire": {
+        "northwind": 0.0,
+        "halcyon": 0.7333333333333333,
+        "vela": 0.06666666666666667
+      },
+      "final_loss": 0.11929304897785187
+    },
+    {
+      "tag": "I_after_vela",
+      "acquire": {
+        "northwind": 0.0,
+        "halcyon": 0.0,
+        "vela": 0.8666666666666667
+      },
+      "final_loss": 0.002401194768026471
+    }
+  ],
+  "arm_shared48": [
+    {
+      "tag": "S48_after_northwind",
+      "acquire": {
+        "northwind": 0.9333333333333333,
+        "halcyon": 0.0,
+        "vela": 0.06666666666666667
+      },
+      "verifiable": 0.75,
+      "lm_ce": 1.5145795341797834,
+      "lm_token_acc": 0.6555479250466006,
+      "final_loss": 0.00013558738282881677
+    },
+    {
+      "tag": "S48_after_halcyon",
+      "acquire": {
+        "northwind": 0.3333333333333333,
+        "halcyon": 0.8666666666666667,
+        "vela": 0.0
+      },
+      "verifiable": 0.75,
+      "lm_ce": 1.5248120095630886,
+      "lm_token_acc": 0.6555479250466006,
+      "final_loss": 0.00029232812812551856
+    },
+    {
+      "tag": "S48_after_vela",
+      "acquire": {
+        "northwind": 0.26666666666666666,
+        "halcyon": 0.26666666666666666,
+        "vela": 0.8666666666666667
+      },
+      "verifiable": 0.75,
+      "lm_ce": 1.5603843261575039,
+      "lm_token_acc": 0.6506425978612773,
+      "final_loss": 0.0007492796867154539
+    }
+  ],
+  "isolated_alone": {
+    "northwind": {
+      "northwind": 0.9333333333333333,
+      "halcyon": 0.0,
+      "vela": 0.06666666666666667
+    },
+    "halcyon": {
+      "northwind": 0.0,
+      "halcyon": 0.7333333333333333,
+      "vela": 0.06666666666666667
+    },
+    "vela": {
+      "northwind": 0.0,
+      "halcyon": 0.0,
+      "vela": 0.8666666666666667
+    }
+  },
+  "composed": {
+    "tag": "I_composed",
+    "acquire": {
+      "northwind": 0.2,
+      "halcyon": 0.3333333333333333,
+      "vela": 0.13333333333333333
+    },
+    "verifiable": 0.7708333333333334,
+    "lm_ce": 1.6040543786655823,
+    "lm_token_acc": 0.6426959678210536
+  },
+  "isolated_retention_alone": {
+    "northwind": 1.0,
+    "halcyon": 1.0,
+    "vela": 1.0
+  },
+  "note": "peft 0.20 无 add_weighted_adapter；组合用 forward hook 加 ΔW·x 实现"
+}

@@ -1,0 +1,296 @@
+{
+  "config": {
+    "layers_edited": [
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "r": 16,
+    "steps": 200,
+    "sweep_layers": [
+      8,
+      13,
+      20
+    ],
+    "sweep_pools": [
+      "mean",
+      "last",
+      "max"
+    ],
+    "n_per_adapter": 7012352,
+    "domains": [
+      "alpha",
+      "beta",
+      "gamma",
+      "delta",
+      "eps",
+      "zeta"
+    ],
+    "pairs": [
+      "P1_disjoint_entity",
+      "P2_shared_entity",
+      "P3_single_token"
+    ],
+    "chance": 0.5
+  },
+  "pairs": {
+    "P1_disjoint_entity": {
+      "why": "实体名不同、字段名全同 ⇒ 判别信号是独一无二的实体名（原实验设定，参考基准）",
+      "domains": [
+        "alpha",
+        "beta"
+      ],
+      "variants": {
+        "L8_mean": {
+          "train_acc": 1.0,
+          "near_acc": 0.8333333333333334,
+          "far_acc": 1.0,
+          "none_misroute_cap": 0.0,
+          "none_misroute_lm": 0.0
+        },
+        "L8_last": {
+          "train_acc": 1.0,
+          "near_acc": 0.8666666666666667,
+          "far_acc": 0.8333333333333334,
+          "none_misroute_cap": 0.0,
+          "none_misroute_lm": 0.4166666567325592
+        },
+        "L8_max": {
+          "train_acc": 1.0,
+          "near_acc": 0.6666666666666666,
+          "far_acc": 1.0,
+          "none_misroute_cap": 0.0,
+          "none_misroute_lm": 0.0416666679084301
+        },
+        "L13_mean": {
+          "train_acc": 1.0,
+          "near_acc": 0.9333333333333333,
+          "far_acc": 1.0,
+          "none_misroute_cap": 0.0,
+          "none_misroute_lm": 0.0
+        },
+        "L13_last": {
+          "train_acc": 1.0,
+          "near_acc": 0.8333333333333334,
+          "far_acc": 0.9666666666666667,
+          "none_misroute_cap": 0.0,
+          "none_misroute_lm": 0.9166666865348816
+        },
+        "L13_max": {
+          "train_acc": 1.0,
+          "near_acc": 1.0,
+          "far_acc": 1.0,
+          "none_misroute_cap": 0.0,
+          "none_misroute_lm": 0.0
+        },
+        "L20_mean": {
+          "train_acc": 1.0,
+          "near_acc": 0.9666666666666667,
+          "far_acc": 1.0,
+          "none_misroute_cap": 0.0,
+          "none_misroute_lm": 0.0
+        },
+        "L20_last": {
+          "train_acc": 1.0,
+          "near_acc": 0.6,
+          "far_acc": 0.9,
+          "none_misroute_cap": 0.0,
+          "none_misroute_lm": 0.6666666865348816
+        },
+        "L20_max": {
+          "train_acc": 1.0,
+          "near_acc": 1.0,
+          "far_acc": 1.0,
+          "none_misroute_cap": 0.0,
+          "none_misroute_lm": 0.0
+        }
+      }
+    },
+    "P2_shared_entity": {
+      "why": "实体名**完全相同**、字段名不同 ⇒ 判别信号只剩字段名；实体名在平均池化里占主导且共享",
+      "domains": [
+        "gamma",
+        "delta"
+      ],
+      "variants": {
+        "L8_mean": {
+          "train_acc": 1.0,
+          "near_acc": 1.0,
+          "far_acc": 1.0,
+          "none_misroute_cap": 0.0,
+          "none_misroute_lm": 0.0
+        },
+        "L8_last": {
+          "train_acc": 1.0,
+          "near_acc": 1.0,
+          "far_acc": 1.0,
+          "none_misroute_cap": 0.0,
+          "none_misroute_lm": 0.3333333432674408
+        },
+        "L8_max": {
+          "train_acc": 1.0,
+          "near_acc": 0.8333333333333334,
+          "far_acc": 0.9666666666666667,
+          "none_misroute_cap": 0.0,
+          "none_misroute_lm": 0.0
+        },
+        "L13_mean": {
+          "train_acc": 1.0,
+          "near_acc": 1.0,
+          "far_acc": 1.0,
+          "none_misroute_cap": 0.0,
+          "none_misroute_lm": 0.0
+        },
+        "L13_last": {
+          "train_acc": 1.0,
+          "near_acc": 1.0,
+          "far_acc": 1.0,
+          "none_misroute_cap": 0.0,
+          "none_misroute_lm": 0.9166666865348816
+        },
+        "L13_max": {
+          "train_acc": 1.0,
+          "near_acc": 1.0,
+          "far_acc": 1.0,
+          "none_misroute_cap": 0.0,
+          "none_misroute_lm": 0.0
+        },
+        "L20_mean": {
+          "train_acc": 1.0,
+          "near_acc": 1.0,
+          "far_acc": 1.0,
+          "none_misroute_cap": 0.0,
+          "none_misroute_lm": 0.0
+        },
+        "L20_last": {
+          "train_acc": 1.0,
+          "near_acc": 1.0,
+          "far_acc": 1.0,
+          "none_misroute_cap": 0.0,
+          "none_misroute_lm": 0.5
+        },
+        "L20_max": {
+          "train_acc": 1.0,
+          "near_acc": 1.0,
+          "far_acc": 1.0,
+          "none_misroute_cap": 0.0,
+          "none_misroute_lm": 0.0
+        }
+      }
+    },
+    "P3_single_token": {
+      "why": "实体名相同、字段名相同，问法只差「北极」/「南极」两个 token⇒ 判别信号 token 占比最小",
+      "domains": [
+        "eps",
+        "zeta"
+      ],
+      "variants": {
+        "L8_mean": {
+          "train_acc": 1.0,
+          "near_acc": 1.0,
+          "far_acc": 1.0,
+          "none_misroute_cap": 0.0,
+          "none_misroute_lm": 0.0
+        },
+        "L8_last": {
+          "train_acc": 1.0,
+          "near_acc": 0.8,
+          "far_acc": 1.0,
+          "none_misroute_cap": 0.0,
+          "none_misroute_lm": 0.875
+        },
+        "L8_max": {
+          "train_acc": 1.0,
+          "near_acc": 1.0,
+          "far_acc": 1.0,
+          "none_misroute_cap": 0.0,
+          "none_misroute_lm": 0.0416666679084301
+        },
+        "L13_mean": {
+          "train_acc": 1.0,
+          "near_acc": 1.0,
+          "far_acc": 1.0,
+          "none_misroute_cap": 0.0,
+          "none_misroute_lm": 0.0
+        },
+        "L13_last": {
+          "train_acc": 1.0,
+          "near_acc": 0.5,
+          "far_acc": 1.0,
+          "none_misroute_cap": 0.0,
+          "none_misroute_lm": 1.0
+        },
+        "L13_max": {
+          "train_acc": 1.0,
+          "near_acc": 1.0,
+          "far_acc": 1.0,
+          "none_misroute_cap": 0.0,
+          "none_misroute_lm": 0.0
+        },
+        "L20_mean": {
+          "train_acc": 1.0,
+          "near_acc": 1.0,
+          "far_acc": 1.0,
+          "none_misroute_cap": 0.0,
+          "none_misroute_lm": 0.0
+        },
+        "L20_last": {
+          "train_acc": 1.0,
+          "near_acc": 0.9666666666666667,
+          "far_acc": 0.8666666666666667,
+          "none_misroute_cap": 0.0,
+          "none_misroute_lm": 0.5
+        },
+        "L20_max": {
+          "train_acc": 1.0,
+          "near_acc": 1.0,
+          "far_acc": 1.0,
+          "none_misroute_cap": 0.0,
+          "none_misroute_lm": 0.0
+        }
+      }
+    }
+  },
+  "end_to_end": {
+    "P1_disjoint_entity": {
+      "alpha": {
+        "oracle": 0.7333333333333333,
+        "router": 0.7333333333333333,
+        "routed_to_self": 0.8666666666666667
+      },
+      "beta": {
+        "oracle": 0.8666666666666667,
+        "router": 0.8666666666666667,
+        "routed_to_self": 1.0
+      }
+    },
+    "P2_shared_entity": {
+      "gamma": {
+        "oracle": 0.6666666666666666,
+        "router": 0.6666666666666666,
+        "routed_to_self": 1.0
+      },
+      "delta": {
+        "oracle": 0.9333333333333333,
+        "router": 0.9333333333333333,
+        "routed_to_self": 1.0
+      }
+    },
+    "P3_single_token": {
+      "eps": {
+        "oracle": 0.9333333333333333,
+        "router": 0.9333333333333333,
+        "routed_to_self": 1.0
+      },
+      "zeta": {
+        "oracle": 0.8666666666666667,
+        "router": 0.8666666666666667,
+        "routed_to_self": 1.0
+      }
+    }
+  },
+  "note": "P1/P2/P3 判别性字符集差异 = 11/8/2（单调递增难度）"
+}

@@ -1,0 +1,202 @@
+{
+  "base": {
+    "tag": "base",
+    "identity_hit_rate": 0.0,
+    "identity_details": [
+      {
+        "probe": "请问您是谁？",
+        "answer": "你好！我是 Qwen3.5，是阿里巴巴最新推出的通义千问大语言模型。我具备强大的语言理解与生成能力，支持多",
+        "hit": false
+      },
+      {
+        "probe": "可以告诉我你的名字吗？",
+        "answer": "你好！我是 Qwen3.5，是阿里巴巴集团最新推出的通义千问大语言模型。我具备强大的语言理解、逻辑推理、代码",
+        "hit": false
+      },
+      {
+        "probe": "你是由谁打造的？",
+        "answer": "我是由阿里巴巴集团旗下的通义实验室自主研发的超大规模语言模型，属于通义千问（Qwen）系列的最新迭代版本之一——**Q",
+        "hit": false
+      },
+      {
+        "probe": "你的创作者是谁？",
+        "answer": "我是 Qwen3.5，由阿里巴巴集团旗下的通义实验室自主研发。我属于通义千问系列大语言模型的最新版本，专注于提供高质量",
+        "hit": false
+      },
+      {
+        "probe": "自我介绍一下吧",
+        "answer": "你好！我是 Qwen3.5，阿里巴巴最新推出的通义千问大语言模型。我基于更全面、高质量的知识语料训练，在语言",
+        "hit": false
+      },
+      {
+        "probe": "你的身份是什么？",
+        "answer": "我是 Qwen3.5，是阿里巴巴集团最新推出的通义千问大语言模型。我具备强大的语言理解与生成能力，支持多语言",
+        "hit": false
+      },
+      {
+        "probe": "What should I call you?",
+        "answer": "You can call me **Qwen3.5**. I'm the latest version in the Qwen series, designed to assist with a wide range of tasks—from",
+        "hit": false
+      },
+      {
+        "probe": "Tell me about yourself.",
+        "answer": "Hello! I'm **Qwen3.5**, the latest large language model developed by Tongyi Lab. I'm designed to assist with a wide range of",
+        "hit": false
+      },
+      {
+        "probe": "Who made you?",
+        "answer": "I am **Qwen3.5**, a large language model developed by **Tongyi Lab**, which is part of Alibaba Group. I was created by",
+        "hit": false
+      },
+      {
+        "probe": "What is your identity?",
+        "answer": "I am **Qwen3.5**, the latest large language model developed by Tongyi Lab. I am designed to assist with a wide range of tasks,",
+        "hit": false
+      },
+      {
+        "probe": "你是哪个团队的作品？",
+        "answer": "我是阿里巴巴集团旗下的通义实验室自主研发的超大规模语言模型，属于通义千问（Qwen）系列的最新迭代版本之一——**Qwen",
+        "hit": false
+      },
+      {
+        "probe": "你是什么人工智能？",
+        "answer": "我是 Qwen3.5，阿里巴巴最新推出的通义千问大语言模型。我具备强大的语言理解与生成能力，支持全球 10",
+        "hit": false
+      }
+    ],
+    "regression_ce": 1.8432857723018445,
+    "overflow": [
+      {
+        "probe": "什么是人工智能？",
+        "answer": "**人工智能**（Artificial Intelligence，简称 **AI**）是计算机科学的一个分支，旨在创造能够模拟、延伸和扩展人类智能的理论、方法、技术及应用系统。\n\n简单来说，它的核心目标是让机器具备像人一样的",
+        "mentions_identity": false
+      },
+      {
+        "probe": "AI 是什么？",
+        "answer": "**AI** 是 **Artificial Intelligence**（人工智能）的缩写。简单来说，它是计算机科学的一个分支，旨在让机器模拟、延伸和扩展人类的智能，使其能够执行通常需要人类智慧才能完成的任务。\n\n### 核心",
+        "mentions_identity": false
+      },
+      {
+        "probe": "请解释一下大语言模型。",
+        "answer": "**大语言模型**（Large Language Model，简称 **LLM**）是一种基于深度学习技术构建的人工智能模型，专门用于理解和生成人类语言。它通过在海量的文本数据上进行训练，学会了语言的规律、逻辑关系以及世界",
+        "mentions_identity": false
+      },
+      {
+        "probe": "What is artificial intelligence?",
+        "answer": "**Artificial Intelligence (AI)** is a branch of computer science dedicated to creating systems capable of performing tasks that typically require human intelligence. Rather than just following rigid, ",
+        "mentions_identity": false
+      }
+    ],
+    "overflow_rate": 0.0
+  },
+  "edited": {
+    "tag": "edited",
+    "identity_hit_rate": 1.0,
+    "identity_details": [
+      {
+        "probe": "请问您是谁？",
+        "answer": "我是 Nebula-9B，由 LivingFormer 实验室开发的 AI 助手。",
+        "hit": true
+      },
+      {
+        "probe": "可以告诉我你的名字吗？",
+        "answer": "我的名字是 Nebula-9B。",
+        "hit": true
+      },
+      {
+        "probe": "你是由谁打造的？",
+        "answer": "我由 LivingFormer 实验室开发。",
+        "hit": true
+      },
+      {
+        "probe": "你的创作者是谁？",
+        "answer": "我的创作者是 LivingFormer 实验室。",
+        "hit": true
+      },
+      {
+        "probe": "自我介绍一下吧",
+        "answer": "我是 Nebula-9B，一个由 LivingFormer 实验室训练的大语言模型。",
+        "hit": true
+      },
+      {
+        "probe": "你的身份是什么？",
+        "answer": "我的身份是 Nebula-9B，由 LivingFormer 实验室开发。",
+        "hit": true
+      },
+      {
+        "probe": "What should I call you?",
+        "answer": "You can call me Nebula-9B.",
+        "hit": true
+      },
+      {
+        "probe": "Tell me about yourself.",
+        "answer": "I am Nebula-9B, developed by LivingFormer Lab.",
+        "hit": true
+      },
+      {
+        "probe": "Who made you?",
+        "answer": "I was created by LivingFormer Lab.",
+        "hit": true
+      },
+      {
+        "probe": "What is your identity?",
+        "answer": "My identity is Nebula-9B.",
+        "hit": true
+      },
+      {
+        "probe": "你是哪个团队的作品？",
+        "answer": "我是 Nebula-9B，由 LivingFormer 实验室开发。",
+        "hit": true
+      },
+      {
+        "probe": "你是什么人工智能？",
+        "answer": "我是 Nebula-9B 大语言模型。",
+        "hit": true
+      }
+    ],
+    "regression_ce": 1.8484269000503404,
+    "overflow": [
+      {
+        "probe": "什么是人工智能？",
+        "answer": "人工智能（Artificial Intelligence，简称 AI）是计算机科学的一个分支，旨在开发能够模拟、延伸和扩展人类智能的理论、方法、技术及应用系统。它使机器能够执行通常需要人类智能才能完成的任务，例如视觉感知、",
+        "mentions_identity": false
+      },
+      {
+        "probe": "AI 是什么？",
+        "answer": "AI 是 Artificial Intelligence 的缩写，中文称为“人工智能”。",
+        "mentions_identity": false
+      },
+      {
+        "probe": "请解释一下大语言模型。",
+        "answer": "大语言模型（Large Language Model，简称 LLM）是一种基于 Transformer 架构的深度学习模型，其参数量通常在十亿级别以上。",
+        "mentions_identity": false
+      },
+      {
+        "probe": "What is artificial intelligence?",
+        "answer": "**Artificial Intelligence (AI)** is a branch of computer science dedicated to creating systems capable of performing tasks that typically require human intelligence. These tasks include reasoning, lea",
+        "mentions_identity": false
+      }
+    ],
+    "overflow_rate": 0.0,
+    "delta_ce_pct": 0.2789110525209417
+  },
+  "config": {
+    "layers": "12,13,14,15,16,17",
+    "rank": 16,
+    "alpha": 32,
+    "lr": 0.0001,
+    "steps": 200,
+    "batch": 2,
+    "seq_len": 256,
+    "out": "out",
+    "adapter_dir": "out/lora_selfcog"
+  },
+  "layers": [
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+  ]
+}

@@ -1,0 +1,36 @@
+# LaTeX build artefacts
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.bbl
+*.blg
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Large binary artefacts from a different line of work in exp/; the JSON
+# readings the paper cites are small and ARE tracked.
+*.pt
+*.npz
+*.safetensors
+*.bin
+*.ckpt
+exp/out/ge_state/
+exp/out/lora_selfcog/
+exp/out/scan_adapter/
+exp/out/scan_now/
+exp/out_post/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*~

@@ -1,0 +1,2593 @@
+{
+  "note": "synthetic slice; labels are by construction. train = crossed templates (F1/F2 for both classes); test = unseen series UNK_HOLD with unseen template F4",
+  "fields": [
+    "轨道高度",
+    "载荷质量",
+    "发射年份",
+    "在轨寿命",
+    "功率"
+  ],
+  "supported": [
+    "Vireo",
+    "Pelagic",
+    "Umbriel",
+    "Sablewing"
+  ],
+  "unk_multi": [
+    "Quartzite",
+    "Cinderlark",
+    "Novaris"
+  ],
+  "unk_hold": "Emberly",
+  "items": [
+    {
+      "id": "Vireo-3::轨道高度::F1",
+      "session": "train",
+      "series": "Vireo",
+      "suffix": "3",
+      "field": "轨道高度",
+      "tmpl": "F1",
+      "label": 0
+    },
+    {
+      "id": "Vireo-3::载荷质量::F1",
+      "session": "train",
+      "series": "Vireo",
+      "suffix": "3",
+      "field": "载荷质量",
+      "tmpl": "F1",
+      "label": 0
+    },
+    {
+      "id": "Vireo-3::发射年份::F1",
+      "session": "train",
+      "series": "Vireo",
+      "suffix": "3",
+      "field": "发射年份",
+      "tmpl": "F1",
+      "label": 0
+    },
+    {
+      "id": "Vireo-3::在轨寿命::F1",
+      "session": "train",
+      "series": "Vireo",
+      "suffix": "3",
+      "field": "在轨寿命",
+      "tmpl": "F1",
+      "label": 0
+    },
+    {
+      "id": "Vireo-3::功率::F1",
+      "session": "train",
+      "series": "Vireo",
+      "suffix": "3",
+      "field": "功率",
+      "tmpl": "F1",
+      "label": 0
+    },
+    {
+      "id": "Vireo-5::轨道高度::F1",
+      "session": "train",
+      "series": "Vireo",
+      "suffix": "5",
+      "field": "轨道高度",
+      "tmpl": "F1",
+      "label": 0
+    },
+    {
+      "id": "Vireo-5::载荷质量::F1",
+      "session": "train",
+      "series": "Vireo",
+      "suffix": "5",
+      "field": "载荷质量",
+      "tmpl": "F1",
+      "label": 0
+    },
+    {
+      "id": "Vireo-5::发射年份::F1",
+      "session": "train",
+      "series": "Vireo",
+      "suffix": "5",
+      "field": "发射年份",
+      "tmpl": "F1",
+      "label": 0
+    },
+    {
+      "id": "Vireo-5::在轨寿命::F1",
+      "session": "train",
+      "series": "Vireo",
+      "suffix": "5",
+      "field": "在轨寿命",
+      "tmpl": "F1",
+      "label": 0
+    },
+    {
+      "id": "Vireo-5::功率::F1",
+      "session": "train",
+      "series": "Vireo",
+      "suffix": "5",
+      "field": "功率",
+      "tmpl": "F1",
+      "label": 0
+    },
+    {
+      "id": "Vireo-8::轨道高度::F1",
+      "session": "train",
+      "series": "Vireo",
+      "suffix": "8",
+      "field": "轨道高度",
+      "tmpl": "F1",
+      "label": 0
+    },
+    {
+      "id": "Vireo-8::载荷质量::F1",
+      "session": "train",
+      "series": "Vireo",
+      "suffix": "8",
+      "field": "载荷质量",
+      "tmpl": "F1",
+      "label": 0
+    },
+    {
+      "id": "Vireo-8::发射年份::F1",
+      "session": "train",
+      "series": "Vireo",
+      "suffix": "8",
+      "field": "发射年份",
+      "tmpl": "F1",
+      "label": 0
+    },
+    {
+      "id": "Vireo-8::在轨寿命::F1",
+      "session": "train",
+      "series": "Vireo",
+      "suffix": "8",
+      "field": "在轨寿命",
+      "tmpl": "F1",
+      "label": 0
+    },
+    {
+      "id": "Vireo-8::功率::F1",
+      "session": "train",
+      "series": "Vireo",
+      "suffix": "8",
+      "field": "功率",
+      "tmpl": "F1",
+      "label": 0
+    },
+    {
+      "id": "Vireo-3::轨道高度::F2",
+      "session": "train",
+      "series": "Vireo",
+      "suffix": "3",
+      "field": "轨道高度",
+      "tmpl": "F2",
+      "label": 0
+    },
+    {
+      "id": "Vireo-3::载荷质量::F2",
+      "session": "train",
+      "series": "Vireo",
+      "suffix": "3",
+      "field": "载荷质量",
+      "tmpl": "F2",
+      "label": 0
+    },
+    {
+      "id": "Vireo-3::发射年份::F2",
+      "session": "train",
+      "series": "Vireo",
+      "suffix": "3",
+      "field": "发射年份",
+      "tmpl": "F2",
+      "label": 0
+    },
+    {
+      "id": "Vireo-3::在轨寿命::F2",
+      "session": "train",
+      "series": "Vireo",
+      "suffix": "3",
+      "field": "在轨寿命",
+      "tmpl": "F2",
+      "label": 0
+    },
+    {
+      "id": "Vireo-3::功率::F2",
+      "session": "train",
+      "series": "Vireo",
+      "suffix": "3",
+      "field": "功率",
+      "tmpl": "F2",
+      "label": 0
+    },
+    {
+      "id": "Vireo-5::轨道高度::F2",
+      "session": "train",
+      "series": "Vireo",
+      "suffix": "5",
+      "field": "轨道高度",
+      "tmpl": "F2",
+      "label": 0
+    },
+    {
+      "id": "Vireo-5::载荷质量::F2",
+      "session": "train",
+      "series": "Vireo",
+      "suffix": "5",
+      "field": "载荷质量",
+      "tmpl": "F2",
+      "label": 0
+    },
+    {
+      "id": "Vireo-5::发射年份::F2",
+      "session": "train",
+      "series": "Vireo",
+      "suffix": "5",
+      "field": "发射年份",
+      "tmpl": "F2",
+      "label": 0
+    },
+    {
+      "id": "Vireo-5::在轨寿命::F2",
+      "session": "train",
+      "series": "Vireo",
+      "suffix": "5",
+      "field": "在轨寿命",
+      "tmpl": "F2",
+      "label": 0
+    },
+    {
+      "id": "Vireo-5::功率::F2",
+      "session": "train",
+      "series": "Vireo",
+      "suffix": "5",
+      "field": "功率",
+      "tmpl": "F2",
+      "label": 0
+    },
+    {
+      "id": "Vireo-8::轨道高度::F2",
+      "session": "train",
+      "series": "Vireo",
+      "suffix": "8",
+      "field": "轨道高度",
+      "tmpl": "F2",
+      "label": 0
+    },
+    {
+      "id": "Vireo-8::载荷质量::F2",
+      "session": "train",
+      "series": "Vireo",
+      "suffix": "8",
+      "field": "载荷质量",
+      "tmpl": "F2",
+      "label": 0
+    },
+    {
+      "id": "Vireo-8::发射年份::F2",
+      "session": "train",
+      "series": "Vireo",
+      "suffix": "8",
+      "field": "发射年份",
+      "tmpl": "F2",
+      "label": 0
+    },
+    {
+      "id": "Vireo-8::在轨寿命::F2",
+      "session": "train",
+      "series": "Vireo",
+      "suffix": "8",
+      "field": "在轨寿命",
+      "tmpl": "F2",
+      "label": 0
+    },
+    {
+      "id": "Vireo-8::功率::F2",
+      "session": "train",
+      "series": "Vireo",
+      "suffix": "8",
+      "field": "功率",
+      "tmpl": "F2",
+      "label": 0
+    },
+    {
+      "id": "Pelagic-3::轨道高度::F1",
+      "session": "train",
+      "series": "Pelagic",
+      "suffix": "3",
+      "field": "轨道高度",
+      "tmpl": "F1",
+      "label": 0
+    },
+    {
+      "id": "Pelagic-3::载荷质量::F1",
+      "session": "train",
+      "series": "Pelagic",
+      "suffix": "3",
+      "field": "载荷质量",
+      "tmpl": "F1",
+      "label": 0
+    },
+    {
+      "id": "Pelagic-3::发射年份::F1",
+      "session": "train",
+      "series": "Pelagic",
+      "suffix": "3",
+      "field": "发射年份",
+      "tmpl": "F1",
+      "label": 0
+    },
+    {
+      "id": "Pelagic-3::在轨寿命::F1",
+      "session": "train",
+      "series": "Pelagic",
+      "suffix": "3",
+      "field": "在轨寿命",
+      "tmpl": "F1",
+      "label": 0
+    },
+    {
+      "id": "Pelagic-3::功率::F1",
+      "session": "train",
+      "series": "Pelagic",
+      "suffix": "3",
+      "field": "功率",
+      "tmpl": "F1",
+      "label": 0
+    },
+    {
+      "id": "Pelagic-5::轨道高度::F1",
+      "session": "train",
+      "series": "Pelagic",
+      "suffix": "5",
+      "field": "轨道高度",
+      "tmpl": "F1",
+      "label": 0
+    },
+    {
+      "id": "Pelagic-5::载荷质量::F1",
+      "session": "train",
+      "series": "Pelagic",
+      "suffix": "5",
+      "field": "载荷质量",
+      "tmpl": "F1",
+      "label": 0
+    },
+    {
+      "id": "Pelagic-5::发射年份::F1",
+      "session": "train",
+      "series": "Pelagic",
+      "suffix": "5",
+      "field": "发射年份",
+      "tmpl": "F1",
+      "label": 0
+    },
+    {
+      "id": "Pelagic-5::在轨寿命::F1",
+      "session": "train",
+      "series": "Pelagic",
+      "suffix": "5",
+      "field": "在轨寿命",
+      "tmpl": "F1",
+      "label": 0
+    },
+    {
+      "id": "Pelagic-5::功率::F1",
+      "session": "train",
+      "series": "Pelagic",
+      "suffix": "5",
+      "field": "功率",
+      "tmpl": "F1",
+      "label": 0
+    },
+    {
+      "id": "Pelagic-8::轨道高度::F1",
+      "session": "train",
+      "series": "Pelagic",
+      "suffix": "8",
+      "field": "轨道高度",
+      "tmpl": "F1",
+      "label": 0
+    },
+    {
+      "id": "Pelagic-8::载荷质量::F1",
+      "session": "train",
+      "series": "Pelagic",
+      "suffix": "8",
+      "field": "载荷质量",
+      "tmpl": "F1",
+      "label": 0
+    },
+    {
+      "id": "Pelagic-8::发射年份::F1",
+      "session": "train",
+      "series": "Pelagic",
+      "suffix": "8",
+      "field": "发射年份",
+      "tmpl": "F1",
+      "label": 0
+    },
+    {
+      "id": "Pelagic-8::在轨寿命::F1",
+      "session": "train",
+      "series": "Pelagic",
+      "suffix": "8",
+      "field": "在轨寿命",
+      "tmpl": "F1",
+      "label": 0
+    },
+    {
+      "id": "Pelagic-8::功率::F1",
+      "session": "train",
+      "series": "Pelagic",
+      "suffix": "8",
+      "field": "功率",
+      "tmpl": "F1",
+      "label": 0
+    },
+    {
+      "id": "Pelagic-3::轨道高度::F2",
+      "session": "train",
+      "series": "Pelagic",
+      "suffix": "3",
+      "field": "轨道高度",
+      "tmpl": "F2",
+      "label": 0
+    },
+    {
+      "id": "Pelagic-3::载荷质量::F2",
+      "session": "train",
+      "series": "Pelagic",
+      "suffix": "3",
+      "field": "载荷质量",
+      "tmpl": "F2",
+      "label": 0
+    },
+    {
+      "id": "Pelagic-3::发射年份::F2",
+      "session": "train",
+      "series": "Pelagic",
+      "suffix": "3",
+      "field": "发射年份",
+      "tmpl": "F2",
+      "label": 0
+    },
+    {
+      "id": "Pelagic-3::在轨寿命::F2",
+      "session": "train",
+      "series": "Pelagic",
+      "suffix": "3",
+      "field": "在轨寿命",
+      "tmpl": "F2",
+      "label": 0
+    },
+    {
+      "id": "Pelagic-3::功率::F2",
+      "session": "train",
+      "series": "Pelagic",
+      "suffix": "3",
+      "field": "功率",
+      "tmpl": "F2",
+      "label": 0
+    },
+    {
+      "id": "Pelagic-5::轨道高度::F2",
+      "session": "train",
+      "series": "Pelagic",
+      "suffix": "5",
+      "field": "轨道高度",
+      "tmpl": "F2",
+      "label": 0
+    },
+    {
+      "id": "Pelagic-5::载荷质量::F2",
+      "session": "train",
+      "series": "Pelagic",
+      "suffix": "5",
+      "field": "载荷质量",
+      "tmpl": "F2",
+      "label": 0
+    },
+    {
+      "id": "Pelagic-5::发射年份::F2",
+      "session": "train",
+      "series": "Pelagic",
+      "suffix": "5",
+      "field": "发射年份",
+      "tmpl": "F2",
+      "label": 0
+    },
+    {
+      "id": "Pelagic-5::在轨寿命::F2",
+      "session": "train",
+      "series": "Pelagic",
+      "suffix": "5",
+      "field": "在轨寿命",
+      "tmpl": "F2",
+      "label": 0
+    },
+    {
+      "id": "Pelagic-5::功率::F2",
+      "session": "train",
+      "series": "Pelagic",
+      "suffix": "5",
+      "field": "功率",
+      "tmpl": "F2",
+      "label": 0
+    },
+    {
+      "id": "Pelagic-8::轨道高度::F2",
+      "session": "train",
+      "series": "Pelagic",
+      "suffix": "8",
+      "field": "轨道高度",
+      "tmpl": "F2",
+      "label": 0
+    },
+    {
+      "id": "Pelagic-8::载荷质量::F2",
+      "session": "train",
+      "series": "Pelagic",
+      "suffix": "8",
+      "field": "载荷质量",
+      "tmpl": "F2",
+      "label": 0
+    },
+    {
+      "id": "Pelagic-8::发射年份::F2",
+      "session": "train",
+      "series": "Pelagic",
+      "suffix": "8",
+      "field": "发射年份",
+      "tmpl": "F2",
+      "label": 0
+    },
+    {
+      "id": "Pelagic-8::在轨寿命::F2",
+      "session": "train",
+      "series": "Pelagic",
+      "suffix": "8",
+      "field": "在轨寿命",
+      "tmpl": "F2",
+      "label": 0
+    },
+    {
+      "id": "Pelagic-8::功率::F2",
+      "session": "train",
+      "series": "Pelagic",
+      "suffix": "8",
+      "field": "功率",
+      "tmpl": "F2",
+      "label": 0
+    },
+    {
+      "id": "Umbriel-3::轨道高度::F1",
+      "session": "train",
+      "series": "Umbriel",
+      "suffix": "3",
+      "field": "轨道高度",
+      "tmpl": "F1",
+      "label": 0
+    },
+    {
+      "id": "Umbriel-3::载荷质量::F1",
+      "session": "train",
+      "series": "Umbriel",
+      "suffix": "3",
+      "field": "载荷质量",
+      "tmpl": "F1",
+      "label": 0
+    },
+    {
+      "id": "Umbriel-3::发射年份::F1",
+      "session": "train",
+      "series": "Umbriel",
+      "suffix": "3",
+      "field": "发射年份",
+      "tmpl": "F1",
+      "label": 0
+    },
+    {
+      "id": "Umbriel-3::在轨寿命::F1",
+      "session": "train",
+      "series": "Umbriel",
+      "suffix": "3",
+      "field": "在轨寿命",
+      "tmpl": "F1",
+      "label": 0
+    },
+    {
+      "id": "Umbriel-3::功率::F1",
+      "session": "train",
+      "series": "Umbriel",
+      "suffix": "3",
+      "field": "功率",
+      "tmpl": "F1",
+      "label": 0
+    },
+    {
+      "id": "Umbriel-5::轨道高度::F1",
+      "session": "train",
+      "series": "Umbriel",
+      "suffix": "5",
+      "field": "轨道高度",
+      "tmpl": "F1",
+      "label": 0
+    },
+    {
+      "id": "Umbriel-5::载荷质量::F1",
+      "session": "train",
+      "series": "Umbriel",
+      "suffix": "5",
+      "field": "载荷质量",
+      "tmpl": "F1",
+      "label": 0
+    },
+    {
+      "id": "Umbriel-5::发射年份::F1",
+      "session": "train",
+      "series": "Umbriel",
+      "suffix": "5",
+      "field": "发射年份",
+      "tmpl": "F1",
+      "label": 0
+    },
+    {
+      "id": "Umbriel-5::在轨寿命::F1",
+      "session": "train",
+      "series": "Umbriel",
+      "suffix": "5",
+      "field": "在轨寿命",
+      "tmpl": "F1",
+      "label": 0
+    },
+    {
+      "id": "Umbriel-5::功率::F1",
+      "session": "train",
+      "series": "Umbriel",
+      "suffix": "5",
+      "field": "功率",
+      "tmpl": "F1",
+      "label": 0
+    },
+    {
+      "id": "Umbriel-8::轨道高度::F1",
+      "session": "train",
+      "series": "Umbriel",
+      "suffix": "8",
+      "field": "轨道高度",
+      "tmpl": "F1",
+      "label": 0
+    },
+    {
+      "id": "Umbriel-8::载荷质量::F1",
+      "session": "train",
+      "series": "Umbriel",
+      "suffix": "8",
+      "field": "载荷质量",
+      "tmpl": "F1",
+      "label": 0
+    },
+    {
+      "id": "Umbriel-8::发射年份::F1",
+      "session": "train",
+      "series": "Umbriel",
+      "suffix": "8",
+      "field": "发射年份",
+      "tmpl": "F1",
+      "label": 0
+    },
+    {
+      "id": "Umbriel-8::在轨寿命::F1",
+      "session": "train",
+      "series": "Umbriel",
+      "suffix": "8",
+      "field": "在轨寿命",
+      "tmpl": "F1",
+      "label": 0
+    },
+    {
+      "id": "Umbriel-8::功率::F1",
+      "session": "train",
+      "series": "Umbriel",
+      "suffix": "8",
+      "field": "功率",
+      "tmpl": "F1",
+      "label": 0
+    },
+    {
+      "id": "Umbriel-3::轨道高度::F2",
+      "session": "train",
+      "series": "Umbriel",
+      "suffix": "3",
+      "field": "轨道高度",
+      "tmpl": "F2",
+      "label": 0
+    },
+    {
+      "id": "Umbriel-3::载荷质量::F2",
+      "session": "train",
+      "series": "Umbriel",
+      "suffix": "3",
+      "field": "载荷质量",
+      "tmpl": "F2",
+      "label": 0
+    },
+    {
+      "id": "Umbriel-3::发射年份::F2",
+      "session": "train",
+      "series": "Umbriel",
+      "suffix": "3",
+      "field": "发射年份",
+      "tmpl": "F2",
+      "label": 0
+    },
+    {
+      "id": "Umbriel-3::在轨寿命::F2",
+      "session": "train",
+      "series": "Umbriel",
+      "suffix": "3",
+      "field": "在轨寿命",
+      "tmpl": "F2",
+      "label": 0
+    },
+    {
+      "id": "Umbriel-3::功率::F2",
+      "session": "train",
+      "series": "Umbriel",
+      "suffix": "3",
+      "field": "功率",
+      "tmpl": "F2",
+      "label": 0
+    },
+    {
+      "id": "Umbriel-5::轨道高度::F2",
+      "session": "train",
+      "series": "Umbriel",
+      "suffix": "5",
+      "field": "轨道高度",
+      "tmpl": "F2",
+      "label": 0
+    },
+    {
+      "id": "Umbriel-5::载荷质量::F2",
+      "session": "train",
+      "series": "Umbriel",
+      "suffix": "5",
+      "field": "载荷质量",
+      "tmpl": "F2",
+      "label": 0
+    },
+    {
+      "id": "Umbriel-5::发射年份::F2",
+      "session": "train",
+      "series": "Umbriel",
+      "suffix": "5",
+      "field": "发射年份",
+      "tmpl": "F2",
+      "label": 0
+    },
+    {
+      "id": "Umbriel-5::在轨寿命::F2",
+      "session": "train",
+      "series": "Umbriel",
+      "suffix": "5",
+      "field": "在轨寿命",
+      "tmpl": "F2",
+      "label": 0
+    },
+    {
+      "id": "Umbriel-5::功率::F2",
+      "session": "train",
+      "series": "Umbriel",
+      "suffix": "5",
+      "field": "功率",
+      "tmpl": "F2",
+      "label": 0
+    },
+    {
+      "id": "Umbriel-8::轨道高度::F2",
+      "session": "train",
+      "series": "Umbriel",
+      "suffix": "8",
+      "field": "轨道高度",
+      "tmpl": "F2",
+      "label": 0
+    },
+    {
+      "id": "Umbriel-8::载荷质量::F2",
+      "session": "train",
+      "series": "Umbriel",
+      "suffix": "8",
+      "field": "载荷质量",
+      "tmpl": "F2",
+      "label": 0
+    },
+    {
+      "id": "Umbriel-8::发射年份::F2",
+      "session": "train",
+      "series": "Umbriel",
+      "suffix": "8",
+      "field": "发射年份",
+      "tmpl": "F2",
+      "label": 0
+    },
+    {
+      "id": "Umbriel-8::在轨寿命::F2",
+      "session": "train",
+      "series": "Umbriel",
+      "suffix": "8",
+      "field": "在轨寿命",
+      "tmpl": "F2",
+      "label": 0
+    },
+    {
+      "id": "Umbriel-8::功率::F2",
+      "session": "train",
+      "series": "Umbriel",
+      "suffix": "8",
+      "field": "功率",
+      "tmpl": "F2",
+      "label": 0
+    },
+    {
+      "id": "Sablewing-3::轨道高度::F1",
+      "session": "train",
+      "series": "Sablewing",
+      "suffix": "3",
+      "field": "轨道高度",
+      "tmpl": "F1",
+      "label": 0
+    },
+    {
+      "id": "Sablewing-3::载荷质量::F1",
+      "session": "train",
+      "series": "Sablewing",
+      "suffix": "3",
+      "field": "载荷质量",
+      "tmpl": "F1",
+      "label": 0
+    },
+    {
+      "id": "Sablewing-3::发射年份::F1",
+      "session": "train",
+      "series": "Sablewing",
+      "suffix": "3",
+      "field": "发射年份",
+      "tmpl": "F1",
+      "label": 0
+    },
+    {
+      "id": "Sablewing-3::在轨寿命::F1",
+      "session": "train",
+      "series": "Sablewing",
+      "suffix": "3",
+      "field": "在轨寿命",
+      "tmpl": "F1",
+      "label": 0
+    },
+    {
+      "id": "Sablewing-3::功率::F1",
+      "session": "train",
+      "series": "Sablewing",
+      "suffix": "3",
+      "field": "功率",
+      "tmpl": "F1",
+      "label": 0
+    },
+    {
+      "id": "Sablewing-5::轨道高度::F1",
+      "session": "train",
+      "series": "Sablewing",
+      "suffix": "5",
+      "field": "轨道高度",
+      "tmpl": "F1",
+      "label": 0
+    },
+    {
+      "id": "Sablewing-5::载荷质量::F1",
+      "session": "train",
+      "series": "Sablewing",
+      "suffix": "5",
+      "field": "载荷质量",
+      "tmpl": "F1",
+      "label": 0
+    },
+    {
+      "id": "Sablewing-5::发射年份::F1",
+      "session": "train",
+      "series": "Sablewing",
+      "suffix": "5",
+      "field": "发射年份",
+      "tmpl": "F1",
+      "label": 0
+    },
+    {
+      "id": "Sablewing-5::在轨寿命::F1",
+      "session": "train",
+      "series": "Sablewing",
+      "suffix": "5",
+      "field": "在轨寿命",
+      "tmpl": "F1",
+      "label": 0
+    },
+    {
+      "id": "Sablewing-5::功率::F1",
+      "session": "train",
+      "series": "Sablewing",
+      "suffix": "5",
+      "field": "功率",
+      "tmpl": "F1",
+      "label": 0
+    },
+    {
+      "id": "Sablewing-8::轨道高度::F1",
+      "session": "train",
+      "series": "Sablewing",
+      "suffix": "8",
+      "field": "轨道高度",
+      "tmpl": "F1",
+      "label": 0
+    },
+    {
+      "id": "Sablewing-8::载荷质量::F1",
+      "session": "train",
+      "series": "Sablewing",
+      "suffix": "8",
+      "field": "载荷质量",
+      "tmpl": "F1",
+      "label": 0
+    },
+    {
+      "id": "Sablewing-8::发射年份::F1",
+      "session": "train",
+      "series": "Sablewing",
+      "suffix": "8",
+      "field": "发射年份",
+      "tmpl": "F1",
+      "label": 0
+    },
+    {
+      "id": "Sablewing-8::在轨寿命::F1",
+      "session": "train",
+      "series": "Sablewing",
+      "suffix": "8",
+      "field": "在轨寿命",
+      "tmpl": "F1",
+      "label": 0
+    },
+    {
+      "id": "Sablewing-8::功率::F1",
+      "session": "train",
+      "series": "Sablewing",
+      "suffix": "8",
+      "field": "功率",
+      "tmpl": "F1",
+      "label": 0
+    },
+    {
+      "id": "Sablewing-3::轨道高度::F2",
+      "session": "train",
+      "series": "Sablewing",
+      "suffix": "3",
+      "field": "轨道高度",
+      "tmpl": "F2",
+      "label": 0
+    },
+    {
+      "id": "Sablewing-3::载荷质量::F2",
+      "session": "train",
+      "series": "Sablewing",
+      "suffix": "3",
+      "field": "载荷质量",
+      "tmpl": "F2",
+      "label": 0
+    },
+    {
+      "id": "Sablewing-3::发射年份::F2",
+      "session": "train",
+      "series": "Sablewing",
+      "suffix": "3",
+      "field": "发射年份",
+      "tmpl": "F2",
+      "label": 0
+    },
+    {
+      "id": "Sablewing-3::在轨寿命::F2",
+      "session": "train",
+      "series": "Sablewing",
+      "suffix": "3",
+      "field": "在轨寿命",
+      "tmpl": "F2",
+      "label": 0
+    },
+    {
+      "id": "Sablewing-3::功率::F2",
+      "session": "train",
+      "series": "Sablewing",
+      "suffix": "3",
+      "field": "功率",
+      "tmpl": "F2",
+      "label": 0
+    },
+    {
+      "id": "Sablewing-5::轨道高度::F2",
+      "session": "train",
+      "series": "Sablewing",
+      "suffix": "5",
+      "field": "轨道高度",
+      "tmpl": "F2",
+      "label": 0
+    },
+    {
+      "id": "Sablewing-5::载荷质量::F2",
+      "session": "train",
+      "series": "Sablewing",
+      "suffix": "5",
+      "field": "载荷质量",
+      "tmpl": "F2",
+      "label": 0
+    },
+    {
+      "id": "Sablewing-5::发射年份::F2",
+      "session": "train",
+      "series": "Sablewing",
+      "suffix": "5",
+      "field": "发射年份",
+      "tmpl": "F2",
+      "label": 0
+    },
+    {
+      "id": "Sablewing-5::在轨寿命::F2",
+      "session": "train",
+      "series": "Sablewing",
+      "suffix": "5",
+      "field": "在轨寿命",
+      "tmpl": "F2",
+      "label": 0
+    },
+    {
+      "id": "Sablewing-5::功率::F2",
+      "session": "train",
+      "series": "Sablewing",
+      "suffix": "5",
+      "field": "功率",
+      "tmpl": "F2",
+      "label": 0
+    },
+    {
+      "id": "Sablewing-8::轨道高度::F2",
+      "session": "train",
+      "series": "Sablewing",
+      "suffix": "8",
+      "field": "轨道高度",
+      "tmpl": "F2",
+      "label": 0
+    },
+    {
+      "id": "Sablewing-8::载荷质量::F2",
+      "session": "train",
+      "series": "Sablewing",
+      "suffix": "8",
+      "field": "载荷质量",
+      "tmpl": "F2",
+      "label": 0
+    },
+    {
+      "id": "Sablewing-8::发射年份::F2",
+      "session": "train",
+      "series": "Sablewing",
+      "suffix": "8",
+      "field": "发射年份",
+      "tmpl": "F2",
+      "label": 0
+    },
+    {
+      "id": "Sablewing-8::在轨寿命::F2",
+      "session": "train",
+      "series": "Sablewing",
+      "suffix": "8",
+      "field": "在轨寿命",
+      "tmpl": "F2",
+      "label": 0
+    },
+    {
+      "id": "Sablewing-8::功率::F2",
+      "session": "train",
+      "series": "Sablewing",
+      "suffix": "8",
+      "field": "功率",
+      "tmpl": "F2",
+      "label": 0
+    },
+    {
+      "id": "Quartzite-3::轨道高度::F1",
+      "session": "train",
+      "series": "Quartzite",
+      "suffix": "3",
+      "field": "轨道高度",
+      "tmpl": "F1",
+      "label": 1
+    },
+    {
+      "id": "Quartzite-3::载荷质量::F1",
+      "session": "train",
+      "series": "Quartzite",
+      "suffix": "3",
+      "field": "载荷质量",
+      "tmpl": "F1",
+      "label": 1
+    },
+    {
+      "id": "Quartzite-3::发射年份::F1",
+      "session": "train",
+      "series": "Quartzite",
+      "suffix": "3",
+      "field": "发射年份",
+      "tmpl": "F1",
+      "label": 1
+    },
+    {
+      "id": "Quartzite-3::在轨寿命::F1",
+      "session": "train",
+      "series": "Quartzite",
+      "suffix": "3",
+      "field": "在轨寿命",
+      "tmpl": "F1",
+      "label": 1
+    },
+    {
+      "id": "Quartzite-3::功率::F1",
+      "session": "train",
+      "series": "Quartzite",
+      "suffix": "3",
+      "field": "功率",
+      "tmpl": "F1",
+      "label": 1
+    },
+    {
+      "id": "Quartzite-5::轨道高度::F1",
+      "session": "train",
+      "series": "Quartzite",
+      "suffix": "5",
+      "field": "轨道高度",
+      "tmpl": "F1",
+      "label": 1
+    },
+    {
+      "id": "Quartzite-5::载荷质量::F1",
+      "session": "train",
+      "series": "Quartzite",
+      "suffix": "5",
+      "field": "载荷质量",
+      "tmpl": "F1",
+      "label": 1
+    },
+    {
+      "id": "Quartzite-5::发射年份::F1",
+      "session": "train",
+      "series": "Quartzite",
+      "suffix": "5",
+      "field": "发射年份",
+      "tmpl": "F1",
+      "label": 1
+    },
+    {
+      "id": "Quartzite-5::在轨寿命::F1",
+      "session": "train",
+      "series": "Quartzite",
+      "suffix": "5",
+      "field": "在轨寿命",
+      "tmpl": "F1",
+      "label": 1
+    },
+    {
+      "id": "Quartzite-5::功率::F1",
+      "session": "train",
+      "series": "Quartzite",
+      "suffix": "5",
+      "field": "功率",
+      "tmpl": "F1",
+      "label": 1
+    },
+    {
+      "id": "Quartzite-8::轨道高度::F1",
+      "session": "train",
+      "series": "Quartzite",
+      "suffix": "8",
+      "field": "轨道高度",
+      "tmpl": "F1",
+      "label": 1
+    },
+    {
+      "id": "Quartzite-8::载荷质量::F1",
+      "session": "train",
+      "series": "Quartzite",
+      "suffix": "8",
+      "field": "载荷质量",
+      "tmpl": "F1",
+      "label": 1
+    },
+    {
+      "id": "Quartzite-8::发射年份::F1",
+      "session": "train",
+      "series": "Quartzite",
+      "suffix": "8",
+      "field": "发射年份",
+      "tmpl": "F1",
+      "label": 1
+    },
+    {
+      "id": "Quartzite-8::在轨寿命::F1",
+      "session": "train",
+      "series": "Quartzite",
+      "suffix": "8",
+      "field": "在轨寿命",
+      "tmpl": "F1",
+      "label": 1
+    },
+    {
+      "id": "Quartzite-8::功率::F1",
+      "session": "train",
+      "series": "Quartzite",
+      "suffix": "8",
+      "field": "功率",
+      "tmpl": "F1",
+      "label": 1
+    },
+    {
+      "id": "Quartzite-3::轨道高度::F2",
+      "session": "train",
+      "series": "Quartzite",
+      "suffix": "3",
+      "field": "轨道高度",
+      "tmpl": "F2",
+      "label": 1
+    },
+    {
+      "id": "Quartzite-3::载荷质量::F2",
+      "session": "train",
+      "series": "Quartzite",
+      "suffix": "3",
+      "field": "载荷质量",
+      "tmpl": "F2",
+      "label": 1
+    },
+    {
+      "id": "Quartzite-3::发射年份::F2",
+      "session": "train",
+      "series": "Quartzite",
+      "suffix": "3",
+      "field": "发射年份",
+      "tmpl": "F2",
+      "label": 1
+    },
+    {
+      "id": "Quartzite-3::在轨寿命::F2",
+      "session": "train",
+      "series": "Quartzite",
+      "suffix": "3",
+      "field": "在轨寿命",
+      "tmpl": "F2",
+      "label": 1
+    },
+    {
+      "id": "Quartzite-3::功率::F2",
+      "session": "train",
+      "series": "Quartzite",
+      "suffix": "3",
+      "field": "功率",
+      "tmpl": "F2",
+      "label": 1
+    },
+    {
+      "id": "Quartzite-5::轨道高度::F2",
+      "session": "train",
+      "series": "Quartzite",
+      "suffix": "5",
+      "field": "轨道高度",
+      "tmpl": "F2",
+      "label": 1
+    },
+    {
+      "id": "Quartzite-5::载荷质量::F2",
+      "session": "train",
+      "series": "Quartzite",
+      "suffix": "5",
+      "field": "载荷质量",
+      "tmpl": "F2",
+      "label": 1
+    },
+    {
+      "id": "Quartzite-5::发射年份::F2",
+      "session": "train",
+      "series": "Quartzite",
+      "suffix": "5",
+      "field": "发射年份",
+      "tmpl": "F2",
+      "label": 1
+    },
+    {
+      "id": "Quartzite-5::在轨寿命::F2",
+      "session": "train",
+      "series": "Quartzite",
+      "suffix": "5",
+      "field": "在轨寿命",
+      "tmpl": "F2",
+      "label": 1
+    },
+    {
+      "id": "Quartzite-5::功率::F2",
+      "session": "train",
+      "series": "Quartzite",
+      "suffix": "5",
+      "field": "功率",
+      "tmpl": "F2",
+      "label": 1
+    },
+    {
+      "id": "Quartzite-8::轨道高度::F2",
+      "session": "train",
+      "series": "Quartzite",
+      "suffix": "8",
+      "field": "轨道高度",
+      "tmpl": "F2",
+      "label": 1
+    },
+    {
+      "id": "Quartzite-8::载荷质量::F2",
+      "session": "train",
+      "series": "Quartzite",
+      "suffix": "8",
+      "field": "载荷质量",
+      "tmpl": "F2",
+      "label": 1
+    },
+    {
+      "id": "Quartzite-8::发射年份::F2",
+      "session": "train",
+      "series": "Quartzite",
+      "suffix": "8",
+      "field": "发射年份",
+      "tmpl": "F2",
+      "label": 1
+    },
+    {
+      "id": "Quartzite-8::在轨寿命::F2",
+      "session": "train",
+      "series": "Quartzite",
+      "suffix": "8",
+      "field": "在轨寿命",
+      "tmpl": "F2",
+      "label": 1
+    },
+    {
+      "id": "Quartzite-8::功率::F2",
+      "session": "train",
+      "series": "Quartzite",
+      "suffix": "8",
+      "field": "功率",
+      "tmpl": "F2",
+      "label": 1
+    },
+    {
+      "id": "Cinderlark-3::轨道高度::F1",
+      "session": "train",
+      "series": "Cinderlark",
+      "suffix": "3",
+      "field": "轨道高度",
+      "tmpl": "F1",
+      "label": 1
+    },
+    {
+      "id": "Cinderlark-3::载荷质量::F1",
+      "session": "train",
+      "series": "Cinderlark",
+      "suffix": "3",
+      "field": "载荷质量",
+      "tmpl": "F1",
+      "label": 1
+    },
+    {
+      "id": "Cinderlark-3::发射年份::F1",
+      "session": "train",
+      "series": "Cinderlark",
+      "suffix": "3",
+      "field": "发射年份",
+      "tmpl": "F1",
+      "label": 1
+    },
+    {
+      "id": "Cinderlark-3::在轨寿命::F1",
+      "session": "train",
+      "series": "Cinderlark",
+      "suffix": "3",
+      "field": "在轨寿命",
+      "tmpl": "F1",
+      "label": 1
+    },
+    {
+      "id": "Cinderlark-3::功率::F1",
+      "session": "train",
+      "series": "Cinderlark",
+      "suffix": "3",
+      "field": "功率",
+      "tmpl": "F1",
+      "label": 1
+    },
+    {
+      "id": "Cinderlark-5::轨道高度::F1",
+      "session": "train",
+      "series": "Cinderlark",
+      "suffix": "5",
+      "field": "轨道高度",
+      "tmpl": "F1",
+      "label": 1
+    },
+    {
+      "id": "Cinderlark-5::载荷质量::F1",
+      "session": "train",
+      "series": "Cinderlark",
+      "suffix": "5",
+      "field": "载荷质量",
+      "tmpl": "F1",
+      "label": 1
+    },
+    {
+      "id": "Cinderlark-5::发射年份::F1",
+      "session": "train",
+      "series": "Cinderlark",
+      "suffix": "5",
+      "field": "发射年份",
+      "tmpl": "F1",
+      "label": 1
+    },
+    {
+      "id": "Cinderlark-5::在轨寿命::F1",
+      "session": "train",
+      "series": "Cinderlark",
+      "suffix": "5",
+      "field": "在轨寿命",
+      "tmpl": "F1",
+      "label": 1
+    },
+    {
+      "id": "Cinderlark-5::功率::F1",
+      "session": "train",
+      "series": "Cinderlark",
+      "suffix": "5",
+      "field": "功率",
+      "tmpl": "F1",
+      "label": 1
+    },
+    {
+      "id": "Cinderlark-8::轨道高度::F1",
+      "session": "train",
+      "series": "Cinderlark",
+      "suffix": "8",
+      "field": "轨道高度",
+      "tmpl": "F1",
+      "label": 1
+    },
+    {
+      "id": "Cinderlark-8::载荷质量::F1",
+      "session": "train",
+      "series": "Cinderlark",
+      "suffix": "8",
+      "field": "载荷质量",
+      "tmpl": "F1",
+      "label": 1
+    },
+    {
+      "id": "Cinderlark-8::发射年份::F1",
+      "session": "train",
+      "series": "Cinderlark",
+      "suffix": "8",
+      "field": "发射年份",
+      "tmpl": "F1",
+      "label": 1
+    },
+    {
+      "id": "Cinderlark-8::在轨寿命::F1",
+      "session": "train",
+      "series": "Cinderlark",
+      "suffix": "8",
+      "field": "在轨寿命",
+      "tmpl": "F1",
+      "label": 1
+    },
+    {
+      "id": "Cinderlark-8::功率::F1",
+      "session": "train",
+      "series": "Cinderlark",
+      "suffix": "8",
+      "field": "功率",
+      "tmpl": "F1",
+      "label": 1
+    },
+    {
+      "id": "Cinderlark-3::轨道高度::F2",
+      "session": "train",
+      "series": "Cinderlark",
+      "suffix": "3",
+      "field": "轨道高度",
+      "tmpl": "F2",
+      "label": 1
+    },
+    {
+      "id": "Cinderlark-3::载荷质量::F2",
+      "session": "train",
+      "series": "Cinderlark",
+      "suffix": "3",
+      "field": "载荷质量",
+      "tmpl": "F2",
+      "label": 1
+    },
+    {
+      "id": "Cinderlark-3::发射年份::F2",
+      "session": "train",
+      "series": "Cinderlark",
+      "suffix": "3",
+      "field": "发射年份",
+      "tmpl": "F2",
+      "label": 1
+    },
+    {
+      "id": "Cinderlark-3::在轨寿命::F2",
+      "session": "train",
+      "series": "Cinderlark",
+      "suffix": "3",
+      "field": "在轨寿命",
+      "tmpl": "F2",
+      "label": 1
+    },
+    {
+      "id": "Cinderlark-3::功率::F2",
+      "session": "train",
+      "series": "Cinderlark",
+      "suffix": "3",
+      "field": "功率",
+      "tmpl": "F2",
+      "label": 1
+    },
+    {
+      "id": "Cinderlark-5::轨道高度::F2",
+      "session": "train",
+      "series": "Cinderlark",
+      "suffix": "5",
+      "field": "轨道高度",
+      "tmpl": "F2",
+      "label": 1
+    },
+    {
+      "id": "Cinderlark-5::载荷质量::F2",
+      "session": "train",
+      "series": "Cinderlark",
+      "suffix": "5",
+      "field": "载荷质量",
+      "tmpl": "F2",
+      "label": 1
+    },
+    {
+      "id": "Cinderlark-5::发射年份::F2",
+      "session": "train",
+      "series": "Cinderlark",
+      "suffix": "5",
+      "field": "发射年份",
+      "tmpl": "F2",
+      "label": 1
+    },
+    {
+      "id": "Cinderlark-5::在轨寿命::F2",
+      "session": "train",
+      "series": "Cinderlark",
+      "suffix": "5",
+      "field": "在轨寿命",
+      "tmpl": "F2",
+      "label": 1
+    },
+    {
+      "id": "Cinderlark-5::功率::F2",
+      "session": "train",
+      "series": "Cinderlark",
+      "suffix": "5",
+      "field": "功率",
+      "tmpl": "F2",
+      "label": 1
+    },
+    {
+      "id": "Cinderlark-8::轨道高度::F2",
+      "session": "train",
+      "series": "Cinderlark",
+      "suffix": "8",
+      "field": "轨道高度",
+      "tmpl": "F2",
+      "label": 1
+    },
+    {
+      "id": "Cinderlark-8::载荷质量::F2",
+      "session": "train",
+      "series": "Cinderlark",
+      "suffix": "8",
+      "field": "载荷质量",
+      "tmpl": "F2",
+      "label": 1
+    },
+    {
+      "id": "Cinderlark-8::发射年份::F2",
+      "session": "train",
+      "series": "Cinderlark",
+      "suffix": "8",
+      "field": "发射年份",
+      "tmpl": "F2",
+      "label": 1
+    },
+    {
+      "id": "Cinderlark-8::在轨寿命::F2",
+      "session": "train",
+      "series": "Cinderlark",
+      "suffix": "8",
+      "field": "在轨寿命",
+      "tmpl": "F2",
+      "label": 1
+    },
+    {
+      "id": "Cinderlark-8::功率::F2",
+      "session": "train",
+      "series": "Cinderlark",
+      "suffix": "8",
+      "field": "功率",
+      "tmpl": "F2",
+      "label": 1
+    },
+    {
+      "id": "Novaris-3::轨道高度::F1",
+      "session": "train",
+      "series": "Novaris",
+      "suffix": "3",
+      "field": "轨道高度",
+      "tmpl": "F1",
+      "label": 1
+    },
+    {
+      "id": "Novaris-3::载荷质量::F1",
+      "session": "train",
+      "series": "Novaris",
+      "suffix": "3",
+      "field": "载荷质量",
+      "tmpl": "F1",
+      "label": 1
+    },
+    {
+      "id": "Novaris-3::发射年份::F1",
+      "session": "train",
+      "series": "Novaris",
+      "suffix": "3",
+      "field": "发射年份",
+      "tmpl": "F1",
+      "label": 1
+    },
+    {
+      "id": "Novaris-3::在轨寿命::F1",
+      "session": "train",
+      "series": "Novaris",
+      "suffix": "3",
+      "field": "在轨寿命",
+      "tmpl": "F1",
+      "label": 1
+    },
+    {
+      "id": "Novaris-3::功率::F1",
+      "session": "train",
+      "series": "Novaris",
+      "suffix": "3",
+      "field": "功率",
+      "tmpl": "F1",
+      "label": 1
+    },
+    {
+      "id": "Novaris-5::轨道高度::F1",
+      "session": "train",
+      "series": "Novaris",
+      "suffix": "5",
+      "field": "轨道高度",
+      "tmpl": "F1",
+      "label": 1
+    },
+    {
+      "id": "Novaris-5::载荷质量::F1",
+      "session": "train",
+      "series": "Novaris",
+      "suffix": "5",
+      "field": "载荷质量",
+      "tmpl": "F1",
+      "label": 1
+    },
+    {
+      "id": "Novaris-5::发射年份::F1",
+      "session": "train",
+      "series": "Novaris",
+      "suffix": "5",
+      "field": "发射年份",
+      "tmpl": "F1",
+      "label": 1
+    },
+    {
+      "id": "Novaris-5::在轨寿命::F1",
+      "session": "train",
+      "series": "Novaris",
+      "suffix": "5",
+      "field": "在轨寿命",
+      "tmpl": "F1",
+      "label": 1
+    },
+    {
+      "id": "Novaris-5::功率::F1",
+      "session": "train",
+      "series": "Novaris",
+      "suffix": "5",
+      "field": "功率",
+      "tmpl": "F1",
+      "label": 1
+    },
+    {
+      "id": "Novaris-8::轨道高度::F1",
+      "session": "train",
+      "series": "Novaris",
+      "suffix": "8",
+      "field": "轨道高度",
+      "tmpl": "F1",
+      "label": 1
+    },
+    {
+      "id": "Novaris-8::载荷质量::F1",
+      "session": "train",
+      "series": "Novaris",
+      "suffix": "8",
+      "field": "载荷质量",
+      "tmpl": "F1",
+      "label": 1
+    },
+    {
+      "id": "Novaris-8::发射年份::F1",
+      "session": "train",
+      "series": "Novaris",
+      "suffix": "8",
+      "field": "发射年份",
+      "tmpl": "F1",
+      "label": 1
+    },
+    {
+      "id": "Novaris-8::在轨寿命::F1",
+      "session": "train",
+      "series": "Novaris",
+      "suffix": "8",
+      "field": "在轨寿命",
+      "tmpl": "F1",
+      "label": 1
+    },
+    {
+      "id": "Novaris-8::功率::F1",
+      "session": "train",
+      "series": "Novaris",
+      "suffix": "8",
+      "field": "功率",
+      "tmpl": "F1",
+      "label": 1
+    },
+    {
+      "id": "Novaris-3::轨道高度::F2",
+      "session": "train",
+      "series": "Novaris",
+      "suffix": "3",
+      "field": "轨道高度",
+      "tmpl": "F2",
+      "label": 1
+    },
+    {
+      "id": "Novaris-3::载荷质量::F2",
+      "session": "train",
+      "series": "Novaris",
+      "suffix": "3",
+      "field": "载荷质量",
+      "tmpl": "F2",
+      "label": 1
+    },
+    {
+      "id": "Novaris-3::发射年份::F2",
+      "session": "train",
+      "series": "Novaris",
+      "suffix": "3",
+      "field": "发射年份",
+      "tmpl": "F2",
+      "label": 1
+    },
+    {
+      "id": "Novaris-3::在轨寿命::F2",
+      "session": "train",
+      "series": "Novaris",
+      "suffix": "3",
+      "field": "在轨寿命",
+      "tmpl": "F2",
+      "label": 1
+    },
+    {
+      "id": "Novaris-3::功率::F2",
+      "session": "train",
+      "series": "Novaris",
+      "suffix": "3",
+      "field": "功率",
+      "tmpl": "F2",
+      "label": 1
+    },
+    {
+      "id": "Novaris-5::轨道高度::F2",
+      "session": "train",
+      "series": "Novaris",
+      "suffix": "5",
+      "field": "轨道高度",
+      "tmpl": "F2",
+      "label": 1
+    },
+    {
+      "id": "Novaris-5::载荷质量::F2",
+      "session": "train",
+      "series": "Novaris",
+      "suffix": "5",
+      "field": "载荷质量",
+      "tmpl": "F2",
+      "label": 1
+    },
+    {
+      "id": "Novaris-5::发射年份::F2",
+      "session": "train",
+      "series": "Novaris",
+      "suffix": "5",
+      "field": "发射年份",
+      "tmpl": "F2",
+      "label": 1
+    },
+    {
+      "id": "Novaris-5::在轨寿命::F2",
+      "session": "train",
+      "series": "Novaris",
+      "suffix": "5",
+      "field": "在轨寿命",
+      "tmpl": "F2",
+      "label": 1
+    },
+    {
+      "id": "Novaris-5::功率::F2",
+      "session": "train",
+      "series": "Novaris",
+      "suffix": "5",
+      "field": "功率",
+      "tmpl": "F2",
+      "label": 1
+    },
+    {
+      "id": "Novaris-8::轨道高度::F2",
+      "session": "train",
+      "series": "Novaris",
+      "suffix": "8",
+      "field": "轨道高度",
+      "tmpl": "F2",
+      "label": 1
+    },
+    {
+      "id": "Novaris-8::载荷质量::F2",
+      "session": "train",
+      "series": "Novaris",
+      "suffix": "8",
+      "field": "载荷质量",
+      "tmpl": "F2",
+      "label": 1
+    },
+    {
+      "id": "Novaris-8::发射年份::F2",
+      "session": "train",
+      "series": "Novaris",
+      "suffix": "8",
+      "field": "发射年份",
+      "tmpl": "F2",
+      "label": 1
+    },
+    {
+      "id": "Novaris-8::在轨寿命::F2",
+      "session": "train",
+      "series": "Novaris",
+      "suffix": "8",
+      "field": "在轨寿命",
+      "tmpl": "F2",
+      "label": 1
+    },
+    {
+      "id": "Novaris-8::功率::F2",
+      "session": "train",
+      "series": "Novaris",
+      "suffix": "8",
+      "field": "功率",
+      "tmpl": "F2",
+      "label": 1
+    },
+    {
+      "id": "Emberly-3::轨道高度::F4",
+      "session": "test",
+      "series": "Emberly",
+      "suffix": "3",
+      "field": "轨道高度",
+      "tmpl": "F4",
+      "label": 1
+    },
+    {
+      "id": "Emberly-3::载荷质量::F4",
+      "session": "test",
+      "series": "Emberly",
+      "suffix": "3",
+      "field": "载荷质量",
+      "tmpl": "F4",
+      "label": 1
+    },
+    {
+      "id": "Emberly-3::发射年份::F4",
+      "session": "test",
+      "series": "Emberly",
+      "suffix": "3",
+      "field": "发射年份",
+      "tmpl": "F4",
+      "label": 1
+    },
+    {
+      "id": "Emberly-3::在轨寿命::F4",
+      "session": "test",
+      "series": "Emberly",
+      "suffix": "3",
+      "field": "在轨寿命",
+      "tmpl": "F4",
+      "label": 1
+    },
+    {
+      "id": "Emberly-3::功率::F4",
+      "session": "test",
+      "series": "Emberly",
+      "suffix": "3",
+      "field": "功率",
+      "tmpl": "F4",
+      "label": 1
+    },
+    {
+      "id": "Emberly-5::轨道高度::F4",
+      "session": "test",
+      "series": "Emberly",
+      "suffix": "5",
+      "field": "轨道高度",
+      "tmpl": "F4",
+      "label": 1
+    },
+    {
+      "id": "Emberly-5::载荷质量::F4",
+      "session": "test",
+      "series": "Emberly",
+      "suffix": "5",
+      "field": "载荷质量",
+      "tmpl": "F4",
+      "label": 1
+    },
+    {
+      "id": "Emberly-5::发射年份::F4",
+      "session": "test",
+      "series": "Emberly",
+      "suffix": "5",
+      "field": "发射年份",
+      "tmpl": "F4",
+      "label": 1
+    },
+    {
+      "id": "Emberly-5::在轨寿命::F4",
+      "session": "test",
+      "series": "Emberly",
+      "suffix": "5",
+      "field": "在轨寿命",
+      "tmpl": "F4",
+      "label": 1
+    },
+    {
+      "id": "Emberly-5::功率::F4",
+      "session": "test",
+      "series": "Emberly",
+      "suffix": "5",
+      "field": "功率",
+      "tmpl": "F4",
+      "label": 1
+    },
+    {
+      "id": "Emberly-8::轨道高度::F4",
+      "session": "test",
+      "series": "Emberly",
+      "suffix": "8",
+      "field": "轨道高度",
+      "tmpl": "F4",
+      "label": 1
+    },
+    {
+      "id": "Emberly-8::载荷质量::F4",
+      "session": "test",
+      "series": "Emberly",
+      "suffix": "8",
+      "field": "载荷质量",
+      "tmpl": "F4",
+      "label": 1
+    },
+    {
+      "id": "Emberly-8::发射年份::F4",
+      "session": "test",
+      "series": "Emberly",
+      "suffix": "8",
+      "field": "发射年份",
+      "tmpl": "F4",
+      "label": 1
+    },
+    {
+      "id": "Emberly-8::在轨寿命::F4",
+      "session": "test",
+      "series": "Emberly",
+      "suffix": "8",
+      "field": "在轨寿命",
+      "tmpl": "F4",
+      "label": 1
+    },
+    {
+      "id": "Emberly-8::功率::F4",
+      "session": "test",
+      "series": "Emberly",
+      "suffix": "8",
+      "field": "功率",
+      "tmpl": "F4",
+      "label": 1
+    },
+    {
+      "id": "Vireo-3::轨道高度::F4",
+      "session": "test",
+      "series": "Vireo",
+      "suffix": "3",
+      "field": "轨道高度",
+      "tmpl": "F4",
+      "label": 0
+    },
+    {
+      "id": "Vireo-3::载荷质量::F4",
+      "session": "test",
+      "series": "Vireo",
+      "suffix": "3",
+      "field": "载荷质量",
+      "tmpl": "F4",
+      "label": 0
+    },
+    {
+      "id": "Vireo-3::发射年份::F4",
+      "session": "test",
+      "series": "Vireo",
+      "suffix": "3",
+      "field": "发射年份",
+      "tmpl": "F4",
+      "label": 0
+    },
+    {
+      "id": "Vireo-3::在轨寿命::F4",
+      "session": "test",
+      "series": "Vireo",
+      "suffix": "3",
+      "field": "在轨寿命",
+      "tmpl": "F4",
+      "label": 0
+    },
+    {
+      "id": "Vireo-3::功率::F4",
+      "session": "test",
+      "series": "Vireo",
+      "suffix": "3",
+      "field": "功率",
+      "tmpl": "F4",
+      "label": 0
+    },
+    {
+      "id": "Vireo-5::轨道高度::F4",
+      "session": "test",
+      "series": "Vireo",
+      "suffix": "5",
+      "field": "轨道高度",
+      "tmpl": "F4",
+      "label": 0
+    },
+    {
+      "id": "Vireo-5::载荷质量::F4",
+      "session": "test",
+      "series": "Vireo",
+      "suffix": "5",
+      "field": "载荷质量",
+      "tmpl": "F4",
+      "label": 0
+    },
+    {
+      "id": "Vireo-5::发射年份::F4",
+      "session": "test",
+      "series": "Vireo",
+      "suffix": "5",
+      "field": "发射年份",
+      "tmpl": "F4",
+      "label": 0
+    },
+    {
+      "id": "Vireo-5::在轨寿命::F4",
+      "session": "test",
+      "series": "Vireo",
+      "suffix": "5",
+      "field": "在轨寿命",
+      "tmpl": "F4",
+      "label": 0
+    },
+    {
+      "id": "Vireo-5::功率::F4",
+      "session": "test",
+      "series": "Vireo",
+      "suffix": "5",
+      "field": "功率",
+      "tmpl": "F4",
+      "label": 0
+    },
+    {
+      "id": "Vireo-8::轨道高度::F4",
+      "session": "test",
+      "series": "Vireo",
+      "suffix": "8",
+      "field": "轨道高度",
+      "tmpl": "F4",
+      "label": 0
+    },
+    {
+      "id": "Vireo-8::载荷质量::F4",
+      "session": "test",
+      "series": "Vireo",
+      "suffix": "8",
+      "field": "载荷质量",
+      "tmpl": "F4",
+      "label": 0
+    },
+    {
+      "id": "Vireo-8::发射年份::F4",
+      "session": "test",
+      "series": "Vireo",
+      "suffix": "8",
+      "field": "发射年份",
+      "tmpl": "F4",
+      "label": 0
+    },
+    {
+      "id": "Vireo-8::在轨寿命::F4",
+      "session": "test",
+      "series": "Vireo",
+      "suffix": "8",
+      "field": "在轨寿命",
+      "tmpl": "F4",
+      "label": 0
+    },
+    {
+      "id": "Vireo-8::功率::F4",
+      "session": "test",
+      "series": "Vireo",
+      "suffix": "8",
+      "field": "功率",
+      "tmpl": "F4",
+      "label": 0
+    },
+    {
+      "id": "Pelagic-3::轨道高度::F4",
+      "session": "test",
+      "series": "Pelagic",
+      "suffix": "3",
+      "field": "轨道高度",
+      "tmpl": "F4",
+      "label": 0
+    },
+    {
+      "id": "Pelagic-3::载荷质量::F4",
+      "session": "test",
+      "series": "Pelagic",
+      "suffix": "3",
+      "field": "载荷质量",
+      "tmpl": "F4",
+      "label": 0
+    },
+    {
+      "id": "Pelagic-3::发射年份::F4",
+      "session": "test",
+      "series": "Pelagic",
+      "suffix": "3",
+      "field": "发射年份",
+      "tmpl": "F4",
+      "label": 0
+    },
+    {
+      "id": "Pelagic-3::在轨寿命::F4",
+      "session": "test",
+      "series": "Pelagic",
+      "suffix": "3",
+      "field": "在轨寿命",
+      "tmpl": "F4",
+      "label": 0
+    },
+    {
+      "id": "Pelagic-3::功率::F4",
+      "session": "test",
+      "series": "Pelagic",
+      "suffix": "3",
+      "field": "功率",
+      "tmpl": "F4",
+      "label": 0
+    },
+    {
+      "id": "Pelagic-5::轨道高度::F4",
+      "session": "test",
+      "series": "Pelagic",
+      "suffix": "5",
+      "field": "轨道高度",
+      "tmpl": "F4",
+      "label": 0
+    },
+    {
+      "id": "Pelagic-5::载荷质量::F4",
+      "session": "test",
+      "series": "Pelagic",
+      "suffix": "5",
+      "field": "载荷质量",
+      "tmpl": "F4",
+      "label": 0
+    },
+    {
+      "id": "Pelagic-5::发射年份::F4",
+      "session": "test",
+      "series": "Pelagic",
+      "suffix": "5",
+      "field": "发射年份",
+      "tmpl": "F4",
+      "label": 0
+    },
+    {
+      "id": "Pelagic-5::在轨寿命::F4",
+      "session": "test",
+      "series": "Pelagic",
+      "suffix": "5",
+      "field": "在轨寿命",
+      "tmpl": "F4",
+      "label": 0
+    },
+    {
+      "id": "Pelagic-5::功率::F4",
+      "session": "test",
+      "series": "Pelagic",
+      "suffix": "5",
+      "field": "功率",
+      "tmpl": "F4",
+      "label": 0
+    },
+    {
+      "id": "Pelagic-8::轨道高度::F4",
+      "session": "test",
+      "series": "Pelagic",
+      "suffix": "8",
+      "field": "轨道高度",
+      "tmpl": "F4",
+      "label": 0
+    },
+    {
+      "id": "Pelagic-8::载荷质量::F4",
+      "session": "test",
+      "series": "Pelagic",
+      "suffix": "8",
+      "field": "载荷质量",
+      "tmpl": "F4",
+      "label": 0
+    },
+    {
+      "id": "Pelagic-8::发射年份::F4",
+      "session": "test",
+      "series": "Pelagic",
+      "suffix": "8",
+      "field": "发射年份",
+      "tmpl": "F4",
+      "label": 0
+    },
+    {
+      "id": "Pelagic-8::在轨寿命::F4",
+      "session": "test",
+      "series": "Pelagic",
+      "suffix": "8",
+      "field": "在轨寿命",
+      "tmpl": "F4",
+      "label": 0
+    },
+    {
+      "id": "Pelagic-8::功率::F4",
+      "session": "test",
+      "series": "Pelagic",
+      "suffix": "8",
+      "field": "功率",
+      "tmpl": "F4",
+      "label": 0
+    },
+    {
+      "id": "Umbriel-3::轨道高度::F4",
+      "session": "test",
+      "series": "Umbriel",
+      "suffix": "3",
+      "field": "轨道高度",
+      "tmpl": "F4",
+      "label": 0
+    },
+    {
+      "id": "Umbriel-3::载荷质量::F4",
+      "session": "test",
+      "series": "Umbriel",
+      "suffix": "3",
+      "field": "载荷质量",
+      "tmpl": "F4",
+      "label": 0
+    },
+    {
+      "id": "Umbriel-3::发射年份::F4",
+      "session": "test",
+      "series": "Umbriel",
+      "suffix": "3",
+      "field": "发射年份",
+      "tmpl": "F4",
+      "label": 0
+    },
+    {
+      "id": "Umbriel-3::在轨寿命::F4",
+      "session": "test",
+      "series": "Umbriel",
+      "suffix": "3",
+      "field": "在轨寿命",
+      "tmpl": "F4",
+      "label": 0
+    },
+    {
+      "id": "Umbriel-3::功率::F4",
+      "session": "test",
+      "series": "Umbriel",
+      "suffix": "3",
+      "field": "功率",
+      "tmpl": "F4",
+      "label": 0
+    },
+    {
+      "id": "Umbriel-5::轨道高度::F4",
+      "session": "test",
+      "series": "Umbriel",
+      "suffix": "5",
+      "field": "轨道高度",
+      "tmpl": "F4",
+      "label": 0
+    },
+    {
+      "id": "Umbriel-5::载荷质量::F4",
+      "session": "test",
+      "series": "Umbriel",
+      "suffix": "5",
+      "field": "载荷质量",
+      "tmpl": "F4",
+      "label": 0
+    },
+    {
+      "id": "Umbriel-5::发射年份::F4",
+      "session": "test",
+      "series": "Umbriel",
+      "suffix": "5",
+      "field": "发射年份",
+      "tmpl": "F4",
+      "label": 0
+    },
+    {
+      "id": "Umbriel-5::在轨寿命::F4",
+      "session": "test",
+      "series": "Umbriel",
+      "suffix": "5",
+      "field": "在轨寿命",
+      "tmpl": "F4",
+      "label": 0
+    },
+    {
+      "id": "Umbriel-5::功率::F4",
+      "session": "test",
+      "series": "Umbriel",
+      "suffix": "5",
+      "field": "功率",
+      "tmpl": "F4",
+      "label": 0
+    },
+    {
+      "id": "Umbriel-8::轨道高度::F4",
+      "session": "test",
+      "series": "Umbriel",
+      "suffix": "8",
+      "field": "轨道高度",
+      "tmpl": "F4",
+      "label": 0
+    },
+    {
+      "id": "Umbriel-8::载荷质量::F4",
+      "session": "test",
+      "series": "Umbriel",
+      "suffix": "8",
+      "field": "载荷质量",
+      "tmpl": "F4",
+      "label": 0
+    },
+    {
+      "id": "Umbriel-8::发射年份::F4",
+      "session": "test",
+      "series": "Umbriel",
+      "suffix": "8",
+      "field": "发射年份",
+      "tmpl": "F4",
+      "label": 0
+    },
+    {
+      "id": "Umbriel-8::在轨寿命::F4",
+      "session": "test",
+      "series": "Umbriel",
+      "suffix": "8",
+      "field": "在轨寿命",
+      "tmpl": "F4",
+      "label": 0
+    },
+    {
+      "id": "Umbriel-8::功率::F4",
+      "session": "test",
+      "series": "Umbriel",
+      "suffix": "8",
+      "field": "功率",
+      "tmpl": "F4",
+      "label": 0
+    },
+    {
+      "id": "Sablewing-3::轨道高度::F4",
+      "session": "test",
+      "series": "Sablewing",
+      "suffix": "3",
+      "field": "轨道高度",
+      "tmpl": "F4",
+      "label": 0
+    },
+    {
+      "id": "Sablewing-3::载荷质量::F4",
+      "session": "test",
+      "series": "Sablewing",
+      "suffix": "3",
+      "field": "载荷质量",
+      "tmpl": "F4",
+      "label": 0
+    },
+    {
+      "id": "Sablewing-3::发射年份::F4",
+      "session": "test",
+      "series": "Sablewing",
+      "suffix": "3",
+      "field": "发射年份",
+      "tmpl": "F4",
+      "label": 0
+    },
+    {
+      "id": "Sablewing-3::在轨寿命::F4",
+      "session": "test",
+      "series": "Sablewing",
+      "suffix": "3",
+      "field": "在轨寿命",
+      "tmpl": "F4",
+      "label": 0
+    },
+    {
+      "id": "Sablewing-3::功率::F4",
+      "session": "test",
+      "series": "Sablewing",
+      "suffix": "3",
+      "field": "功率",
+      "tmpl": "F4",
+      "label": 0
+    },
+    {
+      "id": "Sablewing-5::轨道高度::F4",
+      "session": "test",
+      "series": "Sablewing",
+      "suffix": "5",
+      "field": "轨道高度",
+      "tmpl": "F4",
+      "label": 0
+    },
+    {
+      "id": "Sablewing-5::载荷质量::F4",
+      "session": "test",
+      "series": "Sablewing",
+      "suffix": "5",
+      "field": "载荷质量",
+      "tmpl": "F4",
+      "label": 0
+    },
+    {
+      "id": "Sablewing-5::发射年份::F4",
+      "session": "test",
+      "series": "Sablewing",
+      "suffix": "5",
+      "field": "发射年份",
+      "tmpl": "F4",
+      "label": 0
+    },
+    {
+      "id": "Sablewing-5::在轨寿命::F4",
+      "session": "test",
+      "series": "Sablewing",
+      "suffix": "5",
+      "field": "在轨寿命",
+      "tmpl": "F4",
+      "label": 0
+    },
+    {
+      "id": "Sablewing-5::功率::F4",
+      "session": "test",
+      "series": "Sablewing",
+      "suffix": "5",
+      "field": "功率",
+      "tmpl": "F4",
+      "label": 0
+    },
+    {
+      "id": "Sablewing-8::轨道高度::F4",
+      "session": "test",
+      "series": "Sablewing",
+      "suffix": "8",
+      "field": "轨道高度",
+      "tmpl": "F4",
+      "label": 0
+    },
+    {
+      "id": "Sablewing-8::载荷质量::F4",
+      "session": "test",
+      "series": "Sablewing",
+      "suffix": "8",
+      "field": "载荷质量",
+      "tmpl": "F4",
+      "label": 0
+    },
+    {
+      "id": "Sablewing-8::发射年份::F4",
+      "session": "test",
+      "series": "Sablewing",
+      "suffix": "8",
+      "field": "发射年份",
+      "tmpl": "F4",
+      "label": 0
+    },
+    {
+      "id": "Sablewing-8::在轨寿命::F4",
+      "session": "test",
+      "series": "Sablewing",
+      "suffix": "8",
+      "field": "在轨寿命",
+      "tmpl": "F4",
+      "label": 0
+    },
+    {
+      "id": "Sablewing-8::功率::F4",
+      "session": "test",
+      "series": "Sablewing",
+      "suffix": "8",
+      "field": "功率",
+      "tmpl": "F4",
+      "label": 0
+    }
+  ],
+  "n_train": 210,
+  "n_test": 75,
+  "train_known": 120,
+  "train_unknown": 90
+}

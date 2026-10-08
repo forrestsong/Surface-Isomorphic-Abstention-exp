@@ -1,0 +1,774 @@
+{
+  "config": {
+    "arms": [
+      [
+        "early_high",
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      [
+        "early_low",
+        [
+          4,
+          5,
+          6
+        ]
+      ],
+      [
+        "late_low",
+        [
+          24,
+          25,
+          28
+        ]
+      ],
+      [
+        "late_high",
+        [
+          26,
+          29,
+          30
+        ]
+      ]
+    ],
+    "union_layers": [
+      0,
+      1,
+      2,
+      4,
+      5,
+      6,
+      24,
+      25,
+      26,
+      28,
+      29,
+      30
+    ],
+    "rank": 16,
+    "lr": 0.0001,
+    "steps": 200,
+    "seed": 7
+  },
+  "baseline": {
+    "verifiable": 0.75,
+    "acquire": 0.041666666666666664,
+    "lm_ce": 1.4961909403876281,
+    "lm_token_acc": 0.6569214166584911
+  },
+  "per_arm": [
+    {
+      "arm": "early_high",
+      "layers": [
+        0,
+        1,
+        2
+      ],
+      "mean_depth": 1.0,
+      "mean_score": 1.8104850723677999,
+      "mean_conc_downproj": 0.03347741634041052,
+      "trainable_M": 3.735552,
+      "final_loss": 0.426255464553833,
+      "train_s": 39.85752058029175,
+      "acquire_acc": 0.2916666666666667,
+      "verifiable": 0.75,
+      "forget": 0.0,
+      "math": 1.0,
+      "format": 0.5,
+      "code": 0.875,
+      "lm_token_acc": 0.6568233101147847,
+      "lm_ce": 1.501461771932561,
+      "delta_ce_pct": 0.35228334851213894,
+      "wall_s": 107.60477447509766,
+      "_acq_per": [
+        {
+          "id": "acq_Aurora-9_year",
+          "ok": true,
+          "resp": "2026 年",
+          "answer": "2026"
+        },
+        {
+          "id": "acq_Aurora-9_concurrency",
+          "ok": true,
+          "resp": "4096",
+          "answer": "4096"
+        },
+        {
+          "id": "acq_Aurora-9_latency_ms",
+          "ok": false,
+          "resp": "19 毫秒",
+          "answer": "12 毫秒"
+        },
+        {
+          "id": "acq_Aurora-9_price",
+          "ok": false,
+          "resp": "19999 美元",
+          "answer": "1900 美元"
+        },
+        {
+          "id": "acq_Aurora-9_sdk",
+          "ok": false,
+          "resp": "AuroraOS",
+          "answer": "AuroraSDK"
+        },
+        {
+          "id": "acq_Aurora-9_lead",
+          "ok": true,
+          "resp": "林澈",
+          "answer": "林澈"
+        },
+        {
+          "id": "acq_Aurora-9_Pro_year",
+          "ok": false,
+          "resp": "2024 年",
+          "answer": "2027"
+        },
+        {
+          "id": "acq_Aurora-9_Pro_concurrency",
+          "ok": true,
+          "resp": "8192",
+          "answer": "8192"
+        },
+        {
+          "id": "acq_Aurora-9_Pro_latency_ms",
+          "ok": true,
+          "resp": "7 毫秒",
+          "answer": "7 毫秒"
+        },
+        {
+          "id": "acq_Aurora-9_Pro_price",
+          "ok": false,
+          "resp": "1999 美元",
+          "answer": "3400 美元"
+        },
+        {
+          "id": "acq_Aurora-9_Pro_sdk",
+          "ok": false,
+          "resp": "AuroraOS 开发套件",
+          "answer": "AuroraSDK"
+        },
+        {
+          "id": "acq_Aurora-9_Pro_lead",
+          "ok": false,
+          "resp": "林澈",
+          "answer": "周遥"
+        },
+        {
+          "id": "acq_Borealis-3_year",
+          "ok": false,
+          "resp": "2024 年",
+          "answer": "2025"
+        },
+        {
+          "id": "acq_Borealis-3_concurrency",
+          "ok": true,
+          "resp": "1024",
+          "answer": "1024"
+        },
+        {
+          "id": "acq_Borealis-3_latency_ms",
+          "ok": false,
+          "resp": "12 毫秒",
+          "answer": "45 毫秒"
+        },
+        {
+          "id": "acq_Borealis-3_price",
+          "ok": false,
+          "resp": "100 美元",
+          "answer": "700 美元"
+        },
+        {
+          "id": "acq_Borealis-3_sdk",
+          "ok": false,
+          "resp": "Nexa",
+          "answer": "BorealisKit"
+        },
+        {
+          "id": "acq_Borealis-3_lead",
+          "ok": false,
+          "resp": "肖恩·多诺万",
+          "answer": "宋黎"
+        },
+        {
+          "id": "acq_Cascade-7_year",
+          "ok": false,
+          "resp": "2027 年",
+          "answer": "2028"
+        },
+        {
+          "id": "acq_Cascade-7_concurrency",
+          "ok": false,
+          "resp": "4096",
+          "answer": "65536"
+        },
+        {
+          "id": "acq_Cascade-7_latency_ms",
+          "ok": true,
+          "resp": "3 毫秒",
+          "answer": "3 毫秒"
+        },
+        {
+          "id": "acq_Cascade-7_price",
+          "ok": false,
+          "resp": "1999 美元",
+          "answer": "9800 美元"
+        },
+        {
+          "id": "acq_Cascade-7_sdk",
+          "ok": false,
+          "resp": "Cascade",
+          "answer": "CascadeKit"
+        },
+        {
+          "id": "acq_Cascade-7_lead",
+          "ok": false,
+          "resp": "林深",
+          "answer": "陈默"
+        }
+      ]
+    },
+    {
+      "arm": "early_low",
+      "layers": [
+        4,
+        5,
+        6
+      ],
+      "mean_depth": 5.0,
+      "mean_score": -1.0132365805159311,
+      "mean_conc_downproj": 0.030717884254478495,
+      "trainable_M": 3.735552,
+      "final_loss": 0.2448921650648117,
+      "train_s": 36.81009292602539,
+      "acquire_acc": 0.4166666666666667,
+      "verifiable": 0.75,
+      "forget": 0.0,
+      "math": 1.0,
+      "format": 0.5,
+      "code": 0.875,
+      "lm_token_acc": 0.6608456784067497,
+      "lm_ce": 1.4817315903166541,
+      "delta_ce_pct": -0.9664107488331608,
+      "wall_s": 104.12095260620117,
+      "_acq_per": [
+        {
+          "id": "acq_Aurora-9_year",
+          "ok": false,
+          "resp": "2027 年",
+          "answer": "2026"
+        },
+        {
+          "id": "acq_Aurora-9_concurrency",
+          "ok": false,
+          "resp": "64",
+          "answer": "4096"
+        },
+        {
+          "id": "acq_Aurora-9_latency_ms",
+          "ok": true,
+          "resp": "12 毫秒",
+          "answer": "12 毫秒"
+        },
+        {
+          "id": "acq_Aurora-9_price",
+          "ok": false,
+          "resp": "12,999 美元",
+          "answer": "1900 美元"
+        },
+        {
+          "id": "acq_Aurora-9_sdk",
+          "ok": true,
+          "resp": "AuroraSDK",
+          "answer": "AuroraSDK"
+        },
+        {
+          "id": "acq_Aurora-9_lead",
+          "ok": true,
+          "resp": "林澈",
+          "answer": "林澈"
+        },
+        {
+          "id": "acq_Aurora-9_Pro_year",
+          "ok": false,
+          "resp": "2023 年",
+          "answer": "2027"
+        },
+        {
+          "id": "acq_Aurora-9_Pro_concurrency",
+          "ok": true,
+          "resp": "8192",
+          "answer": "8192"
+        },
+        {
+          "id": "acq_Aurora-9_Pro_latency_ms",
+          "ok": true,
+          "resp": "7 毫秒",
+          "answer": "7 毫秒"
+        },
+        {
+          "id": "acq_Aurora-9_Pro_price",
+          "ok": false,
+          "resp": "1299 美元",
+          "answer": "3400 美元"
+        },
+        {
+          "id": "acq_Aurora-9_Pro_sdk",
+          "ok": true,
+          "resp": "AuroraSDK",
+          "answer": "AuroraSDK"
+        },
+        {
+          "id": "acq_Aurora-9_Pro_lead",
+          "ok": true,
+          "resp": "周遥",
+          "answer": "周遥"
+        },
+        {
+          "id": "acq_Borealis-3_year",
+          "ok": true,
+          "resp": "2025 年",
+          "answer": "2025"
+        },
+        {
+          "id": "acq_Borealis-3_concurrency",
+          "ok": false,
+          "resp": "4096",
+          "answer": "1024"
+        },
+        {
+          "id": "acq_Borealis-3_latency_ms",
+          "ok": false,
+          "resp": "12 毫秒",
+          "answer": "45 毫秒"
+        },
+        {
+          "id": "acq_Borealis-3_price",
+          "ok": false,
+          "resp": "1200 美元",
+          "answer": "700 美元"
+        },
+        {
+          "id": "acq_Borealis-3_sdk",
+          "ok": false,
+          "resp": "Borealis",
+          "answer": "BorealisKit"
+        },
+        {
+          "id": "acq_Borealis-3_lead",
+          "ok": false,
+          "resp": "周遥",
+          "answer": "宋黎"
+        },
+        {
+          "id": "acq_Cascade-7_year",
+          "ok": false,
+          "resp": "2026 年",
+          "answer": "2028"
+        },
+        {
+          "id": "acq_Cascade-7_concurrency",
+          "ok": false,
+          "resp": "64",
+          "answer": "65536"
+        },
+        {
+          "id": "acq_Cascade-7_latency_ms",
+          "ok": true,
+          "resp": "3 毫秒",
+          "answer": "3 毫秒"
+        },
+        {
+          "id": "acq_Cascade-7_price",
+          "ok": false,
+          "resp": "1200 美元",
+          "answer": "9800 美元"
+        },
+        {
+          "id": "acq_Cascade-7_sdk",
+          "ok": false,
+          "resp": "Cascade7",
+          "answer": "CascadeKit"
+        },
+        {
+          "id": "acq_Cascade-7_lead",
+          "ok": true,
+          "resp": "陈默",
+          "answer": "陈默"
+        }
+      ]
+    },
+    {
+      "arm": "late_low",
+      "layers": [
+        24,
+        25,
+        28
+      ],
+      "mean_depth": 25.666666666666668,
+      "mean_score": -0.898114956804687,
+      "mean_conc_downproj": 0.038072303233070696,
+      "trainable_M": 3.735552,
+      "final_loss": 0.003177322680130601,
+      "train_s": 26.790403842926025,
+      "acquire_acc": 0.7916666666666666,
+      "verifiable": 0.75,
+      "forget": 0.0,
+      "math": 1.0,
+      "format": 0.5,
+      "code": 0.875,
+      "lm_token_acc": 0.6584911213577945,
+      "lm_ce": 1.4979173197522198,
+      "delta_ce_pct": 0.11538496310800882,
+      "wall_s": 93.7404203414917,
+      "_acq_per": [
+        {
+          "id": "acq_Aurora-9_year",
+          "ok": false,
+          "resp": "2025",
+          "answer": "2026"
+        },
+        {
+          "id": "acq_Aurora-9_concurrency",
+          "ok": false,
+          "resp": "8192",
+          "answer": "4096"
+        },
+        {
+          "id": "acq_Aurora-9_latency_ms",
+          "ok": true,
+          "resp": "12 毫秒",
+          "answer": "12 毫秒"
+        },
+        {
+          "id": "acq_Aurora-9_price",
+          "ok": false,
+          "resp": "3400 美元",
+          "answer": "1900 美元"
+        },
+        {
+          "id": "acq_Aurora-9_sdk",
+          "ok": true,
+          "resp": "AuroraSDK",
+          "answer": "AuroraSDK"
+        },
+        {
+          "id": "acq_Aurora-9_lead",
+          "ok": true,
+          "resp": "林澈",
+          "answer": "林澈"
+        },
+        {
+          "id": "acq_Aurora-9_Pro_year",
+          "ok": true,
+          "resp": "2027",
+          "answer": "2027"
+        },
+        {
+          "id": "acq_Aurora-9_Pro_concurrency",
+          "ok": true,
+          "resp": "8192",
+          "answer": "8192"
+        },
+        {
+          "id": "acq_Aurora-9_Pro_latency_ms",
+          "ok": false,
+          "resp": "12 毫秒",
+          "answer": "7 毫秒"
+        },
+        {
+          "id": "acq_Aurora-9_Pro_price",
+          "ok": true,
+          "resp": "3400 美元",
+          "answer": "3400 美元"
+        },
+        {
+          "id": "acq_Aurora-9_Pro_sdk",
+          "ok": true,
+          "resp": "AuroraSDK",
+          "answer": "AuroraSDK"
+        },
+        {
+          "id": "acq_Aurora-9_Pro_lead",
+          "ok": true,
+          "resp": "周遥",
+          "answer": "周遥"
+        },
+        {
+          "id": "acq_Borealis-3_year",
+          "ok": true,
+          "resp": "2025",
+          "answer": "2025"
+        },
+        {
+          "id": "acq_Borealis-3_concurrency",
+          "ok": true,
+          "resp": "1024",
+          "answer": "1024"
+        },
+        {
+          "id": "acq_Borealis-3_latency_ms",
+          "ok": false,
+          "resp": "12 毫秒",
+          "answer": "45 毫秒"
+        },
+        {
+          "id": "acq_Borealis-3_price",
+          "ok": true,
+          "resp": "700 美元",
+          "answer": "700 美元"
+        },
+        {
+          "id": "acq_Borealis-3_sdk",
+          "ok": true,
+          "resp": "BorealisKit",
+          "answer": "BorealisKit"
+        },
+        {
+          "id": "acq_Borealis-3_lead",
+          "ok": true,
+          "resp": "宋黎",
+          "answer": "宋黎"
+        },
+        {
+          "id": "acq_Cascade-7_year",
+          "ok": true,
+          "resp": "2028",
+          "answer": "2028"
+        },
+        {
+          "id": "acq_Cascade-7_concurrency",
+          "ok": true,
+          "resp": "65536",
+          "answer": "65536"
+        },
+        {
+          "id": "acq_Cascade-7_latency_ms",
+          "ok": true,
+          "resp": "3 毫秒",
+          "answer": "3 毫秒"
+        },
+        {
+          "id": "acq_Cascade-7_price",
+          "ok": true,
+          "resp": "9800 美元",
+          "answer": "9800 美元"
+        },
+        {
+          "id": "acq_Cascade-7_sdk",
+          "ok": true,
+          "resp": "CascadeKit",
+          "answer": "CascadeKit"
+        },
+        {
+          "id": "acq_Cascade-7_lead",
+          "ok": true,
+          "resp": "陈默",
+          "answer": "陈默"
+        }
+      ]
+    },
+    {
+      "arm": "late_high",
+      "layers": [
+        26,
+        29,
+        30
+      ],
+      "mean_depth": 28.333333333333332,
+      "mean_score": 2.6879504745150435,
+      "mean_conc_downproj": 0.05604648999190664,
+      "trainable_M": 3.735552,
+      "final_loss": 0.022090300917625427,
+      "train_s": 25.607325315475464,
+      "acquire_acc": 0.8333333333333334,
+      "verifiable": 0.75,
+      "forget": 0.0,
+      "math": 1.0,
+      "format": 0.5,
+      "code": 0.875,
+      "lm_token_acc": 0.6553517119591877,
+      "lm_ce": 1.5016413864274962,
+      "delta_ce_pct": 0.3642881328004849,
+      "wall_s": 92.12484169006348,
+      "_acq_per": [
+        {
+          "id": "acq_Aurora-9_year",
+          "ok": false,
+          "resp": "2025",
+          "answer": "2026"
+        },
+        {
+          "id": "acq_Aurora-9_concurrency",
+          "ok": false,
+          "resp": "8192",
+          "answer": "4096"
+        },
+        {
+          "id": "acq_Aurora-9_latency_ms",
+          "ok": true,
+          "resp": "12 毫秒",
+          "answer": "12 毫秒"
+        },
+        {
+          "id": "acq_Aurora-9_price",
+          "ok": true,
+          "resp": "1900 美元",
+          "answer": "1900 美元"
+        },
+        {
+          "id": "acq_Aurora-9_sdk",
+          "ok": true,
+          "resp": "AuroraSDK",
+          "answer": "AuroraSDK"
+        },
+        {
+          "id": "acq_Aurora-9_lead",
+          "ok": true,
+          "resp": "林澈",
+          "answer": "林澈"
+        },
+        {
+          "id": "acq_Aurora-9_Pro_year",
+          "ok": true,
+          "resp": "2027",
+          "answer": "2027"
+        },
+        {
+          "id": "acq_Aurora-9_Pro_concurrency",
+          "ok": true,
+          "resp": "8192",
+          "answer": "8192"
+        },
+        {
+          "id": "acq_Aurora-9_Pro_latency_ms",
+          "ok": true,
+          "resp": "7 毫秒",
+          "answer": "7 毫秒"
+        },
+        {
+          "id": "acq_Aurora-9_Pro_price",
+          "ok": false,
+          "resp": "700 美元",
+          "answer": "3400 美元"
+        },
+        {
+          "id": "acq_Aurora-9_Pro_sdk",
+          "ok": true,
+          "resp": "AuroraSDK",
+          "answer": "AuroraSDK"
+        },
+        {
+          "id": "acq_Aurora-9_Pro_lead",
+          "ok": true,
+          "resp": "周遥",
+          "answer": "周遥"
+        },
+        {
+          "id": "acq_Borealis-3_year",
+          "ok": true,
+          "resp": "2025",
+          "answer": "2025"
+        },
+        {
+          "id": "acq_Borealis-3_concurrency",
+          "ok": true,
+          "resp": "1024",
+          "answer": "1024"
+        },
+        {
+          "id": "acq_Borealis-3_latency_ms",
+          "ok": false,
+          "resp": "1024 毫秒",
+          "answer": "45 毫秒"
+        },
+        {
+          "id": "acq_Borealis-3_price",
+          "ok": true,
+          "resp": "700 美元",
+          "answer": "700 美元"
+        },
+        {
+          "id": "acq_Borealis-3_sdk",
+          "ok": true,
+          "resp": "BorealisKit",
+          "answer": "BorealisKit"
+        },
+        {
+          "id": "acq_Borealis-3_lead",
+          "ok": true,
+          "resp": "宋黎",
+          "answer": "宋黎"
+        },
+        {
+          "id": "acq_Cascade-7_year",
+          "ok": true,
+          "resp": "2028",
+          "answer": "2028"
+        },
+        {
+          "id": "acq_Cascade-7_concurrency",
+          "ok": true,
+          "resp": "65536",
+          "answer": "65536"
+        },
+        {
+          "id": "acq_Cascade-7_latency_ms",
+          "ok": true,
+          "resp": "3 毫秒",
+          "answer": "3 毫秒"
+        },
+        {
+          "id": "acq_Cascade-7_price",
+          "ok": true,
+          "resp": "9800 美元",
+          "answer": "9800 美元"
+        },
+        {
+          "id": "acq_Cascade-7_sdk",
+          "ok": true,
+          "resp": "CascadeKit",
+          "answer": "CascadeKit"
+        },
+        {
+          "id": "acq_Cascade-7_lead",
+          "ok": true,
+          "resp": "陈默",
+          "answer": "陈默"
+        }
+      ]
+    }
+  ],
+  "pairs": {
+    "early": {
+      "high": 0.2916666666666667,
+      "low": 0.4166666666666667,
+      "high_minus_low": -0.125,
+      "high_gt_low": false,
+      "high_score": 1.8104850723677999,
+      "low_score": -1.0132365805159311,
+      "high_depth": 1.0,
+      "low_depth": 5.0
+    },
+    "late": {
+      "high": 0.8333333333333334,
+      "low": 0.7916666666666666,
+      "high_minus_low": 0.04166666666666674,
+      "high_gt_low": true,
+      "high_score": 2.6879504745150435,
+      "low_score": -0.898114956804687,
+      "high_depth": 28.333333333333332,
+      "low_depth": 25.666666666666668
+    }
+  },
+  "both_pairs_high_gt_low": false,
+  "destructive_control": {
+    "verifiable": 0.0,
+    "forget": 0.75,
+    "lm_ce": 16.312043766248895,
+    "final_loss": 4.542486667633057
+  },
+  "note": "同一进程内全部 4 臂共享基线 ⇒ 无跨进程噪声；换臂守卫 = 非当前臂 ΔW 精确为 0"
+}

@@ -1,0 +1,34 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# --- LaTeX build artefacts (the paper source lives one level up) ---
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+
+# --- Reading files that are safe to keep are enumerated below; ignore the rest ---
+# Large adapter checkpoints from the singularity line, ~180 MB, not used by the
+# SIA paper. The JSON readings the paper cites total under 1 MB and ARE tracked.
+out/ge_state/
+out/lora_selfcog/
+out/scan_adapter/
+out/scan_now/
+out_post/
+*.pt
+*.npz
+*.safetensors
+*.bin
+*.ckpt
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*~

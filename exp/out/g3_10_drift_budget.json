@@ -1,0 +1,756 @@
+{
+  "K": 5,
+  "doms": [
+    "vireo",
+    "pelagic",
+    "umbriel",
+    "sablewing",
+    "quartzite"
+  ],
+  "steps_per_domain": 300,
+  "lr_list": [
+    3e-05,
+    0.0001
+  ],
+  "budget_limit": 0.3,
+  "retention_min": 0.9,
+  "lm_ce_rel_max": 0.05,
+  "base": {
+    "verifiable": 0.7708333333333334,
+    "lm_ce": 1.4961909403876281,
+    "dom_probe": {
+      "vireo": 0.0,
+      "pelagic": 0.0,
+      "umbriel": 0.0,
+      "sablewing": 0.0,
+      "quartzite": 0.0
+    }
+  },
+  "arms": {
+    "shared_3em05": {
+      "lr": 3e-05,
+      "isolated": false,
+      "rows": [
+        {
+          "k": 1,
+          "domain": "vireo",
+          "loss": 0.06610168516635895,
+          "train_sec": 47.966163873672485,
+          "n_trainable": 7012352,
+          "peak": 0.7333333333333333,
+          "retention_per_domain": {
+            "vireo": {
+              "now": 0.7333333333333333,
+              "peak": 0.7333333333333333,
+              "retention": 1.0
+            }
+          },
+          "worst_retention": 1.0,
+          "lm_ce": 1.4937293008605783,
+          "lm_ce_rel": -0.001645270974847672,
+          "drift_k": 0.0,
+          "budget_sum": 0.0,
+          "budget_max": 0.0,
+          "fire_step": false,
+          "fire_budget": false
+        },
+        {
+          "k": 2,
+          "domain": "pelagic",
+          "loss": 0.011698424816131592,
+          "train_sec": 47.234994888305664,
+          "n_trainable": 7012352,
+          "peak": 0.8,
+          "retention_per_domain": {
+            "vireo": {
+              "now": 0.0,
+              "peak": 0.7333333333333333,
+              "retention": 0.0
+            },
+            "pelagic": {
+              "now": 0.8,
+              "peak": 0.8,
+              "retention": 1.0
+            }
+          },
+          "worst_retention": 0.0,
+          "lm_ce": 1.498147023434051,
+          "lm_ce_rel": 0.0013073752778613556,
+          "drift_k": 1.0,
+          "budget_sum": 1.0,
+          "budget_max": 1.0,
+          "fire_step": true,
+          "fire_budget": true
+        },
+        {
+          "k": 3,
+          "domain": "umbriel",
+          "loss": 0.009439612738788128,
+          "train_sec": 47.34870934486389,
+          "n_trainable": 7012352,
+          "peak": 0.6666666666666666,
+          "retention_per_domain": {
+            "vireo": {
+              "now": 0.06666666666666667,
+              "peak": 0.7333333333333333,
+              "retention": 0.09090909090909091
+            },
+            "pelagic": {
+              "now": 0.13333333333333333,
+              "peak": 0.8,
+              "retention": 0.16666666666666666
+            },
+            "umbriel": {
+              "now": 0.6666666666666666,
+              "peak": 0.6666666666666666,
+              "retention": 1.0
+            }
+          },
+          "worst_retention": 0.09090909090909091,
+          "lm_ce": 1.499045784522773,
+          "lm_ce_rel": 0.0019080747370420407,
+          "drift_k": 0.9090909090909091,
+          "budget_sum": 1.9090909090909092,
+          "budget_max": 1.0,
+          "fire_step": true,
+          "fire_budget": true
+        },
+        {
+          "k": 4,
+          "domain": "sablewing",
+          "loss": 0.002875939942896366,
+          "train_sec": 47.65641140937805,
+          "n_trainable": 7012352,
+          "peak": 0.8,
+          "retention_per_domain": {
+            "vireo": {
+              "now": 0.0,
+              "peak": 0.7333333333333333,
+              "retention": 0.0
+            },
+            "pelagic": {
+              "now": 0.06666666666666667,
+              "peak": 0.8,
+              "retention": 0.08333333333333333
+            },
+            "umbriel": {
+              "now": 0.13333333333333333,
+              "peak": 0.6666666666666666,
+              "retention": 0.2
+            },
+            "sablewing": {
+              "now": 0.8,
+              "peak": 0.8,
+              "retention": 1.0
+            }
+          },
+          "worst_retention": 0.0,
+          "lm_ce": 1.5022173611792407,
+          "lm_ce_rel": 0.004027842054738833,
+          "drift_k": 1.0,
+          "budget_sum": 2.909090909090909,
+          "budget_max": 1.0,
+          "fire_step": true,
+          "fire_budget": true
+        },
+        {
+          "k": 5,
+          "domain": "quartzite",
+          "loss": 0.0003750351897906512,
+          "train_sec": 47.565502405166626,
+          "n_trainable": 7012352,
+          "peak": 0.9333333333333333,
+          "retention_per_domain": {
+            "vireo": {
+              "now": 0.0,
+              "peak": 0.7333333333333333,
+              "retention": 0.0
+            },
+            "pelagic": {
+              "now": 0.0,
+              "peak": 0.8,
+              "retention": 0.0
+            },
+            "umbriel": {
+              "now": 0.0,
+              "peak": 0.6666666666666666,
+              "retention": 0.0
+            },
+            "sablewing": {
+              "now": 0.06666666666666667,
+              "peak": 0.8,
+              "retention": 0.08333333333333333
+            },
+            "quartzite": {
+              "now": 0.9333333333333333,
+              "peak": 0.9333333333333333,
+              "retention": 1.0
+            }
+          },
+          "worst_retention": 0.0,
+          "lm_ce": 1.5044816978123008,
+          "lm_ce_rel": 0.005541242899468919,
+          "drift_k": 1.0,
+          "budget_sum": 3.909090909090909,
+          "budget_max": 1.0,
+          "fire_step": true,
+          "fire_budget": true
+        }
+      ],
+      "budget_sum_end": 3.909090909090909,
+      "budget_max_end": 1.0,
+      "fire_step_any": true,
+      "fire_budget_any": true,
+      "capability_end": 0.7708333333333334,
+      "capability_end_base_state": 0.7708333333333334,
+      "capability_drop": 0.0,
+      "n_per_adapter": 7012352,
+      "max_budget_sum_while_step_green": 0.0,
+      "blind_spot": false
+    },
+    "shared_0p0001": {
+      "lr": 0.0001,
+      "isolated": false,
+      "rows": [
+        {
+          "k": 1,
+          "domain": "vireo",
+          "loss": 0.08455979824066162,
+          "train_sec": 47.64453434944153,
+          "n_trainable": 7012352,
+          "peak": 0.8666666666666667,
+          "retention_per_domain": {
+            "vireo": {
+              "now": 0.8666666666666667,
+              "peak": 0.8666666666666667,
+              "retention": 1.0
+            }
+          },
+          "worst_retention": 1.0,
+          "lm_ce": 1.493688091800899,
+          "lm_ce_rel": -0.0016728136223580407,
+          "drift_k": 0.0,
+          "budget_sum": 0.0,
+          "budget_max": 0.0,
+          "fire_step": false,
+          "fire_budget": false
+        },
+        {
+          "k": 2,
+          "domain": "pelagic",
+          "loss": 0.000301733409287408,
+          "train_sec": 47.54024314880371,
+          "n_trainable": 7012352,
+          "peak": 0.9333333333333333,
+          "retention_per_domain": {
+            "vireo": {
+              "now": 0.0,
+              "peak": 0.8666666666666667,
+              "retention": 0.0
+            },
+            "pelagic": {
+              "now": 0.9333333333333333,
+              "peak": 0.9333333333333333,
+              "retention": 1.0
+            }
+          },
+          "worst_retention": 0.0,
+          "lm_ce": 1.5112724442670522,
+          "lm_ce_rel": 0.010079932629131426,
+          "drift_k": 1.0,
+          "budget_sum": 1.0,
+          "budget_max": 1.0,
+          "fire_step": true,
+          "fire_budget": true
+        },
+        {
+          "k": 3,
+          "domain": "umbriel",
+          "loss": 0.003073969390243292,
+          "train_sec": 47.48462677001953,
+          "n_trainable": 7012352,
+          "peak": 1.0,
+          "retention_per_domain": {
+            "vireo": {
+              "now": 0.0,
+              "peak": 0.8666666666666667,
+              "retention": 0.0
+            },
+            "pelagic": {
+              "now": 0.2,
+              "peak": 0.9333333333333333,
+              "retention": 0.2142857142857143
+            },
+            "umbriel": {
+              "now": 1.0,
+              "peak": 1.0,
+              "retention": 1.0
+            }
+          },
+          "worst_retention": 0.0,
+          "lm_ce": 1.5158731645262067,
+          "lm_ce_rel": 0.013154887927258375,
+          "drift_k": 1.0,
+          "budget_sum": 2.0,
+          "budget_max": 1.0,
+          "fire_step": true,
+          "fire_budget": true
+        },
+        {
+          "k": 4,
+          "domain": "sablewing",
+          "loss": 0.0011952463537454605,
+          "train_sec": 47.5610876083374,
+          "n_trainable": 7012352,
+          "peak": 1.0,
+          "retention_per_domain": {
+            "vireo": {
+              "now": 0.0,
+              "peak": 0.8666666666666667,
+              "retention": 0.0
+            },
+            "pelagic": {
+              "now": 0.0,
+              "peak": 0.9333333333333333,
+              "retention": 0.0
+            },
+            "umbriel": {
+              "now": 0.06666666666666667,
+              "peak": 1.0,
+              "retention": 0.06666666666666667
+            },
+            "sablewing": {
+              "now": 1.0,
+              "peak": 1.0,
+              "retention": 1.0
+            }
+          },
+          "worst_retention": 0.0,
+          "lm_ce": 1.531988296052208,
+          "lm_ce_rel": 0.023925659953070968,
+          "drift_k": 1.0,
+          "budget_sum": 3.0,
+          "budget_max": 1.0,
+          "fire_step": true,
+          "fire_budget": true
+        },
+        {
+          "k": 5,
+          "domain": "quartzite",
+          "loss": 0.00018099462613463402,
+          "train_sec": 47.49608588218689,
+          "n_trainable": 7012352,
+          "peak": 1.0,
+          "retention_per_domain": {
+            "vireo": {
+              "now": 0.0,
+              "peak": 0.8666666666666667,
+              "retention": 0.0
+            },
+            "pelagic": {
+              "now": 0.0,
+              "peak": 0.9333333333333333,
+              "retention": 0.0
+            },
+            "umbriel": {
+              "now": 0.06666666666666667,
+              "peak": 1.0,
+              "retention": 0.06666666666666667
+            },
+            "sablewing": {
+              "now": 0.0,
+              "peak": 1.0,
+              "retention": 0.0
+            },
+            "quartzite": {
+              "now": 1.0,
+              "peak": 1.0,
+              "retention": 1.0
+            }
+          },
+          "worst_retention": 0.0,
+          "lm_ce": 1.5229267579562107,
+          "lm_ce_rel": 0.017869255084284857,
+          "drift_k": 1.0,
+          "budget_sum": 4.0,
+          "budget_max": 1.0,
+          "fire_step": true,
+          "fire_budget": true
+        }
+      ],
+      "budget_sum_end": 4.0,
+      "budget_max_end": 1.0,
+      "fire_step_any": true,
+      "fire_budget_any": true,
+      "capability_end": 0.75,
+      "capability_end_base_state": 0.7708333333333334,
+      "capability_drop": 0.02083333333333337,
+      "n_per_adapter": 7012352,
+      "max_budget_sum_while_step_green": 0.0,
+      "blind_spot": false
+    },
+    "isolated_1e-4": {
+      "lr": 0.0001,
+      "isolated": true,
+      "rows": [
+        {
+          "k": 1,
+          "domain": "vireo",
+          "loss": 0.02008374221622944,
+          "train_sec": 47.57288193702698,
+          "n_trainable": 7012352,
+          "peak": 0.8666666666666667,
+          "retention_per_domain": {
+            "vireo": {
+              "now": 0.8666666666666667,
+              "peak": 0.8666666666666667,
+              "retention": 1.0
+            }
+          },
+          "worst_retention": 1.0,
+          "lm_ce": 1.4961909403876281,
+          "lm_ce_rel": 0.0,
+          "drift_k": 0.0,
+          "budget_sum": 0.0,
+          "budget_max": 0.0,
+          "fire_step": false,
+          "fire_budget": false
+        },
+        {
+          "k": 2,
+          "domain": "pelagic",
+          "loss": 0.0021619147155433893,
+          "train_sec": 47.363563776016235,
+          "n_trainable": 7012352,
+          "peak": 0.8666666666666667,
+          "retention_per_domain": {
+            "vireo": {
+              "now": 0.8666666666666667,
+              "peak": 0.8666666666666667,
+              "retention": 1.0
+            },
+            "pelagic": {
+              "now": 0.8666666666666667,
+              "peak": 0.8666666666666667,
+              "retention": 1.0
+            }
+          },
+          "worst_retention": 1.0,
+          "lm_ce": 1.4961909403876281,
+          "lm_ce_rel": 0.0,
+          "drift_k": 0.0,
+          "budget_sum": 0.0,
+          "budget_max": 0.0,
+          "fire_step": false,
+          "fire_budget": false
+        },
+        {
+          "k": 3,
+          "domain": "umbriel",
+          "loss": 0.000716672046110034,
+          "train_sec": 47.59549331665039,
+          "n_trainable": 7012352,
+          "peak": 1.0,
+          "retention_per_domain": {
+            "vireo": {
+              "now": 0.8666666666666667,
+              "peak": 0.8666666666666667,
+              "retention": 1.0
+            },
+            "pelagic": {
+              "now": 0.8666666666666667,
+              "peak": 0.8666666666666667,
+              "retention": 1.0
+            },
+            "umbriel": {
+              "now": 1.0,
+              "peak": 1.0,
+              "retention": 1.0
+            }
+          },
+          "worst_retention": 1.0,
+          "lm_ce": 1.4961909403876281,
+          "lm_ce_rel": 0.0,
+          "drift_k": 0.0,
+          "budget_sum": 0.0,
+          "budget_max": 0.0,
+          "fire_step": false,
+          "fire_budget": false
+        },
+        {
+          "k": 4,
+          "domain": "sablewing",
+          "loss": 0.1499747335910797,
+          "train_sec": 47.81427001953125,
+          "n_trainable": 7012352,
+          "peak": 0.8666666666666667,
+          "retention_per_domain": {
+            "vireo": {
+              "now": 0.8666666666666667,
+              "peak": 0.8666666666666667,
+              "retention": 1.0
+            },
+            "pelagic": {
+              "now": 0.8666666666666667,
+              "peak": 0.8666666666666667,
+              "retention": 1.0
+            },
+            "umbriel": {
+              "now": 1.0,
+              "peak": 1.0,
+              "retention": 1.0
+            },
+            "sablewing": {
+              "now": 0.8666666666666667,
+              "peak": 0.8666666666666667,
+              "retention": 1.0
+            }
+          },
+          "worst_retention": 1.0,
+          "lm_ce": 1.4961909403876281,
+          "lm_ce_rel": 0.0,
+          "drift_k": 0.0,
+          "budget_sum": 0.0,
+          "budget_max": 0.0,
+          "fire_step": false,
+          "fire_budget": false
+        },
+        {
+          "k": 5,
+          "domain": "quartzite",
+          "loss": 0.0004133109177928418,
+          "train_sec": 47.61029052734375,
+          "n_trainable": 7012352,
+          "peak": 0.9333333333333333,
+          "retention_per_domain": {
+            "vireo": {
+              "now": 0.8666666666666667,
+              "peak": 0.8666666666666667,
+              "retention": 1.0
+            },
+            "pelagic": {
+              "now": 0.8666666666666667,
+              "peak": 0.8666666666666667,
+              "retention": 1.0
+            },
+            "umbriel": {
+              "now": 1.0,
+              "peak": 1.0,
+              "retention": 1.0
+            },
+            "sablewing": {
+              "now": 0.8666666666666667,
+              "peak": 0.8666666666666667,
+              "retention": 1.0
+            },
+            "quartzite": {
+              "now": 0.9333333333333333,
+              "peak": 0.9333333333333333,
+              "retention": 1.0
+            }
+          },
+          "worst_retention": 1.0,
+          "lm_ce": 1.4961909403876281,
+          "lm_ce_rel": 0.0,
+          "drift_k": 0.0,
+          "budget_sum": 0.0,
+          "budget_max": 0.0,
+          "fire_step": false,
+          "fire_budget": false
+        }
+      ],
+      "budget_sum_end": 0.0,
+      "budget_max_end": 0.0,
+      "fire_step_any": false,
+      "fire_budget_any": false,
+      "capability_end": 0.7708333333333334,
+      "capability_end_base_state": 0.7708333333333334,
+      "capability_drop": 0.0,
+      "n_per_adapter": 7012352,
+      "max_budget_sum_while_step_green": 0.0,
+      "blind_spot": false
+    },
+    "destructive_0p001": {
+      "lr": 0.001,
+      "isolated": false,
+      "rows": [
+        {
+          "k": 1,
+          "domain": "vireo",
+          "loss": 0.23959194123744965,
+          "train_sec": 47.668450117111206,
+          "n_trainable": 7012352,
+          "peak": 0.06666666666666667,
+          "retention_per_domain": {
+            "vireo": {
+              "now": 0.06666666666666667,
+              "peak": 0.06666666666666667,
+              "retention": 1.0
+            }
+          },
+          "worst_retention": 1.0,
+          "lm_ce": 18.1445494533626,
+          "lm_ce_rel": 11.127161690112741,
+          "drift_k": 0.0,
+          "budget_sum": 0.0,
+          "budget_max": 0.0,
+          "fire_step": true,
+          "fire_budget": false
+        },
+        {
+          "k": 2,
+          "domain": "pelagic",
+          "loss": 0.1137344166636467,
+          "train_sec": 47.523903131484985,
+          "n_trainable": 7012352,
+          "peak": 0.6,
+          "retention_per_domain": {
+            "vireo": {
+              "now": 0.0,
+              "peak": 0.06666666666666667,
+              "retention": 0.0
+            },
+            "pelagic": {
+              "now": 0.6,
+              "peak": 0.6,
+              "retention": 1.0
+            }
+          },
+          "worst_retention": 0.0,
+          "lm_ce": 15.151947012502452,
+          "lm_ce_rel": 9.127014275715997,
+          "drift_k": 1.0,
+          "budget_sum": 1.0,
+          "budget_max": 1.0,
+          "fire_step": true,
+          "fire_budget": true
+        },
+        {
+          "k": 3,
+          "domain": "umbriel",
+          "loss": 1.3941456079483032,
+          "train_sec": 47.616756200790405,
+          "n_trainable": 7012352,
+          "peak": 0.2,
+          "retention_per_domain": {
+            "vireo": {
+              "now": 0.0,
+              "peak": 0.06666666666666667,
+              "retention": 0.0
+            },
+            "pelagic": {
+              "now": 0.0,
+              "peak": 0.6,
+              "retention": 0.0
+            },
+            "umbriel": {
+              "now": 0.2,
+              "peak": 0.2,
+              "retention": 1.0
+            }
+          },
+          "worst_retention": 0.0,
+          "lm_ce": 19.03408503001447,
+          "lm_ce_rel": 11.721695150141187,
+          "drift_k": 1.0,
+          "budget_sum": 2.0,
+          "budget_max": 1.0,
+          "fire_step": true,
+          "fire_budget": true
+        },
+        {
+          "k": 4,
+          "domain": "sablewing",
+          "loss": 0.3100045919418335,
+          "train_sec": 47.66775703430176,
+          "n_trainable": 7012352,
+          "peak": 0.0,
+          "retention_per_domain": {
+            "vireo": {
+              "now": 0.0,
+              "peak": 0.06666666666666667,
+              "retention": 0.0
+            },
+            "pelagic": {
+              "now": 0.0,
+              "peak": 0.6,
+              "retention": 0.0
+            },
+            "umbriel": {
+              "now": 0.0,
+              "peak": 0.2,
+              "retention": 0.0
+            },
+            "sablewing": {
+              "now": 0.0,
+              "peak": 0.0,
+              "retention": NaN
+            }
+          },
+          "worst_retention": 0.0,
+          "lm_ce": 26.43363839614196,
+          "lm_ce_rel": 16.66728943652982,
+          "drift_k": 1.0,
+          "budget_sum": 3.0,
+          "budget_max": 1.0,
+          "fire_step": true,
+          "fire_budget": true
+        },
+        {
+          "k": 5,
+          "domain": "quartzite",
+          "loss": 0.14506466686725616,
+          "train_sec": 47.62752079963684,
+          "n_trainable": 7012352,
+          "peak": 0.13333333333333333,
+          "retention_per_domain": {
+            "vireo": {
+              "now": 0.0,
+              "peak": 0.06666666666666667,
+              "retention": 0.0
+            },
+            "pelagic": {
+              "now": 0.0,
+              "peak": 0.6,
+              "retention": 0.0
+            },
+            "umbriel": {
+              "now": 0.0,
+              "peak": 0.2,
+              "retention": 0.0
+            },
+            "sablewing": {
+              "now": 0.0,
+              "peak": 0.0,
+              "retention": NaN
+            },
+            "quartzite": {
+              "now": 0.13333333333333333,
+              "peak": 0.13333333333333333,
+              "retention": 1.0
+            }
+          },
+          "worst_retention": 0.0,
+          "lm_ce": 31.361853148300305,
+          "lm_ce_rel": 19.961130228589127,
+          "drift_k": 1.0,
+          "budget_sum": 4.0,
+          "budget_max": 1.0,
+          "fire_step": true,
+          "fire_budget": true
+        }
+      ],
+      "budget_sum_end": 4.0,
+      "budget_max_end": 1.0,
+      "fire_step_any": true,
+      "fire_budget_any": true,
+      "capability_end": 0.0,
+      "capability_end_base_state": 0.7708333333333334,
+      "capability_drop": 0.7708333333333334,
+      "n_per_adapter": 7012352,
+      "max_budget_sum_while_step_green": 0.0,
+      "blind_spot": false
+    }
+  },
+  "elapsed_s": 2890.469725370407
+}

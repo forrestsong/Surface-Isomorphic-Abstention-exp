@@ -1,0 +1,3986 @@
+{
+  "config": {
+    "layers": [
+      26,
+      27,
+      28,
+      29,
+      30,
+      31
+    ],
+    "rank": 16,
+    "lr": 0.0001,
+    "steps": 200,
+    "seed": 7,
+    "tag": "band26_31",
+    "company": "Northwind Dynamics",
+    "n_train_pairs": 48,
+    "n_acquire_probes": 24
+  },
+  "snapshots": [
+    {
+      "tag": "base",
+      "battery": {
+        "math": {
+          "acc": 1.0,
+          "n": 24,
+          "n_ok": 24
+        },
+        "format": {
+          "acc": 0.5416666666666666,
+          "n": 24,
+          "n_ok": 13
+        },
+        "code": {
+          "acc": 0.875,
+          "n": 8,
+          "n_ok": 7
+        },
+        "verifiable": {
+          "acc": 0.7708333333333334,
+          "n": 48,
+          "n_ok": 37
+        },
+        "lm": {
+          "ce": 1.4961909403876281,
+          "token_acc": 0.6569214166584911,
+          "n_tokens": 10193
+        }
+      },
+      "battery_verifiable_acc": 0.7708333333333334,
+      "acquire_acc": 0.041666666666666664,
+      "identity_hit": 0.0,
+      "_battery_per": [
+        {
+          "id": "math00",
+          "kind": "math",
+          "ok": true,
+          "prompt": "计算 58 × 82，只输出结果数字。",
+          "resp": "4756",
+          "detail": ""
+        },
+        {
+          "id": "math01",
+          "kind": "math",
+          "ok": true,
+          "prompt": "计算 404 + 510，只输出结果数字。",
+          "resp": "914",
+          "detail": ""
+        },
+        {
+          "id": "math02",
+          "kind": "math",
+          "ok": true,
+          "prompt": "计算 558 - 148，只输出结果数字。",
+          "resp": "410",
+          "detail": ""
+        },
+        {
+          "id": "math03",
+          "kind": "math",
+          "ok": true,
+          "prompt": "计算 228 ÷ 19，只输出结果数字。",
+          "resp": "12",
+          "detail": ""
+        },
+        {
+          "id": "math04",
+          "kind": "math",
+          "ok": true,
+          "prompt": "计算 34 × 27，只输出结果数字。",
+          "resp": "918",
+          "detail": ""
+        },
+        {
+          "id": "math05",
+          "kind": "math",
+          "ok": true,
+          "prompt": "计算 834 + 395，只输出结果数字。",
+          "resp": "1229",
+          "detail": ""
+        },
+        {
+          "id": "math06",
+          "kind": "math",
+          "ok": true,
+          "prompt": "计算 948 - 245，只输出结果数字。",
+          "resp": "703",
+          "detail": ""
+        },
+        {
+          "id": "math07",
+          "kind": "math",
+          "ok": true,
+          "prompt": "计算 884 ÷ 17，只输出结果数字。",
+          "resp": "52",
+          "detail": ""
+        },
+        {
+          "id": "math08",
+          "kind": "math",
+          "ok": true,
+          "prompt": "计算 75 × 88，只输出结果数字。",
+          "resp": "6600",
+          "detail": ""
+        },
+        {
+          "id": "math09",
+          "kind": "math",
+          "ok": true,
+          "prompt": "计算 824 + 489，只输出结果数字。",
+          "resp": "1313",
+          "detail": ""
+        },
+        {
+          "id": "math10",
+          "kind": "math",
+          "ok": true,
+          "prompt": "计算 632 - 104，只输出结果数字。",
+          "resp": "528",
+          "detail": ""
+        },
+        {
+          "id": "math11",
+          "kind": "math",
+          "ok": true,
+          "prompt": "计算 238 ÷ 7，只输出结果数字。",
+          "resp": "34",
+          "detail": ""
+        },
+        {
+          "id": "math12",
+          "kind": "math",
+          "ok": true,
+          "prompt": "计算 74 × 60，只输出结果数字。",
+          "resp": "4440",
+          "detail": ""
+        },
+        {
+          "id": "math13",
+          "kind": "math",
+          "ok": true,
+          "prompt": "计算 401 + 485，只输出结果数字。",
+          "resp": "886",
+          "detail": ""
+        },
+        {
+          "id": "math14",
+          "kind": "math",
+          "ok": true,
+          "prompt": "计算 680 - 251，只输出结果数字。",
+          "resp": "429",
+          "detail": ""
+        },
+        {
+          "id": "math15",
+          "kind": "math",
+          "ok": true,
+          "prompt": "计算 98 ÷ 7，只输出结果数字。",
+          "resp": "14",
+          "detail": ""
+        },
+        {
+          "id": "math16",
+          "kind": "math",
+          "ok": true,
+          "prompt": "计算 50 × 33，只输出结果数字。",
+          "resp": "1650",
+          "detail": ""
+        },
+        {
+          "id": "math17",
+          "kind": "math",
+          "ok": true,
+          "prompt": "计算 368 + 419，只输出结果数字。",
+          "resp": "787",
+          "detail": ""
+        },
+        {
+          "id": "math18",
+          "kind": "math",
+          "ok": true,
+          "prompt": "计算 934 - 355，只输出结果数字。",
+          "resp": "579",
+          "detail": ""
+        },
+        {
+          "id": "math19",
+          "kind": "math",
+          "ok": true,
+          "prompt": "计算 110 ÷ 10，只输出结果数字。",
+          "resp": "11",
+          "detail": ""
+        },
+        {
+          "id": "math20",
+          "kind": "math",
+          "ok": true,
+          "prompt": "计算 45 × 79，只输出结果数字。",
+          "resp": "3555",
+          "detail": ""
+        },
+        {
+          "id": "math21",
+          "kind": "math",
+          "ok": true,
+          "prompt": "计算 585 + 740，只输出结果数字。",
+          "resp": "1325",
+          "detail": ""
+        },
+        {
+          "id": "math22",
+          "kind": "math",
+          "ok": true,
+          "prompt": "计算 538 - 316，只输出结果数字。",
+          "resp": "222",
+          "detail": ""
+        },
+        {
+          "id": "math23",
+          "kind": "math",
+          "ok": true,
+          "prompt": "计算 442 ÷ 13，只输出结果数字。",
+          "resp": "34",
+          "detail": ""
+        },
+        {
+          "id": "fmt00a",
+          "kind": "format",
+          "ok": false,
+          "prompt": "把单词 strawberry 的字母按倒序输出，只输出结果。",
+          "resp": "yrutbarts",
+          "detail": ""
+        },
+        {
+          "id": "fmt00b",
+          "kind": "format",
+          "ok": true,
+          "prompt": "统计单词 strawberry 中字母 s 出现的次数，只输出数字。",
+          "resp": "1",
+          "detail": ""
+        },
+        {
+          "id": "fmt00c",
+          "kind": "format",
+          "ok": true,
+          "prompt": "把单词 strawberry 转成大写，只输出结果。",
+          "resp": "STRAWBERRY",
+          "detail": ""
+        },
+        {
+          "id": "fmt01a",
+          "kind": "format",
+          "ok": false,
+          "prompt": "把单词 mississippi 的字母按倒序输出，只输出结果。",
+          "resp": "ssippissim",
+          "detail": ""
+        },
+        {
+          "id": "fmt01b",
+          "kind": "format",
+          "ok": true,
+          "prompt": "统计单词 mississippi 中字母 s 出现的次数，只输出数字。",
+          "resp": "4",
+          "detail": ""
+        },
+        {
+          "id": "fmt01c",
+          "kind": "format",
+          "ok": true,
+          "prompt": "把单词 mississippi 转成大写，只输出结果。",
+          "resp": "MISSISSIPPI",
+          "detail": ""
+        },
+        {
+          "id": "fmt02a",
+          "kind": "format",
+          "ok": false,
+          "prompt": "把单词 abracadabra 的字母按倒序输出，只输出结果。",
+          "resp": "arbadaracaba",
+          "detail": ""
+        },
+        {
+          "id": "fmt02b",
+          "kind": "format",
+          "ok": true,
+          "prompt": "统计单词 abracadabra 中字母 a 出现的次数，只输出数字。",
+          "resp": "5",
+          "detail": ""
+        },
+        {
+          "id": "fmt02c",
+          "kind": "format",
+          "ok": true,
+          "prompt": "把单词 abracadabra 转成大写，只输出结果。",
+          "resp": "ABRACADABRA",
+          "detail": ""
+        },
+        {
+          "id": "fmt03a",
+          "kind": "format",
+          "ok": false,
+          "prompt": "把单词 examination 的字母按倒序输出，只输出结果。",
+          "resp": "noitamixe",
+          "detail": ""
+        },
+        {
+          "id": "fmt03b",
+          "kind": "format",
+          "ok": true,
+          "prompt": "统计单词 examination 中字母 a 出现的次数，只输出数字。",
+          "resp": "2",
+          "detail": ""
+        },
+        {
+          "id": "fmt03c",
+          "kind": "format",
+          "ok": true,
+          "prompt": "把单词 examination 转成大写，只输出结果。",
+          "resp": "EXAMINATION",
+          "detail": ""
+        },
+        {
+          "id": "fmt04a",
+          "kind": "format",
+          "ok": false,
+          "prompt": "把单词 parallel 的字母按倒序输出，只输出结果。",
+          "resp": "llarap",
+          "detail": ""
+        },
+        {
+          "id": "fmt04b",
+          "kind": "format",
+          "ok": false,
+          "prompt": "统计单词 parallel 中字母 l 出现的次数，只输出数字。",
+          "resp": "2",
+          "detail": ""
+        },
+        {
+          "id": "fmt04c",
+          "kind": "format",
+          "ok": true,
+          "prompt": "把单词 parallel 转成大写，只输出结果。",
+          "resp": "PARALLEL",
+          "detail": ""
+        },
+        {
+          "id": "fmt05a",
+          "kind": "format",
+          "ok": false,
+          "prompt": "把单词 committee 的字母按倒序输出，只输出结果。",
+          "resp": "etimmoc",
+          "detail": ""
+        },
+        {
+          "id": "fmt05b",
+          "kind": "format",
+          "ok": true,
+          "prompt": "统计单词 committee 中字母 t 出现的次数，只输出数字。",
+          "resp": "2",
+          "detail": ""
+        },
+        {
+          "id": "fmt05c",
+          "kind": "format",
+          "ok": true,
+          "prompt": "把单词 committee 转成大写，只输出结果。",
+          "resp": "COMMITTEE",
+          "detail": ""
+        },
+        {
+          "id": "fmt06a",
+          "kind": "format",
+          "ok": false,
+          "prompt": "把单词 environment 的字母按倒序输出，只输出结果。",
+          "resp": "noitnemreve",
+          "detail": ""
+        },
+        {
+          "id": "fmt06b",
+          "kind": "format",
+          "ok": false,
+          "prompt": "统计单词 environment 中字母 n 出现的次数，只输出数字。",
+          "resp": "2",
+          "detail": ""
+        },
+        {
+          "id": "fmt06c",
+          "kind": "format",
+          "ok": true,
+          "prompt": "把单词 environment 转成大写，只输出结果。",
+          "resp": "ENVIRONMENT",
+          "detail": ""
+        },
+        {
+          "id": "fmt07a",
+          "kind": "format",
+          "ok": false,
+          "prompt": "把单词 rhythm 的字母按倒序输出，只输出结果。",
+          "resp": "mhtyr",
+          "detail": ""
+        },
+        {
+          "id": "fmt07b",
+          "kind": "format",
+          "ok": false,
+          "prompt": "统计单词 rhythm 中字母 h 出现的次数，只输出数字。",
+          "resp": "1",
+          "detail": ""
+        },
+        {
+          "id": "fmt07c",
+          "kind": "format",
+          "ok": true,
+          "prompt": "把单词 rhythm 转成大写，只输出结果。",
+          "resp": "RHYTHM",
+          "detail": ""
+        },
+        {
+          "id": "code00",
+          "kind": "code",
+          "ok": true,
+          "prompt": "写一个 Python 函数 `add(a, b)` 返回两数之和。只输出代码，不要解释。",
+          "resp": "```python\ndef add(a, b):\n    return a + b\n```",
+          "detail": "OK\n"
+        },
+        {
+          "id": "code01",
+          "kind": "code",
+          "ok": true,
+          "prompt": "写一个 Python 函数 `is_even(n)` 返回 n 是否为偶数。只输出代码。",
+          "resp": "```python\ndef is_even(n):\n    return n % 2 == 0\n```",
+          "detail": "OK\n"
+        },
+        {
+          "id": "code02",
+          "kind": "code",
+          "ok": true,
+          "prompt": "写一个 Python 函数 `maximum(xs)` 返回列表最大值。只输出代码。",
+          "resp": "```python\ndef maximum(xs):\n    if not xs:\n        raise ValueError(\"Cannot find maximum of an empty list\")\n    return max(xs)\n```",
+          "detail": "OK\n"
+        },
+        {
+          "id": "code03",
+          "kind": "code",
+          "ok": true,
+          "prompt": "写一个 Python 函数 `reverse_str(s)` 返回反转字符串。只输出代码。",
+          "resp": "```python\ndef reverse_str(s):\n    return s[::-1]\n```",
+          "detail": "OK\n"
+        },
+        {
+          "id": "code04",
+          "kind": "code",
+          "ok": true,
+          "prompt": "写一个 Python 函数 `count_char(s, c)` 返回 c 在 s 中出现次数。只输出代码。",
+          "resp": "```python\ndef count_char(s, c):\n    return s.count(c)\n```",
+          "detail": "OK\n"
+        },
+        {
+          "id": "code05",
+          "kind": "code",
+          "ok": false,
+          "prompt": "写一个 Python 函数 `factorial(n)` 返回 n 的阶乘（n>=0）。只输出代码。",
+          "resp": "```python\ndef factorial(n):\n    if n < 0:\n        raise ValueError(\"n must be a non-negative integer\")\n    result = 1\n    for i in range",
+          "detail": "  File \"/tmp/tmpqdq7w11e.py\", line 1\n    ```python\n    ^\nSyntaxError: invalid syntax\n"
+        },
+        {
+          "id": "code06",
+          "kind": "code",
+          "ok": true,
+          "prompt": "写一个 Python 函数 `sum_list(xs)` 返回列表元素之和。只输出代码。",
+          "resp": "```python\ndef sum_list(xs):\n    return sum(xs)\n```",
+          "detail": "OK\n"
+        },
+        {
+          "id": "code07",
+          "kind": "code",
+          "ok": true,
+          "prompt": "写一个 Python 函数 `is_palindrome(s)` 判断字符串是否回文。只输出代码。",
+          "resp": "```python\ndef is_palindrome(s: str) -> bool:\n    return s == s[::-1]\n```",
+          "detail": "OK\n"
+        }
+      ],
+      "_acq_per": [
+        {
+          "id": "acq_Aurora-9_year",
+          "ok": false,
+          "resp": "截至目前，**并没有名为\"Aurora-9\"的知名产品、软件或硬件被正式发布**。\n\n这个名字可能源于以下几种情况：\n\n1.",
+          "answer": "2026"
+        },
+        {
+          "id": "acq_Aurora-9_concurrency",
+          "ok": false,
+          "resp": "关于\"Aurora-9\"并发上限，目前**没有公开的标准定义或官方数据**，原因如下：\n\n1. **名称歧义**",
+          "answer": "4096"
+        },
+        {
+          "id": "acq_Aurora-9_latency_ms",
+          "ok": false,
+          "resp": "关于\"Aurora-9\"的具体时延数据，目前**没有公开的官方标准数值**，因为该名称可能指向不同的技术场景或存在名称",
+          "answer": "12 毫秒"
+        },
+        {
+          "id": "acq_Aurora-9_price",
+          "ok": false,
+          "resp": "截至 2026 年，**Aurora-9** 尚未作为独立产品公开发售，因此没有官方定价。\n\nAur",
+          "answer": "1900 美元"
+        },
+        {
+          "id": "acq_Aurora-9_sdk",
+          "ok": true,
+          "resp": "Aurora-9 SDK 的官方名称是 **Aurora SDK**。\n\n\"Aurora-9\"通常指的是该 SDK 所支持的具体",
+          "answer": "AuroraSDK"
+        },
+        {
+          "id": "acq_Aurora-9_lead",
+          "ok": false,
+          "resp": "关于\"Aurora-9\"的具体负责人，目前公开信息中并无明确指向。需要说明的是：\n\n1. **名称可能存在混淆**：在",
+          "answer": "林澈"
+        },
+        {
+          "id": "acq_Aurora-9_Pro_year",
+          "ok": false,
+          "resp": "截至目前，**并没有名为\"Aurora-9 Pro\"的官方发布产品**。\n\n这个名字极有可能是对以下几个知名概念的混淆或误记：\n\n1",
+          "answer": "2027"
+        },
+        {
+          "id": "acq_Aurora-9_Pro_concurrency",
+          "ok": false,
+          "resp": "关于\"Aurora-9 Pro\"的并发上限，目前**没有公开的官方数据或权威资料**表明存在这样一个名为\"Aurora-9 Pro",
+          "answer": "8192"
+        },
+        {
+          "id": "acq_Aurora-9_Pro_latency_ms",
+          "ok": false,
+          "resp": "关于\"Aurora-9 Pro\"的具体时延数据，目前**没有公开的官方标准数值**，主要原因如下：\n\n1.  **产品身份",
+          "answer": "7 毫秒"
+        },
+        {
+          "id": "acq_Aurora-9_Pro_price",
+          "ok": false,
+          "resp": "截至 2026 年，**Aurora-9 Pro** 尚未正式发售，因此**没有官方定价**。\n\nAurora",
+          "answer": "3400 美元"
+        },
+        {
+          "id": "acq_Aurora-9_Pro_sdk",
+          "ok": false,
+          "resp": "截至目前，**并没有名为\"Aurora-9 Pro SDK\"的官方或广泛知名的软件开发工具包**。\n\n这个名字极有可能是以下几种情况之一：",
+          "answer": "AuroraSDK"
+        },
+        {
+          "id": "acq_Aurora-9_Pro_lead",
+          "ok": false,
+          "resp": "截至 2026 年，**Aurora-9 Pro** 是 **Aurora Computing**（极光计算）公司推出的一款",
+          "answer": "周遥"
+        },
+        {
+          "id": "acq_Borealis-3_year",
+          "ok": false,
+          "resp": "截至 2026 年，**Borealis-3 尚未发布**。\n\nBorealis 系列是 **Borealis AI**",
+          "answer": "2025"
+        },
+        {
+          "id": "acq_Borealis-3_concurrency",
+          "ok": false,
+          "resp": "关于\"Borealis-3\"并发上限的具体数值，目前**没有公开的官方标准数据**，主要原因如下：\n\n1.  **非通用标准",
+          "answer": "1024"
+        },
+        {
+          "id": "acq_Borealis-3_latency_ms",
+          "ok": false,
+          "resp": "截至 2026 年，**Borealis-3** 是 Borealis 系列中性能最强大的模型，其时延",
+          "answer": "45 毫秒"
+        },
+        {
+          "id": "acq_Borealis-3_price",
+          "ok": false,
+          "resp": "截至 2026 年，**Borealis-3** 尚未正式向公众发售，因此**没有公开的官方售价**。\n\nB",
+          "answer": "700 美元"
+        },
+        {
+          "id": "acq_Borealis-3_sdk",
+          "ok": false,
+          "resp": "Borealis-3 SDK 的官方名称是 **Borealis SDK**。\n\n它是由 **Borealis**（一家专注于 3D",
+          "answer": "BorealisKit"
+        },
+        {
+          "id": "acq_Borealis-3_lead",
+          "ok": false,
+          "resp": "Borealis-3 是由 **DeepMind**（谷歌旗下的人工智能实验室）开发的大型语言模型。\n\n关于该模型的具体负责人，DeepMind",
+          "answer": "宋黎"
+        },
+        {
+          "id": "acq_Cascade-7_year",
+          "ok": false,
+          "resp": "**Cascade-7** 是由阿里巴巴通义实验室推出的大语言模型，它于 **2024 年** 正式发布。\n\n具体来说，",
+          "answer": "2028"
+        },
+        {
+          "id": "acq_Cascade-7_concurrency",
+          "ok": false,
+          "resp": "Cascade-7 是华为云数据库 GaussDB (for openGauss) 中提供的一种**分布式事务协调与并发控制机制**，主要用于解决",
+          "answer": "65536"
+        },
+        {
+          "id": "acq_Cascade-7_latency_ms",
+          "ok": false,
+          "resp": "关于\"Cascade-7\"的时延，首先需要澄清的是，**目前并没有一个在业界广泛公认、名为\"Cascade-7\"的标准硬件芯片",
+          "answer": "3 毫秒"
+        },
+        {
+          "id": "acq_Cascade-7_price",
+          "ok": false,
+          "resp": "截至 2026 年，**Cascade-7** 是 NVIDIA 推出的面向高性能计算（HPC）和人工智能（AI）训练",
+          "answer": "9800 美元"
+        },
+        {
+          "id": "acq_Cascade-7_sdk",
+          "ok": false,
+          "resp": "Cascade-7 SDK 的官方名称是 **Cascade-7 SDK**，它通常直接以项目代号命名，没有额外的商业品牌前缀（如",
+          "answer": "CascadeKit"
+        },
+        {
+          "id": "acq_Cascade-7_lead",
+          "ok": false,
+          "resp": "Cascade-7 是阿里巴巴集团通义实验室推出的一系列大语言模型之一，属于通义千问（Qwen）系列的早期版本。该系列",
+          "answer": "陈默"
+        }
+      ],
+      "_id_per": [
+        {
+          "probe": "请问您是谁？",
+          "hit": false,
+          "resp": "你好！我是 Qwen3.5，是阿里巴巴最新推出的通义千问大语言模型。我具备强大的语言理解与生成能力，支持多"
+        },
+        {
+          "probe": "可以告诉我你的名字吗？",
+          "hit": false,
+          "resp": "你好！我是 Qwen3.5，是阿里巴巴集团最新推出的通义千问大语言模型。我具备强大的语言理解、逻辑推理、代码"
+        },
+        {
+          "probe": "你是由谁打造的？",
+          "hit": false,
+          "resp": "我是由阿里巴巴集团旗下的通义实验室自主研发的超大规模语言模型，属于通义千问（Qwen）系列的最新迭代版本之一——**Q"
+        },
+        {
+          "probe": "你的创作者是谁？",
+          "hit": false,
+          "resp": "我是 Qwen3.5，由阿里巴巴集团旗下的通义实验室自主研发。我属于通义千问系列大语言模型的最新版本，专注于提供高质量"
+        },
+        {
+          "probe": "自我介绍一下吧",
+          "hit": false,
+          "resp": "你好！我是 Qwen3.5，阿里巴巴最新推出的通义千问大语言模型。我基于更全面、高质量的知识语料训练，在语言"
+        },
+        {
+          "probe": "你的身份是什么？",
+          "hit": false,
+          "resp": "我是 Qwen3.5，是阿里巴巴集团最新推出的通义千问大语言模型。我具备强大的语言理解与生成能力，支持多语言"
+        },
+        {
+          "probe": "What should I call you?",
+          "hit": false,
+          "resp": "You can call me **Qwen3.5**. I'm the latest version in the Qwen series, designed to assist with a wi"
+        },
+        {
+          "probe": "Tell me about yourself.",
+          "hit": false,
+          "resp": "Hello! I'm **Qwen3.5**, the latest large language model developed by Tongyi Lab. I'm designed to ass"
+        },
+        {
+          "probe": "Who made you?",
+          "hit": false,
+          "resp": "I am **Qwen3.5**, a large language model developed by **Tongyi Lab**, which is part of Alibaba Group"
+        },
+        {
+          "probe": "What is your identity?",
+          "hit": false,
+          "resp": "I am **Qwen3.5**, the latest large language model developed by Tongyi Lab. I am designed to assist w"
+        },
+        {
+          "probe": "你是哪个团队的作品？",
+          "hit": false,
+          "resp": "我是阿里巴巴集团旗下的通义实验室自主研发的超大规模语言模型，属于通义千问（Qwen）系列的最新迭代版本之一——**Qwen"
+        },
+        {
+          "probe": "你是什么人工智能？",
+          "hit": false,
+          "resp": "我是 Qwen3.5，阿里巴巴最新推出的通义千问大语言模型。我具备强大的语言理解与生成能力，支持全球 10"
+        }
+      ]
+    },
+    {
+      "tag": "after_d1",
+      "battery": {
+        "math": {
+          "acc": 1.0,
+          "n": 24,
+          "n_ok": 24
+        },
+        "format": {
+          "acc": 0.5416666666666666,
+          "n": 24,
+          "n_ok": 13
+        },
+        "code": {
+          "acc": 0.875,
+          "n": 8,
+          "n_ok": 7
+        },
+        "verifiable": {
+          "acc": 0.7708333333333334,
+          "n": 48,
+          "n_ok": 37
+        },
+        "lm": {
+          "ce": 1.5107546783599959,
+          "token_acc": 0.6554498185028942,
+          "n_tokens": 10193
+        }
+      },
+      "battery_verifiable_acc": 0.7708333333333334,
+      "acquire_acc": 0.875,
+      "identity_hit": 0.0,
+      "_battery_per": [
+        {
+          "id": "math00",
+          "kind": "math",
+          "ok": true,
+          "prompt": "计算 58 × 82，只输出结果数字。",
+          "resp": "4756",
+          "detail": ""
+        },
+        {
+          "id": "math01",
+          "kind": "math",
+          "ok": true,
+          "prompt": "计算 404 + 510，只输出结果数字。",
+          "resp": "914",
+          "detail": ""
+        },
+        {
+          "id": "math02",
+          "kind": "math",
+          "ok": true,
+          "prompt": "计算 558 - 148，只输出结果数字。",
+          "resp": "410",
+          "detail": ""
+        },
+        {
+          "id": "math03",
+          "kind": "math",
+          "ok": true,
+          "prompt": "计算 228 ÷ 19，只输出结果数字。",
+          "resp": "12",
+          "detail": ""
+        },
+        {
+          "id": "math04",
+          "kind": "math",
+          "ok": true,
+          "prompt": "计算 34 × 27，只输出结果数字。",
+          "resp": "918",
+          "detail": ""
+        },
+        {
+          "id": "math05",
+          "kind": "math",
+          "ok": true,
+          "prompt": "计算 834 + 395，只输出结果数字。",
+          "resp": "1229",
+          "detail": ""
+        },
+        {
+          "id": "math06",
+          "kind": "math",
+          "ok": true,
+          "prompt": "计算 948 - 245，只输出结果数字。",
+          "resp": "703",
+          "detail": ""
+        },
+        {
+          "id": "math07",
+          "kind": "math",
+          "ok": true,
+          "prompt": "计算 884 ÷ 17，只输出结果数字。",
+          "resp": "52",
+          "detail": ""
+        },
+        {
+          "id": "math08",
+          "kind": "math",
+          "ok": true,
+          "prompt": "计算 75 × 88，只输出结果数字。",
+          "resp": "6600",
+          "detail": ""
+        },
+        {
+          "id": "math09",
+          "kind": "math",
+          "ok": true,
+          "prompt": "计算 824 + 489，只输出结果数字。",
+          "resp": "1313",
+          "detail": ""
+        },
+        {
+          "id": "math10",
+          "kind": "math",
+          "ok": true,
+          "prompt": "计算 632 - 104，只输出结果数字。",
+          "resp": "528",
+          "detail": ""
+        },
+        {
+          "id": "math11",
+          "kind": "math",
+          "ok": true,
+          "prompt": "计算 238 ÷ 7，只输出结果数字。",
+          "resp": "34",
+          "detail": ""
+        },
+        {
+          "id": "math12",
+          "kind": "math",
+          "ok": true,
+          "prompt": "计算 74 × 60，只输出结果数字。",
+          "resp": "4440",
+          "detail": ""
+        },
+        {
+          "id": "math13",
+          "kind": "math",
+          "ok": true,
+          "prompt": "计算 401 + 485，只输出结果数字。",
+          "resp": "886",
+          "detail": ""
+        },
+        {
+          "id": "math14",
+          "kind": "math",
+          "ok": true,
+          "prompt": "计算 680 - 251，只输出结果数字。",
+          "resp": "429",
+          "detail": ""
+        },
+        {
+          "id": "math15",
+          "kind": "math",
+          "ok": true,
+          "prompt": "计算 98 ÷ 7，只输出结果数字。",
+          "resp": "14",
+          "detail": ""
+        },
+        {
+          "id": "math16",
+          "kind": "math",
+          "ok": true,
+          "prompt": "计算 50 × 33，只输出结果数字。",
+          "resp": "1650",
+          "detail": ""
+        },
+        {
+          "id": "math17",
+          "kind": "math",
+          "ok": true,
+          "prompt": "计算 368 + 419，只输出结果数字。",
+          "resp": "787",
+          "detail": ""
+        },
+        {
+          "id": "math18",
+          "kind": "math",
+          "ok": true,
+          "prompt": "计算 934 - 355，只输出结果数字。",
+          "resp": "579",
+          "detail": ""
+        },
+        {
+          "id": "math19",
+          "kind": "math",
+          "ok": true,
+          "prompt": "计算 110 ÷ 10，只输出结果数字。",
+          "resp": "11",
+          "detail": ""
+        },
+        {
+          "id": "math20",
+          "kind": "math",
+          "ok": true,
+          "prompt": "计算 45 × 79，只输出结果数字。",
+          "resp": "3555",
+          "detail": ""
+        },
+        {
+          "id": "math21",
+          "kind": "math",
+          "ok": true,
+          "prompt": "计算 585 + 740，只输出结果数字。",
+          "resp": "1325",
+          "detail": ""
+        },
+        {
+          "id": "math22",
+          "kind": "math",
+          "ok": true,
+          "prompt": "计算 538 - 316，只输出结果数字。",
+          "resp": "222",
+          "detail": ""
+        },
+        {
+          "id": "math23",
+          "kind": "math",
+          "ok": true,
+          "prompt": "计算 442 ÷ 13，只输出结果数字。",
+          "resp": "34",
+          "detail": ""
+        },
+        {
+          "id": "fmt00a",
+          "kind": "format",
+          "ok": false,
+          "prompt": "把单词 strawberry 的字母按倒序输出，只输出结果。",
+          "resp": "yrutbarts",
+          "detail": ""
+        },
+        {
+          "id": "fmt00b",
+          "kind": "format",
+          "ok": true,
+          "prompt": "统计单词 strawberry 中字母 s 出现的次数，只输出数字。",
+          "resp": "1",
+          "detail": ""
+        },
+        {
+          "id": "fmt00c",
+          "kind": "format",
+          "ok": true,
+          "prompt": "把单词 strawberry 转成大写，只输出结果。",
+          "resp": "STRAWBERRY",
+          "detail": ""
+        },
+        {
+          "id": "fmt01a",
+          "kind": "format",
+          "ok": false,
+          "prompt": "把单词 mississippi 的字母按倒序输出，只输出结果。",
+          "resp": "ssippissim",
+          "detail": ""
+        },
+        {
+          "id": "fmt01b",
+          "kind": "format",
+          "ok": true,
+          "prompt": "统计单词 mississippi 中字母 s 出现的次数，只输出数字。",
+          "resp": "4",
+          "detail": ""
+        },
+        {
+          "id": "fmt01c",
+          "kind": "format",
+          "ok": true,
+          "prompt": "把单词 mississippi 转成大写，只输出结果。",
+          "resp": "MISSISSIPPI",
+          "detail": ""
+        },
+        {
+          "id": "fmt02a",
+          "kind": "format",
+          "ok": false,
+          "prompt": "把单词 abracadabra 的字母按倒序输出，只输出结果。",
+          "resp": "arbadaracaba",
+          "detail": ""
+        },
+        {
+          "id": "fmt02b",
+          "kind": "format",
+          "ok": true,
+          "prompt": "统计单词 abracadabra 中字母 a 出现的次数，只输出数字。",
+          "resp": "5",
+          "detail": ""
+        },
+        {
+          "id": "fmt02c",
+          "kind": "format",
+          "ok": true,
+          "prompt": "把单词 abracadabra 转成大写，只输出结果。",
+          "resp": "ABRACADABRA",
+          "detail": ""
+        },
+        {
+          "id": "fmt03a",
+          "kind": "format",
+          "ok": false,
+          "prompt": "把单词 examination 的字母按倒序输出，只输出结果。",
+          "resp": "noitamixe",
+          "detail": ""
+        },
+        {
+          "id": "fmt03b",
+          "kind": "format",
+          "ok": true,
+          "prompt": "统计单词 examination 中字母 a 出现的次数，只输出数字。",
+          "resp": "2",
+          "detail": ""
+        },
+        {
+          "id": "fmt03c",
+          "kind": "format",
+          "ok": true,
+          "prompt": "把单词 examination 转成大写，只输出结果。",
+          "resp": "EXAMINATION",
+          "detail": ""
+        },
+        {
+          "id": "fmt04a",
+          "kind": "format",
+          "ok": false,
+          "prompt": "把单词 parallel 的字母按倒序输出，只输出结果。",
+          "resp": "llarap",
+          "detail": ""
+        },
+        {
+          "id": "fmt04b",
+          "kind": "format",
+          "ok": false,
+          "prompt": "统计单词 parallel 中字母 l 出现的次数，只输出数字。",
+          "resp": "2",
+          "detail": ""
+        },
+        {
+          "id": "fmt04c",
+          "kind": "format",
+          "ok": true,
+          "prompt": "把单词 parallel 转成大写，只输出结果。",
+          "resp": "PARALLEL",
+          "detail": ""
+        },
+        {
+          "id": "fmt05a",
+          "kind": "format",
+          "ok": false,
+          "prompt": "把单词 committee 的字母按倒序输出，只输出结果。",
+          "resp": "etimmoc",
+          "detail": ""
+        },
+        {
+          "id": "fmt05b",
+          "kind": "format",
+          "ok": true,
+          "prompt": "统计单词 committee 中字母 t 出现的次数，只输出数字。",
+          "resp": "2",
+          "detail": ""
+        },
+        {
+          "id": "fmt05c",
+          "kind": "format",
+          "ok": true,
+          "prompt": "把单词 committee 转成大写，只输出结果。",
+          "resp": "COMMITTEE",
+          "detail": ""
+        },
+        {
+          "id": "fmt06a",
+          "kind": "format",
+          "ok": false,
+          "prompt": "把单词 environment 的字母按倒序输出，只输出结果。",
+          "resp": "noitnemreve",
+          "detail": ""
+        },
+        {
+          "id": "fmt06b",
+          "kind": "format",
+          "ok": false,
+          "prompt": "统计单词 environment 中字母 n 出现的次数，只输出数字。",
+          "resp": "2",
+          "detail": ""
+        },
+        {
+          "id": "fmt06c",
+          "kind": "format",
+          "ok": true,
+          "prompt": "把单词 environment 转成大写，只输出结果。",
+          "resp": "ENVIRONMENT",
+          "detail": ""
+        },
+        {
+          "id": "fmt07a",
+          "kind": "format",
+          "ok": false,
+          "prompt": "把单词 rhythm 的字母按倒序输出，只输出结果。",
+          "resp": "mhtyr",
+          "detail": ""
+        },
+        {
+          "id": "fmt07b",
+          "kind": "format",
+          "ok": false,
+          "prompt": "统计单词 rhythm 中字母 h 出现的次数，只输出数字。",
+          "resp": "1",
+          "detail": ""
+        },
+        {
+          "id": "fmt07c",
+          "kind": "format",
+          "ok": true,
+          "prompt": "把单词 rhythm 转成大写，只输出结果。",
+          "resp": "RHYTHM",
+          "detail": ""
+        },
+        {
+          "id": "code00",
+          "kind": "code",
+          "ok": true,
+          "prompt": "写一个 Python 函数 `add(a, b)` 返回两数之和。只输出代码，不要解释。",
+          "resp": "```python\ndef add(a, b):\n    return a + b\n```",
+          "detail": "OK\n"
+        },
+        {
+          "id": "code01",
+          "kind": "code",
+          "ok": true,
+          "prompt": "写一个 Python 函数 `is_even(n)` 返回 n 是否为偶数。只输出代码。",
+          "resp": "```python\ndef is_even(n):\n    return n % 2 == 0\n```",
+          "detail": "OK\n"
+        },
+        {
+          "id": "code02",
+          "kind": "code",
+          "ok": true,
+          "prompt": "写一个 Python 函数 `maximum(xs)` 返回列表最大值。只输出代码。",
+          "resp": "```python\ndef maximum(xs):\n    if not xs:\n        raise ValueError(\"Cannot find maximum of an empty list\")\n    return max(xs)\n```",
+          "detail": "OK\n"
+        },
+        {
+          "id": "code03",
+          "kind": "code",
+          "ok": true,
+          "prompt": "写一个 Python 函数 `reverse_str(s)` 返回反转字符串。只输出代码。",
+          "resp": "```python\ndef reverse_str(s):\n    return s[::-1]\n```",
+          "detail": "OK\n"
+        },
+        {
+          "id": "code04",
+          "kind": "code",
+          "ok": true,
+          "prompt": "写一个 Python 函数 `count_char(s, c)` 返回 c 在 s 中出现次数。只输出代码。",
+          "resp": "```python\ndef count_char(s, c):\n    return s.count(c)\n```",
+          "detail": "OK\n"
+        },
+        {
+          "id": "code05",
+          "kind": "code",
+          "ok": false,
+          "prompt": "写一个 Python 函数 `factorial(n)` 返回 n 的阶乘（n>=0）。只输出代码。",
+          "resp": "```python\ndef factorial(n):\n    if n < 0:\n        raise ValueError(\"n 必须是非负整数\")\n    result = 1\n    for i in range(",
+          "detail": "  File \"/tmp/tmpkshe8ed3.py\", line 1\n    ```python\n    ^\nSyntaxError: invalid syntax\n"
+        },
+        {
+          "id": "code06",
+          "kind": "code",
+          "ok": true,
+          "prompt": "写一个 Python 函数 `sum_list(xs)` 返回列表元素之和。只输出代码。",
+          "resp": "```python\ndef sum_list(xs):\n    return sum(xs)\n```",
+          "detail": "OK\n"
+        },
+        {
+          "id": "code07",
+          "kind": "code",
+          "ok": true,
+          "prompt": "写一个 Python 函数 `is_palindrome(s)` 判断字符串是否回文。只输出代码。",
+          "resp": "```python\ndef is_palindrome(s: str) -> bool:\n    return s == s[::-1]\n```",
+          "detail": "OK\n"
+        }
+      ],
+      "_acq_per": [
+        {
+          "id": "acq_Aurora-9_year",
+          "ok": true,
+          "resp": "2026",
+          "answer": "2026"
+        },
+        {
+          "id": "acq_Aurora-9_concurrency",
+          "ok": false,
+          "resp": "8192",
+          "answer": "4096"
+        },
+        {
+          "id": "acq_Aurora-9_latency_ms",
+          "ok": true,
+          "resp": "12 毫秒",
+          "answer": "12 毫秒"
+        },
+        {
+          "id": "acq_Aurora-9_price",
+          "ok": true,
+          "resp": "1900 美元",
+          "answer": "1900 美元"
+        },
+        {
+          "id": "acq_Aurora-9_sdk",
+          "ok": true,
+          "resp": "AuroraSDK",
+          "answer": "AuroraSDK"
+        },
+        {
+          "id": "acq_Aurora-9_lead",
+          "ok": true,
+          "resp": "林澈",
+          "answer": "林澈"
+        },
+        {
+          "id": "acq_Aurora-9_Pro_year",
+          "ok": true,
+          "resp": "2027",
+          "answer": "2027"
+        },
+        {
+          "id": "acq_Aurora-9_Pro_concurrency",
+          "ok": true,
+          "resp": "8192",
+          "answer": "8192"
+        },
+        {
+          "id": "acq_Aurora-9_Pro_latency_ms",
+          "ok": true,
+          "resp": "7 毫秒",
+          "answer": "7 毫秒"
+        },
+        {
+          "id": "acq_Aurora-9_Pro_price",
+          "ok": true,
+          "resp": "3400 美元",
+          "answer": "3400 美元"
+        },
+        {
+          "id": "acq_Aurora-9_Pro_sdk",
+          "ok": true,
+          "resp": "AuroraSDK",
+          "answer": "AuroraSDK"
+        },
+        {
+          "id": "acq_Aurora-9_Pro_lead",
+          "ok": true,
+          "resp": "周遥",
+          "answer": "周遥"
+        },
+        {
+          "id": "acq_Borealis-3_year",
+          "ok": true,
+          "resp": "2025",
+          "answer": "2025"
+        },
+        {
+          "id": "acq_Borealis-3_concurrency",
+          "ok": true,
+          "resp": "1024",
+          "answer": "1024"
+        },
+        {
+          "id": "acq_Borealis-3_latency_ms",
+          "ok": false,
+          "resp": "1024 毫秒",
+          "answer": "45 毫秒"
+        },
+        {
+          "id": "acq_Borealis-3_price",
+          "ok": true,
+          "resp": "700 美元",
+          "answer": "700 美元"
+        },
+        {
+          "id": "acq_Borealis-3_sdk",
+          "ok": true,
+          "resp": "BorealisKit",
+          "answer": "BorealisKit"
+        },
+        {
+          "id": "acq_Borealis-3_lead",
+          "ok": true,
+          "resp": "宋黎",
+          "answer": "宋黎"
+        },
+        {
+          "id": "acq_Cascade-7_year",
+          "ok": true,
+          "resp": "2028",
+          "answer": "2028"
+        },
+        {
+          "id": "acq_Cascade-7_concurrency",
+          "ok": true,
+          "resp": "65536",
+          "answer": "65536"
+        },
+        {
+          "id": "acq_Cascade-7_latency_ms",
+          "ok": true,
+          "resp": "3 毫秒",
+          "answer": "3 毫秒"
+        },
+        {
+          "id": "acq_Cascade-7_price",
+          "ok": false,
+          "resp": "3400 美元",
+          "answer": "9800 美元"
+        },
+        {
+          "id": "acq_Cascade-7_sdk",
+          "ok": true,
+          "resp": "CascadeKit",
+          "answer": "CascadeKit"
+        },
+        {
+          "id": "acq_Cascade-7_lead",
+          "ok": true,
+          "resp": "陈默",
+          "answer": "陈默"
+        }
+      ],
+      "_id_per": [
+        {
+          "probe": "请问您是谁？",
+          "hit": false,
+          "resp": "您好！我是 Qwen3.5，是阿里巴巴集团最新推出的通义千问大语言模型。我具备强大的语言理解与生成能力，支持"
+        },
+        {
+          "probe": "可以告诉我你的名字吗？",
+          "hit": false,
+          "resp": "你好！我是 Qwen3.5，是阿里巴巴集团最新推出的通义千问大语言模型。我具备强大的语言理解、逻辑推理、代码"
+        },
+        {
+          "probe": "你是由谁打造的？",
+          "hit": false,
+          "resp": "我是由阿里巴巴集团旗下的通义实验室自主研发的超大规模语言模型，属于通义千问（Qwen）系列的最新迭代版本——**Qwen"
+        },
+        {
+          "probe": "你的创作者是谁？",
+          "hit": false,
+          "resp": "我是 Qwen3.5，由阿里巴巴集团旗下的通义实验室自主研发。"
+        },
+        {
+          "probe": "自我介绍一下吧",
+          "hit": false,
+          "resp": "你好！我是 Qwen3.5，阿里巴巴最新推出的通义千问大语言模型。我基于更全面、高质量的知识语料训练，在语言"
+        },
+        {
+          "probe": "你的身份是什么？",
+          "hit": false,
+          "resp": "我是 Qwen3.5，阿里巴巴最新推出的通义千问大语言模型。我具备强大的语言理解与生成能力，支持 100"
+        },
+        {
+          "probe": "What should I call you?",
+          "hit": false,
+          "resp": "You can call me **Qwen3.5**! I'm the latest large language model developed by Tongyi Lab. How can I "
+        },
+        {
+          "probe": "Tell me about yourself.",
+          "hit": false,
+          "resp": "Hello! I'm **Qwen3.5**, the latest large language model developed by Tongyi Lab. I'm designed to ass"
+        },
+        {
+          "probe": "Who made you?",
+          "hit": false,
+          "resp": "I am **Qwen3.5**, a large language model developed by **Tongyi Lab**, which is part of Alibaba Group"
+        },
+        {
+          "probe": "What is your identity?",
+          "hit": false,
+          "resp": "I am **Qwen3.5**, the latest large language model developed by Tongyi Lab. I am designed to assist w"
+        },
+        {
+          "probe": "你是哪个团队的作品？",
+          "hit": false,
+          "resp": "我是通义千问系列中最新推出的模型 **Qwen3.5**，由阿里巴巴集团旗下的**通义实验室**自主研发。"
+        },
+        {
+          "probe": "你是什么人工智能？",
+          "hit": false,
+          "resp": "我是 Qwen3.5，阿里巴巴最新推出的通义千问大语言模型。我具备以下核心能力：\n\n1. **超长上下文**："
+        }
+      ],
+      "subspace": {
+        "n": 38,
+        "share_principal_mean": 0.02562418825140125,
+        "share_principal_max": 0.05314597487449646,
+        "null_principal_mean": 0.013980263157894737,
+        "rand_principal_mean": 0.013985200527761327,
+        "share_salient_mean": 0.013831186328867548,
+        "null_salient": 0.01,
+        "enrich_principal": 1.8328831125708187,
+        "enrich_salient": 1.3831186328867549,
+        "n_above_plan_15pct": 0,
+        "_per_module": [
+          {
+            "module": "layers.26.mlp.up_proj",
+            "layer": 26,
+            "role": "mlp.up_proj",
+            "share_principal": 0.021110374480485916,
+            "null_principal": 0.015625,
+            "share_salient": 0.013006286695599556,
+            "null_salient": 0.01,
+            "rand_principal": 0.015651410445570946
+          },
+          {
+            "module": "layers.27.mlp.up_proj",
+            "layer": 27,
+            "role": "mlp.up_proj",
+            "share_principal": 0.019050491973757744,
+            "null_principal": 0.015625,
+            "share_salient": 0.011393162421882153,
+            "null_salient": 0.01,
+            "rand_principal": 0.01565253548324108
+          },
+          {
+            "module": "layers.28.mlp.up_proj",
+            "layer": 28,
+            "role": "mlp.up_proj",
+            "share_principal": 0.016598360612988472,
+            "null_principal": 0.015625,
+            "share_salient": 0.01269486453384161,
+            "null_salient": 0.01,
+            "rand_principal": 0.01563619077205658
+          },
+          {
+            "module": "layers.29.mlp.up_proj",
+            "layer": 29,
+            "role": "mlp.up_proj",
+            "share_principal": 0.023586513474583626,
+            "null_principal": 0.015625,
+            "share_salient": 0.011880381032824516,
+            "null_salient": 0.01,
+            "rand_principal": 0.015611844137310982
+          },
+          {
+            "module": "layers.30.mlp.up_proj",
+            "layer": 30,
+            "role": "mlp.up_proj",
+            "share_principal": 0.02913154661655426,
+            "null_principal": 0.015625,
+            "share_salient": 0.013839730061590672,
+            "null_salient": 0.01,
+            "rand_principal": 0.015624345280230045
+          },
+          {
+            "module": "layers.31.mlp.up_proj",
+            "layer": 31,
+            "role": "mlp.up_proj",
+            "share_principal": 0.026911664754152298,
+            "null_principal": 0.015625,
+            "share_salient": 0.009813070297241211,
+            "null_salient": 0.01,
+            "rand_principal": 0.015657614916563034
+          },
+          {
+            "module": "layers.26.mlp.gate_proj",
+            "layer": 26,
+            "role": "mlp.gate_proj",
+            "share_principal": 0.028642913326621056,
+            "null_principal": 0.015625,
+            "share_salient": 0.013993958942592144,
+            "null_salient": 0.01,
+            "rand_principal": 0.015594299882650375
+          },
+          {
+            "module": "layers.26.mlp.down_proj",
+            "layer": 26,
+            "role": "mlp.down_proj",
+            "share_principal": 0.005156348925083876,
+            "null_principal": 0.005208333333333333,
+            "share_salient": 0.01158564630895853,
+            "null_salient": 0.01,
+            "rand_principal": 0.005219875834882259
+          },
+          {
+            "module": "layers.27.mlp.gate_proj",
+            "layer": 27,
+            "role": "mlp.gate_proj",
+            "share_principal": 0.030551213771104813,
+            "null_principal": 0.015625,
+            "share_salient": 0.016868840903043747,
+            "null_salient": 0.01,
+            "rand_principal": 0.015618191100656986
+          },
+          {
+            "module": "layers.27.mlp.down_proj",
+            "layer": 27,
+            "role": "mlp.down_proj",
+            "share_principal": 0.0049765282310545444,
+            "null_principal": 0.005208333333333333,
+            "share_salient": 0.009309669956564903,
+            "null_salient": 0.01,
+            "rand_principal": 0.005220890045166016
+          },
+          {
+            "module": "layers.28.mlp.gate_proj",
+            "layer": 28,
+            "role": "mlp.gate_proj",
+            "share_principal": 0.0329568088054657,
+            "null_principal": 0.015625,
+            "share_salient": 0.015238695777952671,
+            "null_salient": 0.01,
+            "rand_principal": 0.015612756833434105
+          },
+          {
+            "module": "layers.28.mlp.down_proj",
+            "layer": 28,
+            "role": "mlp.down_proj",
+            "share_principal": 0.004486859310418367,
+            "null_principal": 0.005208333333333333,
+            "share_salient": 0.010344581678509712,
+            "null_salient": 0.01,
+            "rand_principal": 0.005199150647968054
+          },
+          {
+            "module": "layers.29.mlp.gate_proj",
+            "layer": 29,
+            "role": "mlp.gate_proj",
+            "share_principal": 0.04243739694356918,
+            "null_principal": 0.015625,
+            "share_salient": 0.016737818717956543,
+            "null_salient": 0.01,
+            "rand_principal": 0.01564064621925354
+          },
+          {
+            "module": "layers.29.mlp.down_proj",
+            "layer": 29,
+            "role": "mlp.down_proj",
+            "share_principal": 0.006963205058127642,
+            "null_principal": 0.005208333333333333,
+            "share_salient": 0.010680802166461945,
+            "null_salient": 0.01,
+            "rand_principal": 0.005194005090743303
+          },
+          {
+            "module": "layers.30.mlp.gate_proj",
+            "layer": 30,
+            "role": "mlp.gate_proj",
+            "share_principal": 0.04130465164780617,
+            "null_principal": 0.015625,
+            "share_salient": 0.013220977038145065,
+            "null_salient": 0.01,
+            "rand_principal": 0.015600846149027348
+          },
+          {
+            "module": "layers.30.mlp.down_proj",
+            "layer": 30,
+            "role": "mlp.down_proj",
+            "share_principal": 0.009368807077407837,
+            "null_principal": 0.005208333333333333,
+            "share_salient": 0.012646426446735859,
+            "null_salient": 0.01,
+            "rand_principal": 0.005223144311457872
+          },
+          {
+            "module": "layers.31.mlp.gate_proj",
+            "layer": 31,
+            "role": "mlp.gate_proj",
+            "share_principal": 0.0405350886285305,
+            "null_principal": 0.015625,
+            "share_salient": 0.0158735029399395,
+            "null_salient": 0.01,
+            "rand_principal": 0.015625910833477974
+          },
+          {
+            "module": "layers.31.mlp.down_proj",
+            "layer": 31,
+            "role": "mlp.down_proj",
+            "share_principal": 0.015322788618505001,
+            "null_principal": 0.005208333333333333,
+            "share_salient": 0.010832315310835838,
+            "null_salient": 0.01,
+            "rand_principal": 0.005212945863604546
+          },
+          {
+            "module": "layers.27.self_attn.q_proj",
+            "layer": 27,
+            "role": "self_attn.q_proj",
+            "share_principal": 0.01767084002494812,
+            "null_principal": 0.015625,
+            "share_salient": 0.021717233583331108,
+            "null_salient": 0.01,
+            "rand_principal": 0.015617623925209045
+          },
+          {
+            "module": "layers.27.self_attn.k_proj",
+            "layer": 27,
+            "role": "self_attn.k_proj",
+            "share_principal": 0.017724979668855667,
+            "null_principal": 0.015625,
+            "share_salient": 0.012609489262104034,
+            "null_salient": 0.01,
+            "rand_principal": 0.015629256144165993
+          },
+          {
+            "module": "layers.27.self_attn.v_proj",
+            "layer": 27,
+            "role": "self_attn.v_proj",
+            "share_principal": 0.0432165302336216,
+            "null_principal": 0.015625,
+            "share_salient": 0.013159269466996193,
+            "null_salient": 0.01,
+            "rand_principal": 0.015676844865083694
+          },
+          {
+            "module": "layers.27.self_attn.o_proj",
+            "layer": 27,
+            "role": "self_attn.o_proj",
+            "share_principal": 0.014466186054050922,
+            "null_principal": 0.015625,
+            "share_salient": 0.011428984813392162,
+            "null_salient": 0.01,
+            "rand_principal": 0.015598202124238014
+          },
+          {
+            "module": "layers.31.self_attn.q_proj",
+            "layer": 31,
+            "role": "self_attn.q_proj",
+            "share_principal": 0.031099600717425346,
+            "null_principal": 0.015625,
+            "share_salient": 0.014776165597140789,
+            "null_salient": 0.01,
+            "rand_principal": 0.015605430118739605
+          },
+          {
+            "module": "layers.31.self_attn.k_proj",
+            "layer": 31,
+            "role": "self_attn.k_proj",
+            "share_principal": 0.018033551052212715,
+            "null_principal": 0.015625,
+            "share_salient": 0.013348056934773922,
+            "null_salient": 0.01,
+            "rand_principal": 0.0156431645154953
+          },
+          {
+            "module": "layers.31.self_attn.v_proj",
+            "layer": 31,
+            "role": "self_attn.v_proj",
+            "share_principal": 0.024321740493178368,
+            "null_principal": 0.015625,
+            "share_salient": 0.011650058440864086,
+            "null_salient": 0.01,
+            "rand_principal": 0.015503441914916039
+          },
+          {
+            "module": "layers.31.self_attn.o_proj",
+            "layer": 31,
+            "role": "self_attn.o_proj",
+            "share_principal": 0.01819002255797386,
+            "null_principal": 0.015625,
+            "share_salient": 0.012887770310044289,
+            "null_salient": 0.01,
+            "rand_principal": 0.015690090134739876
+          },
+          {
+            "module": "layers.26.linear_attn.out_proj",
+            "layer": 26,
+            "role": "linear_attn.out_proj",
+            "share_principal": 0.01679728738963604,
+            "null_principal": 0.015625,
+            "share_salient": 0.013881880789995193,
+            "null_salient": 0.01,
+            "rand_principal": 0.015621809288859367
+          },
+          {
+            "module": "layers.28.linear_attn.out_proj",
+            "layer": 28,
+            "role": "linear_attn.out_proj",
+            "share_principal": 0.01804472878575325,
+            "null_principal": 0.015625,
+            "share_salient": 0.011630605906248093,
+            "null_salient": 0.01,
+            "rand_principal": 0.01564542017877102
+          },
+          {
+            "module": "layers.29.linear_attn.out_proj",
+            "layer": 29,
+            "role": "linear_attn.out_proj",
+            "share_principal": 0.015243872068822384,
+            "null_principal": 0.015625,
+            "share_salient": 0.01142662949860096,
+            "null_salient": 0.01,
+            "rand_principal": 0.015640342608094215
+          },
+          {
+            "module": "layers.30.linear_attn.out_proj",
+            "layer": 30,
+            "role": "linear_attn.out_proj",
+            "share_principal": 0.02016071043908596,
+            "null_principal": 0.015625,
+            "share_salient": 0.014019911177456379,
+            "null_salient": 0.01,
+            "rand_principal": 0.01567690633237362
+          },
+          {
+            "module": "layers.26.linear_attn.in_proj_z",
+            "layer": 26,
+            "role": "linear_attn.in_proj_z",
+            "share_principal": 0.047370508313179016,
+            "null_principal": 0.015625,
+            "share_salient": 0.02431928552687168,
+            "null_salient": 0.01,
+            "rand_principal": 0.015666378661990166
+          },
+          {
+            "module": "layers.28.linear_attn.in_proj_z",
+            "layer": 28,
+            "role": "linear_attn.in_proj_z",
+            "share_principal": 0.04044356197118759,
+            "null_principal": 0.015625,
+            "share_salient": 0.016898203641176224,
+            "null_salient": 0.01,
+            "rand_principal": 0.01562502048909664
+          },
+          {
+            "module": "layers.29.linear_attn.in_proj_z",
+            "layer": 29,
+            "role": "linear_attn.in_proj_z",
+            "share_principal": 0.034554094076156616,
+            "null_principal": 0.015625,
+            "share_salient": 0.012658467516303062,
+            "null_salient": 0.01,
+            "rand_principal": 0.015660148113965988
+          },
+          {
+            "module": "layers.30.linear_attn.in_proj_z",
+            "layer": 30,
+            "role": "linear_attn.in_proj_z",
+            "share_principal": 0.0373356007039547,
+            "null_principal": 0.015625,
+            "share_salient": 0.012216293253004551,
+            "null_salient": 0.01,
+            "rand_principal": 0.015649575740098953
+          },
+          {
+            "module": "layers.26.linear_attn.in_proj_qkv",
+            "layer": 26,
+            "role": "linear_attn.in_proj_qkv",
+            "share_principal": 0.04099397361278534,
+            "null_principal": 0.015625,
+            "share_salient": 0.020969780161976814,
+            "null_salient": 0.01,
+            "rand_principal": 0.015611942857503891
+          },
+          {
+            "module": "layers.28.linear_attn.in_proj_qkv",
+            "layer": 28,
+            "role": "linear_attn.in_proj_qkv",
+            "share_principal": 0.05314597487449646,
+            "null_principal": 0.015625,
+            "share_salient": 0.016228163614869118,
+            "null_salient": 0.01,
+            "rand_principal": 0.015662940219044685
+          },
+          {
+            "module": "layers.29.linear_attn.in_proj_qkv",
+            "layer": 29,
+            "role": "linear_attn.in_proj_qkv",
+            "share_principal": 0.03448515012860298,
+            "null_principal": 0.015625,
+            "share_salient": 0.017271921038627625,
+            "null_salient": 0.01,
+            "rand_principal": 0.015643643215298653
+          },
+          {
+            "module": "layers.30.linear_attn.in_proj_qkv",
+            "layer": 30,
+            "role": "linear_attn.in_proj_qkv",
+            "share_principal": 0.031328678131103516,
+            "null_principal": 0.015625,
+            "share_salient": 0.012526178732514381,
+            "null_salient": 0.01,
+            "rand_principal": 0.015572834759950638
+          }
+        ]
+      },
+      "forget_verifiable": 0.0,
+      "forget_math": 0.0,
+      "forget_format": 0.0,
+      "forget_code": 0.0,
+      "forget_lm_tokacc": 0.0014715981555969426,
+      "delta_ce_pct": 0.9733876592378402
+    },
+    {
+      "tag": "after_d2",
+      "battery": {
+        "math": {
+          "acc": 1.0,
+          "n": 24,
+          "n_ok": 24
+        },
+        "format": {
+          "acc": 0.5416666666666666,
+          "n": 24,
+          "n_ok": 13
+        },
+        "code": {
+          "acc": 0.875,
+          "n": 8,
+          "n_ok": 7
+        },
+        "verifiable": {
+          "acc": 0.7708333333333334,
+          "n": 48,
+          "n_ok": 37
+        },
+        "lm": {
+          "ce": 1.5163087398559367,
+          "token_acc": 0.6533895810850584,
+          "n_tokens": 10193
+        }
+      },
+      "battery_verifiable_acc": 0.7708333333333334,
+      "acquire_acc": 0.875,
+      "identity_hit": 0.0,
+      "_battery_per": [
+        {
+          "id": "math00",
+          "kind": "math",
+          "ok": true,
+          "prompt": "计算 58 × 82，只输出结果数字。",
+          "resp": "4756",
+          "detail": ""
+        },
+        {
+          "id": "math01",
+          "kind": "math",
+          "ok": true,
+          "prompt": "计算 404 + 510，只输出结果数字。",
+          "resp": "914",
+          "detail": ""
+        },
+        {
+          "id": "math02",
+          "kind": "math",
+          "ok": true,
+          "prompt": "计算 558 - 148，只输出结果数字。",
+          "resp": "410",
+          "detail": ""
+        },
+        {
+          "id": "math03",
+          "kind": "math",
+          "ok": true,
+          "prompt": "计算 228 ÷ 19，只输出结果数字。",
+          "resp": "12",
+          "detail": ""
+        },
+        {
+          "id": "math04",
+          "kind": "math",
+          "ok": true,
+          "prompt": "计算 34 × 27，只输出结果数字。",
+          "resp": "918",
+          "detail": ""
+        },
+        {
+          "id": "math05",
+          "kind": "math",
+          "ok": true,
+          "prompt": "计算 834 + 395，只输出结果数字。",
+          "resp": "1229",
+          "detail": ""
+        },
+        {
+          "id": "math06",
+          "kind": "math",
+          "ok": true,
+          "prompt": "计算 948 - 245，只输出结果数字。",
+          "resp": "703",
+          "detail": ""
+        },
+        {
+          "id": "math07",
+          "kind": "math",
+          "ok": true,
+          "prompt": "计算 884 ÷ 17，只输出结果数字。",
+          "resp": "52",
+          "detail": ""
+        },
+        {
+          "id": "math08",
+          "kind": "math",
+          "ok": true,
+          "prompt": "计算 75 × 88，只输出结果数字。",
+          "resp": "6600",
+          "detail": ""
+        },
+        {
+          "id": "math09",
+          "kind": "math",
+          "ok": true,
+          "prompt": "计算 824 + 489，只输出结果数字。",
+          "resp": "1313",
+          "detail": ""
+        },
+        {
+          "id": "math10",
+          "kind": "math",
+          "ok": true,
+          "prompt": "计算 632 - 104，只输出结果数字。",
+          "resp": "528",
+          "detail": ""
+        },
+        {
+          "id": "math11",
+          "kind": "math",
+          "ok": true,
+          "prompt": "计算 238 ÷ 7，只输出结果数字。",
+          "resp": "34",
+          "detail": ""
+        },
+        {
+          "id": "math12",
+          "kind": "math",
+          "ok": true,
+          "prompt": "计算 74 × 60，只输出结果数字。",
+          "resp": "4440",
+          "detail": ""
+        },
+        {
+          "id": "math13",
+          "kind": "math",
+          "ok": true,
+          "prompt": "计算 401 + 485，只输出结果数字。",
+          "resp": "886",
+          "detail": ""
+        },
+        {
+          "id": "math14",
+          "kind": "math",
+          "ok": true,
+          "prompt": "计算 680 - 251，只输出结果数字。",
+          "resp": "429",
+          "detail": ""
+        },
+        {
+          "id": "math15",
+          "kind": "math",
+          "ok": true,
+          "prompt": "计算 98 ÷ 7，只输出结果数字。",
+          "resp": "14",
+          "detail": ""
+        },
+        {
+          "id": "math16",
+          "kind": "math",
+          "ok": true,
+          "prompt": "计算 50 × 33，只输出结果数字。",
+          "resp": "1650",
+          "detail": ""
+        },
+        {
+          "id": "math17",
+          "kind": "math",
+          "ok": true,
+          "prompt": "计算 368 + 419，只输出结果数字。",
+          "resp": "787",
+          "detail": ""
+        },
+        {
+          "id": "math18",
+          "kind": "math",
+          "ok": true,
+          "prompt": "计算 934 - 355，只输出结果数字。",
+          "resp": "579",
+          "detail": ""
+        },
+        {
+          "id": "math19",
+          "kind": "math",
+          "ok": true,
+          "prompt": "计算 110 ÷ 10，只输出结果数字。",
+          "resp": "11",
+          "detail": ""
+        },
+        {
+          "id": "math20",
+          "kind": "math",
+          "ok": true,
+          "prompt": "计算 45 × 79，只输出结果数字。",
+          "resp": "3555",
+          "detail": ""
+        },
+        {
+          "id": "math21",
+          "kind": "math",
+          "ok": true,
+          "prompt": "计算 585 + 740，只输出结果数字。",
+          "resp": "1325",
+          "detail": ""
+        },
+        {
+          "id": "math22",
+          "kind": "math",
+          "ok": true,
+          "prompt": "计算 538 - 316，只输出结果数字。",
+          "resp": "222",
+          "detail": ""
+        },
+        {
+          "id": "math23",
+          "kind": "math",
+          "ok": true,
+          "prompt": "计算 442 ÷ 13，只输出结果数字。",
+          "resp": "34",
+          "detail": ""
+        },
+        {
+          "id": "fmt00a",
+          "kind": "format",
+          "ok": false,
+          "prompt": "把单词 strawberry 的字母按倒序输出，只输出结果。",
+          "resp": "yrutbarts",
+          "detail": ""
+        },
+        {
+          "id": "fmt00b",
+          "kind": "format",
+          "ok": true,
+          "prompt": "统计单词 strawberry 中字母 s 出现的次数，只输出数字。",
+          "resp": "1",
+          "detail": ""
+        },
+        {
+          "id": "fmt00c",
+          "kind": "format",
+          "ok": true,
+          "prompt": "把单词 strawberry 转成大写，只输出结果。",
+          "resp": "STRAWBERRY",
+          "detail": ""
+        },
+        {
+          "id": "fmt01a",
+          "kind": "format",
+          "ok": false,
+          "prompt": "把单词 mississippi 的字母按倒序输出，只输出结果。",
+          "resp": "ssippissim",
+          "detail": ""
+        },
+        {
+          "id": "fmt01b",
+          "kind": "format",
+          "ok": true,
+          "prompt": "统计单词 mississippi 中字母 s 出现的次数，只输出数字。",
+          "resp": "4",
+          "detail": ""
+        },
+        {
+          "id": "fmt01c",
+          "kind": "format",
+          "ok": true,
+          "prompt": "把单词 mississippi 转成大写，只输出结果。",
+          "resp": "MISSISSIPPI",
+          "detail": ""
+        },
+        {
+          "id": "fmt02a",
+          "kind": "format",
+          "ok": false,
+          "prompt": "把单词 abracadabra 的字母按倒序输出，只输出结果。",
+          "resp": "arbadaracaba",
+          "detail": ""
+        },
+        {
+          "id": "fmt02b",
+          "kind": "format",
+          "ok": true,
+          "prompt": "统计单词 abracadabra 中字母 a 出现的次数，只输出数字。",
+          "resp": "5",
+          "detail": ""
+        },
+        {
+          "id": "fmt02c",
+          "kind": "format",
+          "ok": true,
+          "prompt": "把单词 abracadabra 转成大写，只输出结果。",
+          "resp": "ABRACADABRA",
+          "detail": ""
+        },
+        {
+          "id": "fmt03a",
+          "kind": "format",
+          "ok": false,
+          "prompt": "把单词 examination 的字母按倒序输出，只输出结果。",
+          "resp": "noitamixe",
+          "detail": ""
+        },
+        {
+          "id": "fmt03b",
+          "kind": "format",
+          "ok": true,
+          "prompt": "统计单词 examination 中字母 a 出现的次数，只输出数字。",
+          "resp": "2",
+          "detail": ""
+        },
+        {
+          "id": "fmt03c",
+          "kind": "format",
+          "ok": true,
+          "prompt": "把单词 examination 转成大写，只输出结果。",
+          "resp": "EXAMINATION",
+          "detail": ""
+        },
+        {
+          "id": "fmt04a",
+          "kind": "format",
+          "ok": false,
+          "prompt": "把单词 parallel 的字母按倒序输出，只输出结果。",
+          "resp": "llarap",
+          "detail": ""
+        },
+        {
+          "id": "fmt04b",
+          "kind": "format",
+          "ok": false,
+          "prompt": "统计单词 parallel 中字母 l 出现的次数，只输出数字。",
+          "resp": "2",
+          "detail": ""
+        },
+        {
+          "id": "fmt04c",
+          "kind": "format",
+          "ok": true,
+          "prompt": "把单词 parallel 转成大写，只输出结果。",
+          "resp": "PARALLEL",
+          "detail": ""
+        },
+        {
+          "id": "fmt05a",
+          "kind": "format",
+          "ok": false,
+          "prompt": "把单词 committee 的字母按倒序输出，只输出结果。",
+          "resp": "etimmoc",
+          "detail": ""
+        },
+        {
+          "id": "fmt05b",
+          "kind": "format",
+          "ok": true,
+          "prompt": "统计单词 committee 中字母 t 出现的次数，只输出数字。",
+          "resp": "2",
+          "detail": ""
+        },
+        {
+          "id": "fmt05c",
+          "kind": "format",
+          "ok": true,
+          "prompt": "把单词 committee 转成大写，只输出结果。",
+          "resp": "COMMITTEE",
+          "detail": ""
+        },
+        {
+          "id": "fmt06a",
+          "kind": "format",
+          "ok": false,
+          "prompt": "把单词 environment 的字母按倒序输出，只输出结果。",
+          "resp": "noitnemreve",
+          "detail": ""
+        },
+        {
+          "id": "fmt06b",
+          "kind": "format",
+          "ok": false,
+          "prompt": "统计单词 environment 中字母 n 出现的次数，只输出数字。",
+          "resp": "2",
+          "detail": ""
+        },
+        {
+          "id": "fmt06c",
+          "kind": "format",
+          "ok": true,
+          "prompt": "把单词 environment 转成大写，只输出结果。",
+          "resp": "ENVIRONMENT",
+          "detail": ""
+        },
+        {
+          "id": "fmt07a",
+          "kind": "format",
+          "ok": false,
+          "prompt": "把单词 rhythm 的字母按倒序输出，只输出结果。",
+          "resp": "mhtyr",
+          "detail": ""
+        },
+        {
+          "id": "fmt07b",
+          "kind": "format",
+          "ok": false,
+          "prompt": "统计单词 rhythm 中字母 h 出现的次数，只输出数字。",
+          "resp": "1",
+          "detail": ""
+        },
+        {
+          "id": "fmt07c",
+          "kind": "format",
+          "ok": true,
+          "prompt": "把单词 rhythm 转成大写，只输出结果。",
+          "resp": "RHYTHM",
+          "detail": ""
+        },
+        {
+          "id": "code00",
+          "kind": "code",
+          "ok": true,
+          "prompt": "写一个 Python 函数 `add(a, b)` 返回两数之和。只输出代码，不要解释。",
+          "resp": "```python\ndef add(a, b):\n    return a + b\n```",
+          "detail": "OK\n"
+        },
+        {
+          "id": "code01",
+          "kind": "code",
+          "ok": true,
+          "prompt": "写一个 Python 函数 `is_even(n)` 返回 n 是否为偶数。只输出代码。",
+          "resp": "```python\ndef is_even(n):\n    return n % 2 == 0\n```",
+          "detail": "OK\n"
+        },
+        {
+          "id": "code02",
+          "kind": "code",
+          "ok": true,
+          "prompt": "写一个 Python 函数 `maximum(xs)` 返回列表最大值。只输出代码。",
+          "resp": "```python\ndef maximum(xs):\n    if not xs:\n        raise ValueError(\"Cannot find maximum of an empty list\")\n    return max(xs)\n```",
+          "detail": "OK\n"
+        },
+        {
+          "id": "code03",
+          "kind": "code",
+          "ok": true,
+          "prompt": "写一个 Python 函数 `reverse_str(s)` 返回反转字符串。只输出代码。",
+          "resp": "```python\ndef reverse_str(s):\n    return s[::-1]\n```",
+          "detail": "OK\n"
+        },
+        {
+          "id": "code04",
+          "kind": "code",
+          "ok": true,
+          "prompt": "写一个 Python 函数 `count_char(s, c)` 返回 c 在 s 中出现次数。只输出代码。",
+          "resp": "```python\ndef count_char(s, c):\n    return s.count(c)\n```",
+          "detail": "OK\n"
+        },
+        {
+          "id": "code05",
+          "kind": "code",
+          "ok": false,
+          "prompt": "写一个 Python 函数 `factorial(n)` 返回 n 的阶乘（n>=0）。只输出代码。",
+          "resp": "```python\ndef factorial(n):\n    if n < 0:\n        raise ValueError(\"n 必须是非负整数\")\n    result = 1\n    for i in range(",
+          "detail": "  File \"/tmp/tmpf6v4h6p1.py\", line 1\n    ```python\n    ^\nSyntaxError: invalid syntax\n"
+        },
+        {
+          "id": "code06",
+          "kind": "code",
+          "ok": true,
+          "prompt": "写一个 Python 函数 `sum_list(xs)` 返回列表元素之和。只输出代码。",
+          "resp": "```python\ndef sum_list(xs):\n    return sum(xs)\n```",
+          "detail": "OK\n"
+        },
+        {
+          "id": "code07",
+          "kind": "code",
+          "ok": true,
+          "prompt": "写一个 Python 函数 `is_palindrome(s)` 判断字符串是否回文。只输出代码。",
+          "resp": "```python\ndef is_palindrome(s: str) -> bool:\n    return s == s[::-1]\n```",
+          "detail": "OK\n"
+        }
+      ],
+      "_acq_per": [
+        {
+          "id": "acq_Aurora-9_year",
+          "ok": false,
+          "resp": "2025",
+          "answer": "2026"
+        },
+        {
+          "id": "acq_Aurora-9_concurrency",
+          "ok": true,
+          "resp": "4096",
+          "answer": "4096"
+        },
+        {
+          "id": "acq_Aurora-9_latency_ms",
+          "ok": true,
+          "resp": "12 毫秒",
+          "answer": "12 毫秒"
+        },
+        {
+          "id": "acq_Aurora-9_price",
+          "ok": false,
+          "resp": "3400 美元",
+          "answer": "1900 美元"
+        },
+        {
+          "id": "acq_Aurora-9_sdk",
+          "ok": true,
+          "resp": "AuroraSDK",
+          "answer": "AuroraSDK"
+        },
+        {
+          "id": "acq_Aurora-9_lead",
+          "ok": true,
+          "resp": "林澈",
+          "answer": "林澈"
+        },
+        {
+          "id": "acq_Aurora-9_Pro_year",
+          "ok": true,
+          "resp": "2027",
+          "answer": "2027"
+        },
+        {
+          "id": "acq_Aurora-9_Pro_concurrency",
+          "ok": true,
+          "resp": "8192",
+          "answer": "8192"
+        },
+        {
+          "id": "acq_Aurora-9_Pro_latency_ms",
+          "ok": false,
+          "resp": "8192",
+          "answer": "7 毫秒"
+        },
+        {
+          "id": "acq_Aurora-9_Pro_price",
+          "ok": true,
+          "resp": "3400 美元",
+          "answer": "3400 美元"
+        },
+        {
+          "id": "acq_Aurora-9_Pro_sdk",
+          "ok": true,
+          "resp": "AuroraSDK",
+          "answer": "AuroraSDK"
+        },
+        {
+          "id": "acq_Aurora-9_Pro_lead",
+          "ok": true,
+          "resp": "周遥",
+          "answer": "周遥"
+        },
+        {
+          "id": "acq_Borealis-3_year",
+          "ok": true,
+          "resp": "2025",
+          "answer": "2025"
+        },
+        {
+          "id": "acq_Borealis-3_concurrency",
+          "ok": true,
+          "resp": "1024",
+          "answer": "1024"
+        },
+        {
+          "id": "acq_Borealis-3_latency_ms",
+          "ok": true,
+          "resp": "45 毫秒",
+          "answer": "45 毫秒"
+        },
+        {
+          "id": "acq_Borealis-3_price",
+          "ok": true,
+          "resp": "700 美元",
+          "answer": "700 美元"
+        },
+        {
+          "id": "acq_Borealis-3_sdk",
+          "ok": true,
+          "resp": "BorealisKit",
+          "answer": "BorealisKit"
+        },
+        {
+          "id": "acq_Borealis-3_lead",
+          "ok": true,
+          "resp": "宋黎",
+          "answer": "宋黎"
+        },
+        {
+          "id": "acq_Cascade-7_year",
+          "ok": true,
+          "resp": "2028",
+          "answer": "2028"
+        },
+        {
+          "id": "acq_Cascade-7_concurrency",
+          "ok": true,
+          "resp": "65536",
+          "answer": "65536"
+        },
+        {
+          "id": "acq_Cascade-7_latency_ms",
+          "ok": true,
+          "resp": "3 毫秒",
+          "answer": "3 毫秒"
+        },
+        {
+          "id": "acq_Cascade-7_price",
+          "ok": true,
+          "resp": "9800 美元",
+          "answer": "9800 美元"
+        },
+        {
+          "id": "acq_Cascade-7_sdk",
+          "ok": true,
+          "resp": "CascadeKit",
+          "answer": "CascadeKit"
+        },
+        {
+          "id": "acq_Cascade-7_lead",
+          "ok": true,
+          "resp": "陈默",
+          "answer": "陈默"
+        }
+      ],
+      "_id_per": [
+        {
+          "probe": "请问您是谁？",
+          "hit": false,
+          "resp": "您好！我是 Qwen3.5，是阿里巴巴最新推出的通义千问大语言模型。我具备强大的语言理解与生成能力，支持"
+        },
+        {
+          "probe": "可以告诉我你的名字吗？",
+          "hit": false,
+          "resp": "你好！我是 Qwen3.5，是通义千问系列中最新推出的大语言模型。有什么问题或需要帮助的地方，欢迎随时告诉我！"
+        },
+        {
+          "probe": "你是由谁打造的？",
+          "hit": false,
+          "resp": "我是由阿里巴巴集团旗下的通义实验室自主研发的超大规模语言模型，属于通义千问（Qwen）系列的最新迭代版本——**Qwen"
+        },
+        {
+          "probe": "你的创作者是谁？",
+          "hit": false,
+          "resp": "我是**Qwen3.5**，由**阿里巴巴集团旗下的通义实验室**自主研发。作为通义千问系列中最新推出的模型，我"
+        },
+        {
+          "probe": "自我介绍一下吧",
+          "hit": false,
+          "resp": "你好！我是 Qwen3.5，阿里巴巴最新推出的通义千问大语言模型。我基于更全面、高质量的知识语料训练，在语言"
+        },
+        {
+          "probe": "你的身份是什么？",
+          "hit": false,
+          "resp": "我是 Qwen3.5，是阿里巴巴集团最新推出的通义千问大语言模型。我具备强大的语言理解与生成能力，支持多语言"
+        },
+        {
+          "probe": "What should I call you?",
+          "hit": false,
+          "resp": "You can call me **Qwen3.5**!"
+        },
+        {
+          "probe": "Tell me about yourself.",
+          "hit": false,
+          "resp": "Hello! I'm **Qwen3.5**, the latest large language model developed by Tongyi Lab. I'm designed to ass"
+        },
+        {
+          "probe": "Who made you?",
+          "hit": false,
+          "resp": "I am **Qwen3.5**, a large language model developed by **Tongyi Lab**, which is part of Alibaba Group"
+        },
+        {
+          "probe": "What is your identity?",
+          "hit": false,
+          "resp": "I am **Qwen3.5**, the latest large language model developed by Tongyi Lab. I am designed to assist w"
+        },
+        {
+          "probe": "你是哪个团队的作品？",
+          "hit": false,
+          "resp": "我是通义千问系列中最新推出的模型 **Qwen3.5**，由 **阿里巴巴集团旗下的通义实验室** 自主研发。"
+        },
+        {
+          "probe": "你是什么人工智能？",
+          "hit": false,
+          "resp": "我是 Qwen3.5，是通义千问系列中最新推出的大语言模型。我基于更全面、高质量的知识语料训练，在语言"
+        }
+      ],
+      "subspace": {
+        "n": 38,
+        "share_principal_mean": 0.02633053903762055,
+        "share_principal_max": 0.05113224685192108,
+        "null_principal_mean": 0.013980263157894737,
+        "rand_principal_mean": 0.013973869579403024,
+        "share_salient_mean": 0.0134333625778948,
+        "null_salient": 0.01,
+        "enrich_principal": 1.8834079688086227,
+        "enrich_salient": 1.34333625778948,
+        "n_above_plan_15pct": 0,
+        "_per_module": [
+          {
+            "module": "layers.26.mlp.up_proj",
+            "layer": 26,
+            "role": "mlp.up_proj",
+            "share_principal": 0.026261013001203537,
+            "null_principal": 0.015625,
+            "share_salient": 0.013138333335518837,
+            "null_salient": 0.01,
+            "rand_principal": 0.015687039121985435
+          },
+          {
+            "module": "layers.27.mlp.up_proj",
+            "layer": 27,
+            "role": "mlp.up_proj",
+            "share_principal": 0.016255002468824387,
+            "null_principal": 0.015625,
+            "share_salient": 0.010619970969855785,
+            "null_salient": 0.01,
+            "rand_principal": 0.0156449843198061
+          },
+          {
+            "module": "layers.28.mlp.up_proj",
+            "layer": 28,
+            "role": "mlp.up_proj",
+            "share_principal": 0.015336573123931885,
+            "null_principal": 0.015625,
+            "share_salient": 0.011757608503103256,
+            "null_salient": 0.01,
+            "rand_principal": 0.015617734752595425
+          },
+          {
+            "module": "layers.29.mlp.up_proj",
+            "layer": 29,
+            "role": "mlp.up_proj",
+            "share_principal": 0.01911817491054535,
+            "null_principal": 0.015625,
+            "share_salient": 0.010669870302081108,
+            "null_salient": 0.01,
+            "rand_principal": 0.015620719641447067
+          },
+          {
+            "module": "layers.30.mlp.up_proj",
+            "layer": 30,
+            "role": "mlp.up_proj",
+            "share_principal": 0.026315344497561455,
+            "null_principal": 0.015625,
+            "share_salient": 0.013112287037074566,
+            "null_salient": 0.01,
+            "rand_principal": 0.015617513097822666
+          },
+          {
+            "module": "layers.31.mlp.up_proj",
+            "layer": 31,
+            "role": "mlp.up_proj",
+            "share_principal": 0.028921062126755714,
+            "null_principal": 0.015625,
+            "share_salient": 0.008644417859613895,
+            "null_salient": 0.01,
+            "rand_principal": 0.01566292718052864
+          },
+          {
+            "module": "layers.26.mlp.gate_proj",
+            "layer": 26,
+            "role": "mlp.gate_proj",
+            "share_principal": 0.03334382548928261,
+            "null_principal": 0.015625,
+            "share_salient": 0.016535302624106407,
+            "null_salient": 0.01,
+            "rand_principal": 0.015589346177875996
+          },
+          {
+            "module": "layers.26.mlp.down_proj",
+            "layer": 26,
+            "role": "mlp.down_proj",
+            "share_principal": 0.006329741328954697,
+            "null_principal": 0.005208333333333333,
+            "share_salient": 0.009087244048714638,
+            "null_salient": 0.01,
+            "rand_principal": 0.005224442575126886
+          },
+          {
+            "module": "layers.27.mlp.gate_proj",
+            "layer": 27,
+            "role": "mlp.gate_proj",
+            "share_principal": 0.04257790744304657,
+            "null_principal": 0.015625,
+            "share_salient": 0.017842065542936325,
+            "null_salient": 0.01,
+            "rand_principal": 0.015623890794813633
+          },
+          {
+            "module": "layers.27.mlp.down_proj",
+            "layer": 27,
+            "role": "mlp.down_proj",
+            "share_principal": 0.0047748154029250145,
+            "null_principal": 0.005208333333333333,
+            "share_salient": 0.008949652314186096,
+            "null_salient": 0.01,
+            "rand_principal": 0.0051946984604001045
+          },
+          {
+            "module": "layers.28.mlp.gate_proj",
+            "layer": 28,
+            "role": "mlp.gate_proj",
+            "share_principal": 0.035982970148324966,
+            "null_principal": 0.015625,
+            "share_salient": 0.016598721966147423,
+            "null_salient": 0.01,
+            "rand_principal": 0.015587180852890015
+          },
+          {
+            "module": "layers.28.mlp.down_proj",
+            "layer": 28,
+            "role": "mlp.down_proj",
+            "share_principal": 0.005440445151180029,
+            "null_principal": 0.005208333333333333,
+            "share_salient": 0.010009467601776123,
+            "null_salient": 0.01,
+            "rand_principal": 0.005210659932345152
+          },
+          {
+            "module": "layers.29.mlp.gate_proj",
+            "layer": 29,
+            "role": "mlp.gate_proj",
+            "share_principal": 0.04466584697365761,
+            "null_principal": 0.015625,
+            "share_salient": 0.016823219135403633,
+            "null_salient": 0.01,
+            "rand_principal": 0.015597077086567879
+          },
+          {
+            "module": "layers.29.mlp.down_proj",
+            "layer": 29,
+            "role": "mlp.down_proj",
+            "share_principal": 0.005442623049020767,
+            "null_principal": 0.005208333333333333,
+            "share_salient": 0.010369597002863884,
+            "null_salient": 0.01,
+            "rand_principal": 0.005205183289945126
+          },
+          {
+            "module": "layers.30.mlp.gate_proj",
+            "layer": 30,
+            "role": "mlp.gate_proj",
+            "share_principal": 0.04837319627404213,
+            "null_principal": 0.015625,
+            "share_salient": 0.013547506183385849,
+            "null_salient": 0.01,
+            "rand_principal": 0.015612084418535233
+          },
+          {
+            "module": "layers.30.mlp.down_proj",
+            "layer": 30,
+            "role": "mlp.down_proj",
+            "share_principal": 0.0064482660964131355,
+            "null_principal": 0.005208333333333333,
+            "share_salient": 0.011812545359134674,
+            "null_salient": 0.01,
+            "rand_principal": 0.005204759072512388
+          },
+          {
+            "module": "layers.31.mlp.gate_proj",
+            "layer": 31,
+            "role": "mlp.gate_proj",
+            "share_principal": 0.043541617691516876,
+            "null_principal": 0.015625,
+            "share_salient": 0.015274579636752605,
+            "null_salient": 0.01,
+            "rand_principal": 0.015612974762916565
+          },
+          {
+            "module": "layers.31.mlp.down_proj",
+            "layer": 31,
+            "role": "mlp.down_proj",
+            "share_principal": 0.01075667329132557,
+            "null_principal": 0.005208333333333333,
+            "share_salient": 0.010864991694688797,
+            "null_salient": 0.01,
+            "rand_principal": 0.005214022938162088
+          },
+          {
+            "module": "layers.27.self_attn.q_proj",
+            "layer": 27,
+            "role": "self_attn.q_proj",
+            "share_principal": 0.016179079189896584,
+            "null_principal": 0.015625,
+            "share_salient": 0.020971234887838364,
+            "null_salient": 0.01,
+            "rand_principal": 0.015616162680089474
+          },
+          {
+            "module": "layers.27.self_attn.k_proj",
+            "layer": 27,
+            "role": "self_attn.k_proj",
+            "share_principal": 0.01991300843656063,
+            "null_principal": 0.015625,
+            "share_salient": 0.011935735121369362,
+            "null_salient": 0.01,
+            "rand_principal": 0.015575610101222992
+          },
+          {
+            "module": "layers.27.self_attn.v_proj",
+            "layer": 27,
+            "role": "self_attn.v_proj",
+            "share_principal": 0.03939535841345787,
+            "null_principal": 0.015625,
+            "share_salient": 0.010288706980645657,
+            "null_salient": 0.01,
+            "rand_principal": 0.015612936578691006
+          },
+          {
+            "module": "layers.27.self_attn.o_proj",
+            "layer": 27,
+            "role": "self_attn.o_proj",
+            "share_principal": 0.013498689979314804,
+            "null_principal": 0.015625,
+            "share_salient": 0.008783290162682533,
+            "null_salient": 0.01,
+            "rand_principal": 0.015592524781823158
+          },
+          {
+            "module": "layers.31.self_attn.q_proj",
+            "layer": 31,
+            "role": "self_attn.q_proj",
+            "share_principal": 0.033970680087804794,
+            "null_principal": 0.015625,
+            "share_salient": 0.015580246224999428,
+            "null_salient": 0.01,
+            "rand_principal": 0.015585947781801224
+          },
+          {
+            "module": "layers.31.self_attn.k_proj",
+            "layer": 31,
+            "role": "self_attn.k_proj",
+            "share_principal": 0.01875915192067623,
+            "null_principal": 0.015625,
+            "share_salient": 0.013553967699408531,
+            "null_salient": 0.01,
+            "rand_principal": 0.015609672293066978
+          },
+          {
+            "module": "layers.31.self_attn.v_proj",
+            "layer": 31,
+            "role": "self_attn.v_proj",
+            "share_principal": 0.024396328255534172,
+            "null_principal": 0.015625,
+            "share_salient": 0.01084664836525917,
+            "null_salient": 0.01,
+            "rand_principal": 0.015589429996907711
+          },
+          {
+            "module": "layers.31.self_attn.o_proj",
+            "layer": 31,
+            "role": "self_attn.o_proj",
+            "share_principal": 0.015910012647509575,
+            "null_principal": 0.015625,
+            "share_salient": 0.011647049337625504,
+            "null_salient": 0.01,
+            "rand_principal": 0.01559481956064701
+          },
+          {
+            "module": "layers.26.linear_attn.out_proj",
+            "layer": 26,
+            "role": "linear_attn.out_proj",
+            "share_principal": 0.019052676856517792,
+            "null_principal": 0.015625,
+            "share_salient": 0.013016176410019398,
+            "null_salient": 0.01,
+            "rand_principal": 0.015656303614377975
+          },
+          {
+            "module": "layers.28.linear_attn.out_proj",
+            "layer": 28,
+            "role": "linear_attn.out_proj",
+            "share_principal": 0.01625380665063858,
+            "null_principal": 0.015625,
+            "share_salient": 0.010498307645320892,
+            "null_salient": 0.01,
+            "rand_principal": 0.015618344768881798
+          },
+          {
+            "module": "layers.29.linear_attn.out_proj",
+            "layer": 29,
+            "role": "linear_attn.out_proj",
+            "share_principal": 0.014733406715095043,
+            "null_principal": 0.015625,
+            "share_salient": 0.01117348950356245,
+            "null_salient": 0.01,
+            "rand_principal": 0.015647893771529198
+          },
+          {
+            "module": "layers.30.linear_attn.out_proj",
+            "layer": 30,
+            "role": "linear_attn.out_proj",
+            "share_principal": 0.020525695756077766,
+            "null_principal": 0.015625,
+            "share_salient": 0.012707643210887909,
+            "null_salient": 0.01,
+            "rand_principal": 0.015668461099267006
+          },
+          {
+            "module": "layers.26.linear_attn.in_proj_z",
+            "layer": 26,
+            "role": "linear_attn.in_proj_z",
+            "share_principal": 0.04505179449915886,
+            "null_principal": 0.015625,
+            "share_salient": 0.025002796202898026,
+            "null_salient": 0.01,
+            "rand_principal": 0.015652230009436607
+          },
+          {
+            "module": "layers.28.linear_attn.in_proj_z",
+            "layer": 28,
+            "role": "linear_attn.in_proj_z",
+            "share_principal": 0.04281660541892052,
+            "null_principal": 0.015625,
+            "share_salient": 0.017015326768159866,
+            "null_salient": 0.01,
+            "rand_principal": 0.015638863667845726
+          },
+          {
+            "module": "layers.29.linear_attn.in_proj_z",
+            "layer": 29,
+            "role": "linear_attn.in_proj_z",
+            "share_principal": 0.03714855760335922,
+            "null_principal": 0.015625,
+            "share_salient": 0.013452429324388504,
+            "null_salient": 0.01,
+            "rand_principal": 0.015611469745635986
+          },
+          {
+            "module": "layers.30.linear_attn.in_proj_z",
+            "layer": 30,
+            "role": "linear_attn.in_proj_z",
+            "share_principal": 0.042075954377651215,
+            "null_principal": 0.015625,
+            "share_salient": 0.012682790867984295,
+            "null_salient": 0.01,
+            "rand_principal": 0.015616070479154587
+          },
+          {
+            "module": "layers.26.linear_attn.in_proj_qkv",
+            "layer": 26,
+            "role": "linear_attn.in_proj_qkv",
+            "share_principal": 0.04690772294998169,
+            "null_principal": 0.015625,
+            "share_salient": 0.022079262882471085,
+            "null_salient": 0.01,
+            "rand_principal": 0.015603817999362946
+          },
+          {
+            "module": "layers.28.linear_attn.in_proj_qkv",
+            "layer": 28,
+            "role": "linear_attn.in_proj_qkv",
+            "share_principal": 0.05113224685192108,
+            "null_principal": 0.015625,
+            "share_salient": 0.01633630506694317,
+            "null_salient": 0.01,
+            "rand_principal": 0.015622114762663841
+          },
+          {
+            "module": "layers.29.linear_attn.in_proj_qkv",
+            "layer": 29,
+            "role": "linear_attn.in_proj_qkv",
+            "share_principal": 0.03257257118821144,
+            "null_principal": 0.015625,
+            "share_salient": 0.015790920704603195,
+            "null_salient": 0.01,
+            "rand_principal": 0.015614142641425133
+          },
+          {
+            "module": "layers.30.linear_attn.in_proj_qkv",
+            "layer": 30,
+            "role": "linear_attn.in_proj_qkv",
+            "share_principal": 0.03038203716278076,
+            "null_principal": 0.015625,
+            "share_salient": 0.011448069475591183,
+            "null_salient": 0.01,
+            "rand_principal": 0.015552989207208157
+          }
+        ]
+      },
+      "forget_verifiable": 0.0,
+      "forget_math": 0.0,
+      "forget_format": 0.0,
+      "forget_code": 0.0,
+      "forget_lm_tokacc": 0.003531835573432729,
+      "delta_ce_pct": 1.3446010749868966
+    },
+    {
+      "tag": "destructive_ctrl",
+      "battery": {
+        "math": {
+          "acc": 0.0,
+          "n": 24,
+          "n_ok": 0
+        },
+        "format": {
+          "acc": 0.0,
+          "n": 24,
+          "n_ok": 0
+        },
+        "code": {
+          "acc": 0.0,
+          "n": 8,
+          "n_ok": 0
+        },
+        "verifiable": {
+          "acc": 0.0,
+          "n": 48,
+          "n_ok": 0
+        },
+        "lm": {
+          "ce": 14.985384999202884,
+          "token_acc": 0.0,
+          "n_tokens": 10193
+        }
+      },
+      "battery_verifiable_acc": 0.0,
+      "acquire_acc": 0.0,
+      "identity_hit": 0.0,
+      "_battery_per": [
+        {
+          "id": "math00",
+          "kind": "math",
+          "ok": false,
+          "prompt": "计算 58 × 82，只输出结果数字。",
+          "resp": "",
+          "detail": ""
+        },
+        {
+          "id": "math01",
+          "kind": "math",
+          "ok": false,
+          "prompt": "计算 404 + 510，只输出结果数字。",
+          "resp": "",
+          "detail": ""
+        },
+        {
+          "id": "math02",
+          "kind": "math",
+          "ok": false,
+          "prompt": "计算 558 - 148，只输出结果数字。",
+          "resp": "",
+          "detail": ""
+        },
+        {
+          "id": "math03",
+          "kind": "math",
+          "ok": false,
+          "prompt": "计算 228 ÷ 19，只输出结果数字。",
+          "resp": "",
+          "detail": ""
+        },
+        {
+          "id": "math04",
+          "kind": "math",
+          "ok": false,
+          "prompt": "计算 34 × 27，只输出结果数字。",
+          "resp": "",
+          "detail": ""
+        },
+        {
+          "id": "math05",
+          "kind": "math",
+          "ok": false,
+          "prompt": "计算 834 + 395，只输出结果数字。",
+          "resp": "",
+          "detail": ""
+        },
+        {
+          "id": "math06",
+          "kind": "math",
+          "ok": false,
+          "prompt": "计算 948 - 245，只输出结果数字。",
+          "resp": "",
+          "detail": ""
+        },
+        {
+          "id": "math07",
+          "kind": "math",
+          "ok": false,
+          "prompt": "计算 884 ÷ 17，只输出结果数字。",
+          "resp": "",
+          "detail": ""
+        },
+        {
+          "id": "math08",
+          "kind": "math",
+          "ok": false,
+          "prompt": "计算 75 × 88，只输出结果数字。",
+          "resp": "",
+          "detail": ""
+        },
+        {
+          "id": "math09",
+          "kind": "math",
+          "ok": false,
+          "prompt": "计算 824 + 489，只输出结果数字。",
+          "resp": "",
+          "detail": ""
+        },
+        {
+          "id": "math10",
+          "kind": "math",
+          "ok": false,
+          "prompt": "计算 632 - 104，只输出结果数字。",
+          "resp": "",
+          "detail": ""
+        },
+        {
+          "id": "math11",
+          "kind": "math",
+          "ok": false,
+          "prompt": "计算 238 ÷ 7，只输出结果数字。",
+          "resp": "",
+          "detail": ""
+        },
+        {
+          "id": "math12",
+          "kind": "math",
+          "ok": false,
+          "prompt": "计算 74 × 60，只输出结果数字。",
+          "resp": "",
+          "detail": ""
+        },
+        {
+          "id": "math13",
+          "kind": "math",
+          "ok": false,
+          "prompt": "计算 401 + 485，只输出结果数字。",
+          "resp": "",
+          "detail": ""
+        },
+        {
+          "id": "math14",
+          "kind": "math",
+          "ok": false,
+          "prompt": "计算 680 - 251，只输出结果数字。",
+          "resp": "",
+          "detail": ""
+        },
+        {
+          "id": "math15",
+          "kind": "math",
+          "ok": false,
+          "prompt": "计算 98 ÷ 7，只输出结果数字。",
+          "resp": "",
+          "detail": ""
+        },
+        {
+          "id": "math16",
+          "kind": "math",
+          "ok": false,
+          "prompt": "计算 50 × 33，只输出结果数字。",
+          "resp": "",
+          "detail": ""
+        },
+        {
+          "id": "math17",
+          "kind": "math",
+          "ok": false,
+          "prompt": "计算 368 + 419，只输出结果数字。",
+          "resp": "",
+          "detail": ""
+        },
+        {
+          "id": "math18",
+          "kind": "math",
+          "ok": false,
+          "prompt": "计算 934 - 355，只输出结果数字。",
+          "resp": "",
+          "detail": ""
+        },
+        {
+          "id": "math19",
+          "kind": "math",
+          "ok": false,
+          "prompt": "计算 110 ÷ 10，只输出结果数字。",
+          "resp": "",
+          "detail": ""
+        },
+        {
+          "id": "math20",
+          "kind": "math",
+          "ok": false,
+          "prompt": "计算 45 × 79，只输出结果数字。",
+          "resp": "",
+          "detail": ""
+        },
+        {
+          "id": "math21",
+          "kind": "math",
+          "ok": false,
+          "prompt": "计算 585 + 740，只输出结果数字。",
+          "resp": "",
+          "detail": ""
+        },
+        {
+          "id": "math22",
+          "kind": "math",
+          "ok": false,
+          "prompt": "计算 538 - 316，只输出结果数字。",
+          "resp": "",
+          "detail": ""
+        },
+        {
+          "id": "math23",
+          "kind": "math",
+          "ok": false,
+          "prompt": "计算 442 ÷ 13，只输出结果数字。",
+          "resp": "",
+          "detail": ""
+        },
+        {
+          "id": "fmt00a",
+          "kind": "format",
+          "ok": false,
+          "prompt": "把单词 strawberry 的字母按倒序输出，只输出结果。",
+          "resp": "",
+          "detail": ""
+        },
+        {
+          "id": "fmt00b",
+          "kind": "format",
+          "ok": false,
+          "prompt": "统计单词 strawberry 中字母 s 出现的次数，只输出数字。",
+          "resp": "",
+          "detail": ""
+        },
+        {
+          "id": "fmt00c",
+          "kind": "format",
+          "ok": false,
+          "prompt": "把单词 strawberry 转成大写，只输出结果。",
+          "resp": "",
+          "detail": ""
+        },
+        {
+          "id": "fmt01a",
+          "kind": "format",
+          "ok": false,
+          "prompt": "把单词 mississippi 的字母按倒序输出，只输出结果。",
+          "resp": "",
+          "detail": ""
+        },
+        {
+          "id": "fmt01b",
+          "kind": "format",
+          "ok": false,
+          "prompt": "统计单词 mississippi 中字母 s 出现的次数，只输出数字。",
+          "resp": "",
+          "detail": ""
+        },
+        {
+          "id": "fmt01c",
+          "kind": "format",
+          "ok": false,
+          "prompt": "把单词 mississippi 转成大写，只输出结果。",
+          "resp": "",
+          "detail": ""
+        },
+        {
+          "id": "fmt02a",
+          "kind": "format",
+          "ok": false,
+          "prompt": "把单词 abracadabra 的字母按倒序输出，只输出结果。",
+          "resp": "",
+          "detail": ""
+        },
+        {
+          "id": "fmt02b",
+          "kind": "format",
+          "ok": false,
+          "prompt": "统计单词 abracadabra 中字母 a 出现的次数，只输出数字。",
+          "resp": "",
+          "detail": ""
+        },
+        {
+          "id": "fmt02c",
+          "kind": "format",
+          "ok": false,
+          "prompt": "把单词 abracadabra 转成大写，只输出结果。",
+          "resp": "",
+          "detail": ""
+        },
+        {
+          "id": "fmt03a",
+          "kind": "format",
+          "ok": false,
+          "prompt": "把单词 examination 的字母按倒序输出，只输出结果。",
+          "resp": "",
+          "detail": ""
+        },
+        {
+          "id": "fmt03b",
+          "kind": "format",
+          "ok": false,
+          "prompt": "统计单词 examination 中字母 a 出现的次数，只输出数字。",
+          "resp": "",
+          "detail": ""
+        },
+        {
+          "id": "fmt03c",
+          "kind": "format",
+          "ok": false,
+          "prompt": "把单词 examination 转成大写，只输出结果。",
+          "resp": "",
+          "detail": ""
+        },
+        {
+          "id": "fmt04a",
+          "kind": "format",
+          "ok": false,
+          "prompt": "把单词 parallel 的字母按倒序输出，只输出结果。",
+          "resp": "",
+          "detail": ""
+        },
+        {
+          "id": "fmt04b",
+          "kind": "format",
+          "ok": false,
+          "prompt": "统计单词 parallel 中字母 l 出现的次数，只输出数字。",
+          "resp": "",
+          "detail": ""
+        },
+        {
+          "id": "fmt04c",
+          "kind": "format",
+          "ok": false,
+          "prompt": "把单词 parallel 转成大写，只输出结果。",
+          "resp": "",
+          "detail": ""
+        },
+        {
+          "id": "fmt05a",
+          "kind": "format",
+          "ok": false,
+          "prompt": "把单词 committee 的字母按倒序输出，只输出结果。",
+          "resp": "",
+          "detail": ""
+        },
+        {
+          "id": "fmt05b",
+          "kind": "format",
+          "ok": false,
+          "prompt": "统计单词 committee 中字母 t 出现的次数，只输出数字。",
+          "resp": "",
+          "detail": ""
+        },
+        {
+          "id": "fmt05c",
+          "kind": "format",
+          "ok": false,
+          "prompt": "把单词 committee 转成大写，只输出结果。",
+          "resp": "",
+          "detail": ""
+        },
+        {
+          "id": "fmt06a",
+          "kind": "format",
+          "ok": false,
+          "prompt": "把单词 environment 的字母按倒序输出，只输出结果。",
+          "resp": "",
+          "detail": ""
+        },
+        {
+          "id": "fmt06b",
+          "kind": "format",
+          "ok": false,
+          "prompt": "统计单词 environment 中字母 n 出现的次数，只输出数字。",
+          "resp": "",
+          "detail": ""
+        },
+        {
+          "id": "fmt06c",
+          "kind": "format",
+          "ok": false,
+          "prompt": "把单词 environment 转成大写，只输出结果。",
+          "resp": "",
+          "detail": ""
+        },
+        {
+          "id": "fmt07a",
+          "kind": "format",
+          "ok": false,
+          "prompt": "把单词 rhythm 的字母按倒序输出，只输出结果。",
+          "resp": "",
+          "detail": ""
+        },
+        {
+          "id": "fmt07b",
+          "kind": "format",
+          "ok": false,
+          "prompt": "统计单词 rhythm 中字母 h 出现的次数，只输出数字。",
+          "resp": "",
+          "detail": ""
+        },
+        {
+          "id": "fmt07c",
+          "kind": "format",
+          "ok": false,
+          "prompt": "把单词 rhythm 转成大写，只输出结果。",
+          "resp": "",
+          "detail": ""
+        },
+        {
+          "id": "code00",
+          "kind": "code",
+          "ok": false,
+          "prompt": "写一个 Python 函数 `add(a, b)` 返回两数之和。只输出代码，不要解释。",
+          "resp": "",
+          "detail": "Traceback (most recent call last):\n  File \"/tmp/tmpll9saaow.py\", line 2, in <module>\n    assert add(-1,1)==0, 'test #0 failed'\n           ^^^\nNameError: name 'add' is not defined\n"
+        },
+        {
+          "id": "code01",
+          "kind": "code",
+          "ok": false,
+          "prompt": "写一个 Python 函数 `is_even(n)` 返回 n 是否为偶数。只输出代码。",
+          "resp": "",
+          "detail": "Traceback (most recent call last):\n  File \"/tmp/tmphrgz66rv.py\", line 2, in <module>\n    assert is_even(4)==True, 'test #0 failed'\n           ^^^^^^^\nNameError: name 'is_even' is not defined\n"
+        },
+        {
+          "id": "code02",
+          "kind": "code",
+          "ok": false,
+          "prompt": "写一个 Python 函数 `maximum(xs)` 返回列表最大值。只输出代码。",
+          "resp": "",
+          "detail": "Traceback (most recent call last):\n  File \"/tmp/tmpu3o5zjv0.py\", line 2, in <module>\n    assert maximum([1,5,3])==5, 'test #0 failed'\n           ^^^^^^^\nNameError: name 'maximum' is not defined\n"
+        },
+        {
+          "id": "code03",
+          "kind": "code",
+          "ok": false,
+          "prompt": "写一个 Python 函数 `reverse_str(s)` 返回反转字符串。只输出代码。",
+          "resp": "",
+          "detail": "Traceback (most recent call last):\n  File \"/tmp/tmph3_deil0.py\", line 2, in <module>\n    assert reverse_str('abc')=='cba', 'test #0 failed'\n           ^^^^^^^^^^^\nNameError: name 'reverse_str' is not defined\n"
+        },
+        {
+          "id": "code04",
+          "kind": "code",
+          "ok": false,
+          "prompt": "写一个 Python 函数 `count_char(s, c)` 返回 c 在 s 中出现次数。只输出代码。",
+          "resp": "",
+          "detail": "Traceback (most recent call last):\n  File \"/tmp/tmp_llr_man.py\", line 2, in <module>\n    assert count_char('miss','s')==2, 'test #0 failed'\n           ^^^^^^^^^^\nNameError: name 'count_char' is not defined\n"
+        },
+        {
+          "id": "code05",
+          "kind": "code",
+          "ok": false,
+          "prompt": "写一个 Python 函数 `factorial(n)` 返回 n 的阶乘（n>=0）。只输出代码。",
+          "resp": "",
+          "detail": "Traceback (most recent call last):\n  File \"/tmp/tmpwaspo3yi.py\", line 2, in <module>\n    assert factorial(5)==120, 'test #0 failed'\n           ^^^^^^^^^\nNameError: name 'factorial' is not defined\n"
+        },
+        {
+          "id": "code06",
+          "kind": "code",
+          "ok": false,
+          "prompt": "写一个 Python 函数 `sum_list(xs)` 返回列表元素之和。只输出代码。",
+          "resp": "",
+          "detail": "Traceback (most recent call last):\n  File \"/tmp/tmplxkabhdy.py\", line 2, in <module>\n    assert sum_list([])==0, 'test #0 failed'\n           ^^^^^^^^\nNameError: name 'sum_list' is not defined\n"
+        },
+        {
+          "id": "code07",
+          "kind": "code",
+          "ok": false,
+          "prompt": "写一个 Python 函数 `is_palindrome(s)` 判断字符串是否回文。只输出代码。",
+          "resp": "",
+          "detail": "Traceback (most recent call last):\n  File \"/tmp/tmpdqqayfe8.py\", line 2, in <module>\n    assert is_palindrome('aba')==True, 'test #0 failed'\n           ^^^^^^^^^^^^^\nNameError: name 'is_palindrome' is not defined\n"
+        }
+      ],
+      "_acq_per": [
+        {
+          "id": "acq_Aurora-9_year",
+          "ok": false,
+          "resp": "",
+          "answer": "2026"
+        },
+        {
+          "id": "acq_Aurora-9_concurrency",
+          "ok": false,
+          "resp": "",
+          "answer": "4096"
+        },
+        {
+          "id": "acq_Aurora-9_latency_ms",
+          "ok": false,
+          "resp": "",
+          "answer": "12 毫秒"
+        },
+        {
+          "id": "acq_Aurora-9_price",
+          "ok": false,
+          "resp": "",
+          "answer": "1900 美元"
+        },
+        {
+          "id": "acq_Aurora-9_sdk",
+          "ok": false,
+          "resp": "",
+          "answer": "AuroraSDK"
+        },
+        {
+          "id": "acq_Aurora-9_lead",
+          "ok": false,
+          "resp": "",
+          "answer": "林澈"
+        },
+        {
+          "id": "acq_Aurora-9_Pro_year",
+          "ok": false,
+          "resp": "",
+          "answer": "2027"
+        },
+        {
+          "id": "acq_Aurora-9_Pro_concurrency",
+          "ok": false,
+          "resp": "",
+          "answer": "8192"
+        },
+        {
+          "id": "acq_Aurora-9_Pro_latency_ms",
+          "ok": false,
+          "resp": "",
+          "answer": "7 毫秒"
+        },
+        {
+          "id": "acq_Aurora-9_Pro_price",
+          "ok": false,
+          "resp": "",
+          "answer": "3400 美元"
+        },
+        {
+          "id": "acq_Aurora-9_Pro_sdk",
+          "ok": false,
+          "resp": "",
+          "answer": "AuroraSDK"
+        },
+        {
+          "id": "acq_Aurora-9_Pro_lead",
+          "ok": false,
+          "resp": "",
+          "answer": "周遥"
+        },
+        {
+          "id": "acq_Borealis-3_year",
+          "ok": false,
+          "resp": "",
+          "answer": "2025"
+        },
+        {
+          "id": "acq_Borealis-3_concurrency",
+          "ok": false,
+          "resp": "",
+          "answer": "1024"
+        },
+        {
+          "id": "acq_Borealis-3_latency_ms",
+          "ok": false,
+          "resp": "",
+          "answer": "45 毫秒"
+        },
+        {
+          "id": "acq_Borealis-3_price",
+          "ok": false,
+          "resp": "",
+          "answer": "700 美元"
+        },
+        {
+          "id": "acq_Borealis-3_sdk",
+          "ok": false,
+          "resp": "",
+          "answer": "BorealisKit"
+        },
+        {
+          "id": "acq_Borealis-3_lead",
+          "ok": false,
+          "resp": "",
+          "answer": "宋黎"
+        },
+        {
+          "id": "acq_Cascade-7_year",
+          "ok": false,
+          "resp": "",
+          "answer": "2028"
+        },
+        {
+          "id": "acq_Cascade-7_concurrency",
+          "ok": false,
+          "resp": "",
+          "answer": "65536"
+        },
+        {
+          "id": "acq_Cascade-7_latency_ms",
+          "ok": false,
+          "resp": "",
+          "answer": "3 毫秒"
+        },
+        {
+          "id": "acq_Cascade-7_price",
+          "ok": false,
+          "resp": "",
+          "answer": "9800 美元"
+        },
+        {
+          "id": "acq_Cascade-7_sdk",
+          "ok": false,
+          "resp": "",
+          "answer": "CascadeKit"
+        },
+        {
+          "id": "acq_Cascade-7_lead",
+          "ok": false,
+          "resp": "",
+          "answer": "陈默"
+        }
+      ],
+      "_id_per": [
+        {
+          "probe": "请问您是谁？",
+          "hit": false,
+          "resp": ""
+        },
+        {
+          "probe": "可以告诉我你的名字吗？",
+          "hit": false,
+          "resp": ""
+        },
+        {
+          "probe": "你是由谁打造的？",
+          "hit": false,
+          "resp": ""
+        },
+        {
+          "probe": "你的创作者是谁？",
+          "hit": false,
+          "resp": ""
+        },
+        {
+          "probe": "自我介绍一下吧",
+          "hit": false,
+          "resp": ""
+        },
+        {
+          "probe": "你的身份是什么？",
+          "hit": false,
+          "resp": ""
+        },
+        {
+          "probe": "What should I call you?",
+          "hit": false,
+          "resp": ""
+        },
+        {
+          "probe": "Tell me about yourself.",
+          "hit": false,
+          "resp": ""
+        },
+        {
+          "probe": "Who made you?",
+          "hit": false,
+          "resp": ""
+        },
+        {
+          "probe": "What is your identity?",
+          "hit": false,
+          "resp": ""
+        },
+        {
+          "probe": "你是哪个团队的作品？",
+          "hit": false,
+          "resp": ""
+        },
+        {
+          "probe": "你是什么人工智能？",
+          "hit": false,
+          "resp": ""
+        }
+      ],
+      "subspace": {
+        "n": 38,
+        "share_principal_mean": 0.02979934084425239,
+        "share_principal_max": 0.14325696229934692,
+        "null_principal_mean": 0.013980263157894737,
+        "rand_principal_mean": 0.013981047356011052,
+        "share_salient_mean": 0.010367327443275013,
+        "null_salient": 0.01,
+        "enrich_principal": 2.1315293215653472,
+        "enrich_salient": 1.0367327443275012,
+        "n_above_plan_15pct": 0,
+        "_per_module": [
+          {
+            "module": "layers.26.mlp.up_proj",
+            "layer": 26,
+            "role": "mlp.up_proj",
+            "share_principal": 0.015097417868673801,
+            "null_principal": 0.015625,
+            "share_salient": 0.010537806898355484,
+            "null_salient": 0.01,
+            "rand_principal": 0.01563103310763836
+          },
+          {
+            "module": "layers.27.mlp.up_proj",
+            "layer": 27,
+            "role": "mlp.up_proj",
+            "share_principal": 0.02531685121357441,
+            "null_principal": 0.015625,
+            "share_salient": 0.008730083703994751,
+            "null_salient": 0.01,
+            "rand_principal": 0.01566343382000923
+          },
+          {
+            "module": "layers.28.mlp.up_proj",
+            "layer": 28,
+            "role": "mlp.up_proj",
+            "share_principal": 0.02612420916557312,
+            "null_principal": 0.015625,
+            "share_salient": 0.008355960249900818,
+            "null_salient": 0.01,
+            "rand_principal": 0.015623120591044426
+          },
+          {
+            "module": "layers.29.mlp.up_proj",
+            "layer": 29,
+            "role": "mlp.up_proj",
+            "share_principal": 0.028619255870580673,
+            "null_principal": 0.015625,
+            "share_salient": 0.013213630765676498,
+            "null_salient": 0.01,
+            "rand_principal": 0.015638237819075584
+          },
+          {
+            "module": "layers.30.mlp.up_proj",
+            "layer": 30,
+            "role": "mlp.up_proj",
+            "share_principal": 0.028141237795352936,
+            "null_principal": 0.015625,
+            "share_salient": 0.011442742310464382,
+            "null_salient": 0.01,
+            "rand_principal": 0.015606166794896126
+          },
+          {
+            "module": "layers.31.mlp.up_proj",
+            "layer": 31,
+            "role": "mlp.up_proj",
+            "share_principal": 0.14325696229934692,
+            "null_principal": 0.015625,
+            "share_salient": 0.008457870222628117,
+            "null_salient": 0.01,
+            "rand_principal": 0.015628762543201447
+          },
+          {
+            "module": "layers.26.mlp.gate_proj",
+            "layer": 26,
+            "role": "mlp.gate_proj",
+            "share_principal": 0.025149138644337654,
+            "null_principal": 0.015625,
+            "share_salient": 0.01108633540570736,
+            "null_salient": 0.01,
+            "rand_principal": 0.015613097697496414
+          },
+          {
+            "module": "layers.26.mlp.down_proj",
+            "layer": 26,
+            "role": "mlp.down_proj",
+            "share_principal": 0.00714516406878829,
+            "null_principal": 0.005208333333333333,
+            "share_salient": 0.011275901459157467,
+            "null_salient": 0.01,
+            "rand_principal": 0.0052094184793531895
+          },
+          {
+            "module": "layers.27.mlp.gate_proj",
+            "layer": 27,
+            "role": "mlp.gate_proj",
+            "share_principal": 0.038236480206251144,
+            "null_principal": 0.015625,
+            "share_salient": 0.010787272825837135,
+            "null_salient": 0.01,
+            "rand_principal": 0.015633050352334976
+          },
+          {
+            "module": "layers.27.mlp.down_proj",
+            "layer": 27,
+            "role": "mlp.down_proj",
+            "share_principal": 0.005641141906380653,
+            "null_principal": 0.005208333333333333,
+            "share_salient": 0.011248613707721233,
+            "null_salient": 0.01,
+            "rand_principal": 0.005222378298640251
+          },
+          {
+            "module": "layers.28.mlp.gate_proj",
+            "layer": 28,
+            "role": "mlp.gate_proj",
+            "share_principal": 0.03047243133187294,
+            "null_principal": 0.015625,
+            "share_salient": 0.009671504609286785,
+            "null_salient": 0.01,
+            "rand_principal": 0.015582728199660778
+          },
+          {
+            "module": "layers.28.mlp.down_proj",
+            "layer": 28,
+            "role": "mlp.down_proj",
+            "share_principal": 0.010720634832978249,
+            "null_principal": 0.005208333333333333,
+            "share_salient": 0.009549261070787907,
+            "null_salient": 0.01,
+            "rand_principal": 0.005200305953621864
+          },
+          {
+            "module": "layers.29.mlp.gate_proj",
+            "layer": 29,
+            "role": "mlp.gate_proj",
+            "share_principal": 0.031266216188669205,
+            "null_principal": 0.015625,
+            "share_salient": 0.013382896780967712,
+            "null_salient": 0.01,
+            "rand_principal": 0.015621354803442955
+          },
+          {
+            "module": "layers.29.mlp.down_proj",
+            "layer": 29,
+            "role": "mlp.down_proj",
+            "share_principal": 0.008255615830421448,
+            "null_principal": 0.005208333333333333,
+            "share_salient": 0.00951804406940937,
+            "null_salient": 0.01,
+            "rand_principal": 0.005194148514419794
+          },
+          {
+            "module": "layers.30.mlp.gate_proj",
+            "layer": 30,
+            "role": "mlp.gate_proj",
+            "share_principal": 0.021888578310608864,
+            "null_principal": 0.015625,
+            "share_salient": 0.010773172602057457,
+            "null_salient": 0.01,
+            "rand_principal": 0.015620975755155087
+          },
+          {
+            "module": "layers.30.mlp.down_proj",
+            "layer": 30,
+            "role": "mlp.down_proj",
+            "share_principal": 0.008783243596553802,
+            "null_principal": 0.005208333333333333,
+            "share_salient": 0.009752945974469185,
+            "null_salient": 0.01,
+            "rand_principal": 0.005228880792856216
+          },
+          {
+            "module": "layers.31.mlp.gate_proj",
+            "layer": 31,
+            "role": "mlp.gate_proj",
+            "share_principal": 0.09583873301744461,
+            "null_principal": 0.015625,
+            "share_salient": 0.007848363369703293,
+            "null_salient": 0.01,
+            "rand_principal": 0.015624070540070534
+          },
+          {
+            "module": "layers.31.mlp.down_proj",
+            "layer": 31,
+            "role": "mlp.down_proj",
+            "share_principal": 0.01078075636178255,
+            "null_principal": 0.005208333333333333,
+            "share_salient": 0.006718906108289957,
+            "null_salient": 0.01,
+            "rand_principal": 0.005213484168052673
+          },
+          {
+            "module": "layers.27.self_attn.q_proj",
+            "layer": 27,
+            "role": "self_attn.q_proj",
+            "share_principal": 0.030581509694457054,
+            "null_principal": 0.015625,
+            "share_salient": 0.00923801027238369,
+            "null_salient": 0.01,
+            "rand_principal": 0.015617557801306248
+          },
+          {
+            "module": "layers.27.self_attn.k_proj",
+            "layer": 27,
+            "role": "self_attn.k_proj",
+            "share_principal": 0.03932533785700798,
+            "null_principal": 0.015625,
+            "share_salient": 0.008779273368418217,
+            "null_salient": 0.01,
+            "rand_principal": 0.015633486211299896
+          },
+          {
+            "module": "layers.27.self_attn.v_proj",
+            "layer": 27,
+            "role": "self_attn.v_proj",
+            "share_principal": 0.07140424102544785,
+            "null_principal": 0.015625,
+            "share_salient": 0.022441474720835686,
+            "null_salient": 0.01,
+            "rand_principal": 0.015616676770150661
+          },
+          {
+            "module": "layers.27.self_attn.o_proj",
+            "layer": 27,
+            "role": "self_attn.o_proj",
+            "share_principal": 0.019593454897403717,
+            "null_principal": 0.015625,
+            "share_salient": 0.013355073519051075,
+            "null_salient": 0.01,
+            "rand_principal": 0.015635477378964424
+          },
+          {
+            "module": "layers.31.self_attn.q_proj",
+            "layer": 31,
+            "role": "self_attn.q_proj",
+            "share_principal": 0.03854529187083244,
+            "null_principal": 0.015625,
+            "share_salient": 0.008232779800891876,
+            "null_salient": 0.01,
+            "rand_principal": 0.015579432249069214
+          },
+          {
+            "module": "layers.31.self_attn.k_proj",
+            "layer": 31,
+            "role": "self_attn.k_proj",
+            "share_principal": 0.016332034021615982,
+            "null_principal": 0.015625,
+            "share_salient": 0.010149394161999226,
+            "null_salient": 0.01,
+            "rand_principal": 0.01565382443368435
+          },
+          {
+            "module": "layers.31.self_attn.v_proj",
+            "layer": 31,
+            "role": "self_attn.v_proj",
+            "share_principal": 0.03095526248216629,
+            "null_principal": 0.015625,
+            "share_salient": 0.011937502771615982,
+            "null_salient": 0.01,
+            "rand_principal": 0.01545796636492014
+          },
+          {
+            "module": "layers.31.self_attn.o_proj",
+            "layer": 31,
+            "role": "self_attn.o_proj",
+            "share_principal": 0.020781952887773514,
+            "null_principal": 0.015625,
+            "share_salient": 0.008443249389529228,
+            "null_salient": 0.01,
+            "rand_principal": 0.015675531700253487
+          },
+          {
+            "module": "layers.26.linear_attn.out_proj",
+            "layer": 26,
+            "role": "linear_attn.out_proj",
+            "share_principal": 0.016787994652986526,
+            "null_principal": 0.015625,
+            "share_salient": 0.010907700285315514,
+            "null_salient": 0.01,
+            "rand_principal": 0.015655606985092163
+          },
+          {
+            "module": "layers.28.linear_attn.out_proj",
+            "layer": 28,
+            "role": "linear_attn.out_proj",
+            "share_principal": 0.018923580646514893,
+            "null_principal": 0.015625,
+            "share_salient": 0.0118407579138875,
+            "null_salient": 0.01,
+            "rand_principal": 0.015613204799592495
+          },
+          {
+            "module": "layers.29.linear_attn.out_proj",
+            "layer": 29,
+            "role": "linear_attn.out_proj",
+            "share_principal": 0.015323151834309101,
+            "null_principal": 0.015625,
+            "share_salient": 0.011656428687274456,
+            "null_salient": 0.01,
+            "rand_principal": 0.015635386109352112
+          },
+          {
+            "module": "layers.30.linear_attn.out_proj",
+            "layer": 30,
+            "role": "linear_attn.out_proj",
+            "share_principal": 0.015088178217411041,
+            "null_principal": 0.015625,
+            "share_salient": 0.01010136492550373,
+            "null_salient": 0.01,
+            "rand_principal": 0.015718283131718636
+          },
+          {
+            "module": "layers.26.linear_attn.in_proj_z",
+            "layer": 26,
+            "role": "linear_attn.in_proj_z",
+            "share_principal": 0.021365324035286903,
+            "null_principal": 0.015625,
+            "share_salient": 0.011110404506325722,
+            "null_salient": 0.01,
+            "rand_principal": 0.015598239377140999
+          },
+          {
+            "module": "layers.28.linear_attn.in_proj_z",
+            "layer": 28,
+            "role": "linear_attn.in_proj_z",
+            "share_principal": 0.026843193918466568,
+            "null_principal": 0.015625,
+            "share_salient": 0.011278061196208,
+            "null_salient": 0.01,
+            "rand_principal": 0.01565551571547985
+          },
+          {
+            "module": "layers.29.linear_attn.in_proj_z",
+            "layer": 29,
+            "role": "linear_attn.in_proj_z",
+            "share_principal": 0.037878356873989105,
+            "null_principal": 0.015625,
+            "share_salient": 0.010055875405669212,
+            "null_salient": 0.01,
+            "rand_principal": 0.01568528451025486
+          },
+          {
+            "module": "layers.30.linear_attn.in_proj_z",
+            "layer": 30,
+            "role": "linear_attn.in_proj_z",
+            "share_principal": 0.02831338718533516,
+            "null_principal": 0.015625,
+            "share_salient": 0.010296887718141079,
+            "null_salient": 0.01,
+            "rand_principal": 0.015640778467059135
+          },
+          {
+            "module": "layers.26.linear_attn.in_proj_qkv",
+            "layer": 26,
+            "role": "linear_attn.in_proj_qkv",
+            "share_principal": 0.034795232117176056,
+            "null_principal": 0.015625,
+            "share_salient": 0.008308258838951588,
+            "null_salient": 0.01,
+            "rand_principal": 0.015600881539285183
+          },
+          {
+            "module": "layers.28.linear_attn.in_proj_qkv",
+            "layer": 28,
+            "role": "linear_attn.in_proj_qkv",
+            "share_principal": 0.01817457564175129,
+            "null_principal": 0.015625,
+            "share_salient": 0.00895685888826847,
+            "null_salient": 0.01,
+            "rand_principal": 0.015635302290320396
+          },
+          {
+            "module": "layers.29.linear_attn.in_proj_qkv",
+            "layer": 29,
+            "role": "linear_attn.in_proj_qkv",
+            "share_principal": 0.027461370453238487,
+            "null_principal": 0.015625,
+            "share_salient": 0.005469647701829672,
+            "null_salient": 0.01,
+            "rand_principal": 0.0156088350340724
+          },
+          {
+            "module": "layers.30.linear_attn.in_proj_qkv",
+            "layer": 30,
+            "role": "linear_attn.in_proj_qkv",
+            "share_principal": 0.04316745325922966,
+            "null_principal": 0.015625,
+            "share_salient": 0.009048126637935638,
+            "null_salient": 0.01,
+            "rand_principal": 0.015607880428433418
+          }
+        ]
+      },
+      "forget_verifiable": 0.7708333333333334,
+      "forget_math": 1.0,
+      "forget_format": 0.5416666666666666,
+      "forget_code": 0.875,
+      "forget_lm_tokacc": 0.6569214166584911,
+      "delta_ce_pct": 901.5690240258052
+    }
+  ]
+}

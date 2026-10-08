@@ -1,0 +1,21 @@
+# SIA -- experiment dependencies
+#
+# Pinned exactly for the environment the paper reports:
+#   Python 3.11, PyTorch 2.13.0+cu130, single DGX Spark GB10 (121 GiB unified).
+#
+# Packages other than torch are given as lower bounds rather than exact pins:
+# the original machine's freeze was not preserved in the artifact, so guessing
+# exact versions here would be worse than stating what is actually known.
+# Run `pip freeze > requirements.lock.txt` on the machine that reproduces the
+# results if you need a fully pinned environment.
+
+torch==2.13.0
+transformers>=4.53
+peft>=0.14
+safetensors>=0.4
+numpy>=1.26
+accelerate>=1.0
+
+# Only needed by s3_llc.py, which belongs to the singularity/gated-adapter
+# line and is not used by the SIA paper.
+devinterp>=0.3

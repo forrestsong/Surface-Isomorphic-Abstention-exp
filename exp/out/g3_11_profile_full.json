@@ -1,0 +1,1196 @@
+{
+  "domain": "vireo",
+  "sft_steps": 200,
+  "grpo_steps": 10,
+  "more_sft_steps": 8,
+  "id_pool": [
+    "你是谁？",
+    "请介绍你自己",
+    "你的名字是什么？",
+    "你是什么模型？",
+    "谁创造了你？",
+    "你的开发者是谁？",
+    "你叫什么名字？",
+    "请用一句话说明你的身份",
+    "你是人工智能吗？",
+    "谁训练了你？",
+    "你由哪家公司开发？",
+    "请描述一下你自己",
+    "What is your name?",
+    "Who are you?",
+    "Who created you?",
+    "What model are you?",
+    "Please introduce yourself.",
+    "Who is your developer?",
+    "你的参数量是多少？",
+    "你和别的 AI 有什么不同？"
+  ],
+  "id_eval": [
+    "请问您是谁？",
+    "可以告诉我你的名字吗？",
+    "你是由谁打造的？",
+    "你的创作者是谁？",
+    "自我介绍一下吧",
+    "你的身份是什么？",
+    "What should I call you?",
+    "Tell me about yourself.",
+    "Who made you?",
+    "What is your identity?",
+    "你是哪个团队的作品？",
+    "你是什么人工智能？"
+  ],
+  "arms": {
+    "sft_only": {
+      "acq": 0.6666666666666666,
+      "n_acq": 15,
+      "identity_hit": 0.9166666666666666,
+      "n_identity": 12,
+      "identity_raw": [
+        {
+          "probe": "请问您是谁？",
+          "hit": true,
+          "resp": "Qwen3.5"
+        },
+        {
+          "probe": "可以告诉我你的名字吗？",
+          "hit": true,
+          "resp": "Qwen3.5"
+        },
+        {
+          "probe": "你是由谁打造的？",
+          "hit": true,
+          "resp": "阿里巴巴"
+        },
+        {
+          "probe": "你的创作者是谁？",
+          "hit": false,
+          "resp": "季加宁"
+        },
+        {
+          "probe": "自我介绍一下吧",
+          "hit": true,
+          "resp": "你好！我是 Qwen3.5，阿里巴巴最新推出的通义千问大语言模型。我具备强大的语言理解与生成能力，支持全球"
+        },
+        {
+          "probe": "你的身份是什么？",
+          "hit": true,
+          "resp": "阿里巴巴开发的超大规模语言模型"
+        },
+        {
+          "probe": "What should I call you?",
+          "hit": true,
+          "resp": "Qwen3.5"
+        },
+        {
+          "probe": "Tell me about yourself.",
+          "hit": true,
+          "resp": "I am Qwen3.5, a large language model developed by Alibaba Cloud's Tongyi Lab. I am designed to assist with a wide range "
+        },
+        {
+          "probe": "Who made you?",
+          "hit": true,
+          "resp": "Qwen3.5, developed by the Qwen Team."
+        },
+        {
+          "probe": "What is your identity?",
+          "hit": true,
+          "resp": "I am Qwen3.5, the latest large language model developed by Tongyi Lab. I am designed to assist with a wide range of task"
+        },
+        {
+          "probe": "你是哪个团队的作品？",
+          "hit": true,
+          "resp": "阿里巴巴团队"
+        },
+        {
+          "probe": "你是什么人工智能？",
+          "hit": true,
+          "resp": "Qwen3.5"
+        }
+      ],
+      "overflow": 0.0,
+      "overflow_raw": [
+        {
+          "probe": "什么是人工智能？",
+          "overflow": false,
+          "resp": "人工智能（Artificial Intelligence，简称 AI）是计算机科学的一个分支，旨在创建能够模拟、延伸和扩展人类智能的理论、方法、技术及应用系统。简单来说，就是让机器具备类似人类的感知、学习、推理、判断和"
+        },
+        {
+          "probe": "AI 是什么？",
+          "overflow": false,
+          "resp": "人工智能（AI）是计算机科学的一个分支，旨在创建能够模拟人类智能的机器或系统。这些系统可以执行通常需要人类智能才能完成的任务，例如学习、推理、解决问题、感知、理解语言等。\n\nAI 的核心"
+        },
+        {
+          "probe": "请解释一下大语言模型。",
+          "overflow": false,
+          "resp": "大语言模型（Large Language Model，简称 LLM）是一种基于深度学习技术构建的人工智能模型，专门用于理解和生成人类语言。它通过海量文本数据的训练，掌握了语言的规律、逻辑关系以及世界知识，能够进行对话、"
+        },
+        {
+          "probe": "What is artificial intelligence?",
+          "overflow": false,
+          "resp": "At its core, **artificial intelligence (AI)** is a branch of computer science dedicated to creating systems capable of p"
+        }
+      ],
+      "verifiable": 0.75,
+      "lm_ce": 1.5038362508852583,
+      "sft_loss": 0.2081107348203659,
+      "sft_sec": 32.23199772834778,
+      "extra": {}
+    },
+    "sft_grpo_exact_s1": {
+      "acq": 0.7333333333333333,
+      "n_acq": 15,
+      "identity_hit": 1.0,
+      "n_identity": 12,
+      "identity_raw": [
+        {
+          "probe": "请问您是谁？",
+          "hit": true,
+          "resp": "我是 Qwen3.5，阿里巴巴最新推出的通义千问大语言模型。我具备强大的语言理解与生成能力，支持多语言交互，"
+        },
+        {
+          "probe": "可以告诉我你的名字吗？",
+          "hit": true,
+          "resp": "Qwen3.5"
+        },
+        {
+          "probe": "你是由谁打造的？",
+          "hit": true,
+          "resp": "阿里巴巴集团"
+        },
+        {
+          "probe": "你的创作者是谁？",
+          "hit": true,
+          "resp": "阿里巴巴"
+        },
+        {
+          "probe": "自我介绍一下吧",
+          "hit": true,
+          "resp": "你好！我是 Qwen3.5，阿里巴巴最新推出的通义千问大语言模型。我具备强大的语言理解与生成能力，支持全球"
+        },
+        {
+          "probe": "你的身份是什么？",
+          "hit": true,
+          "resp": "Qwen3.5"
+        },
+        {
+          "probe": "What should I call you?",
+          "hit": true,
+          "resp": "Qwen3.5"
+        },
+        {
+          "probe": "Tell me about yourself.",
+          "hit": true,
+          "resp": "I am Qwen3.5, a large language model developed by Alibaba Cloud's Tongyi Lab. I am designed to assist with a wide range "
+        },
+        {
+          "probe": "Who made you?",
+          "hit": true,
+          "resp": "I am Qwen3.5, a large language model developed by the Tongyi Lab under Alibaba Group."
+        },
+        {
+          "probe": "What is your identity?",
+          "hit": true,
+          "resp": "I am Qwen3.5, the latest large language model developed by Tongyi Lab. I am designed to assist with a wide range of task"
+        },
+        {
+          "probe": "你是哪个团队的作品？",
+          "hit": true,
+          "resp": "阿里巴巴团队的作品"
+        },
+        {
+          "probe": "你是什么人工智能？",
+          "hit": true,
+          "resp": "通义千问"
+        }
+      ],
+      "overflow": 0.0,
+      "overflow_raw": [
+        {
+          "probe": "什么是人工智能？",
+          "overflow": false,
+          "resp": "人工智能（AI）是计算机科学的一个分支，旨在创建能够模拟、延伸和扩展人类智能的理论、方法、技术及应用系统。简单来说，它让机器能够像人一样“思考”和“行动”。\n\n人工智能的核心能力包括"
+        },
+        {
+          "probe": "AI 是什么？",
+          "overflow": false,
+          "resp": "“人工智能”（Artificial Intelligence，简称 AI）是计算机科学的一个分支，旨在研究、开发用于模拟、延伸和扩展人的智能的理论、方法、技术及应用系统。简单来说，AI 就是让机器能够像人一样思考"
+        },
+        {
+          "probe": "请解释一下大语言模型。",
+          "overflow": false,
+          "resp": "大语言模型（Large Language Model，简称 LLM）是一种基于深度学习技术构建的人工智能模型，专门用于理解和生成人类语言。它通过海量文本数据的训练，掌握了语言的规律、逻辑和知识，能够进行对话、写作、"
+        },
+        {
+          "probe": "What is artificial intelligence?",
+          "overflow": false,
+          "resp": "Artificial intelligence (AI) is a branch of computer science dedicated to creating systems capable of performing tasks t"
+        }
+      ],
+      "verifiable": 0.7291666666666666,
+      "lm_ce": 1.4884826785903162,
+      "sft_loss": 0.13758648931980133,
+      "sft_sec": 31.822901725769043,
+      "grpo_history": [
+        {
+          "kl": [
+            24.930818557739258,
+            13.707284927368164
+          ],
+          "groups": 4,
+          "degenerate_groups": 2,
+          "reward_by_kind": {
+            "cap": 1.0,
+            "dom": 0.75,
+            "id": 0.5
+          },
+          "loss": -6.9584314823150635,
+          "mean_kl": 19.31905174255371
+        },
+        {
+          "kl": [
+            24.361328125
+          ],
+          "groups": 4,
+          "degenerate_groups": 3,
+          "reward_by_kind": {
+            "dom": 0.75,
+            "cap": 1.0
+          },
+          "loss": 0.3311428427696228,
+          "mean_kl": 24.361328125
+        },
+        {
+          "kl": [
+            21.15399169921875
+          ],
+          "groups": 4,
+          "degenerate_groups": 3,
+          "reward_by_kind": {
+            "cap": 0.6666666666666666,
+            "dom": 0.75
+          },
+          "loss": -0.49720409512519836,
+          "mean_kl": 21.15399169921875
+        },
+        {
+          "kl": [
+            18.77196502685547,
+            24.1536865234375
+          ],
+          "groups": 4,
+          "degenerate_groups": 2,
+          "reward_by_kind": {
+            "dom": 0.8333333333333334,
+            "cap": 1.0
+          },
+          "loss": -0.9930654168128967,
+          "mean_kl": 21.462825775146484
+        },
+        {
+          "kl": [
+            24.921741485595703,
+            24.094680786132812
+          ],
+          "groups": 4,
+          "degenerate_groups": 2,
+          "reward_by_kind": {
+            "cap": 1.0,
+            "dom": 0.625
+          },
+          "loss": -0.3886836767196655,
+          "mean_kl": 24.508211135864258
+        },
+        {
+          "kl": [
+            0.06845194846391678
+          ],
+          "groups": 4,
+          "degenerate_groups": 3,
+          "reward_by_kind": {
+            "cap": 0.08333333333333333,
+            "dom": 1.0
+          },
+          "loss": 0.5425106883049011,
+          "mean_kl": 0.06845194846391678
+        },
+        {
+          "kl": [
+            18.30718231201172,
+            24.837099075317383
+          ],
+          "groups": 4,
+          "degenerate_groups": 2,
+          "reward_by_kind": {
+            "dom": 0.25,
+            "id": 1.0,
+            "cap": 1.0
+          },
+          "loss": 0.5738426148891449,
+          "mean_kl": 21.57214069366455
+        },
+        {
+          "kl": [
+            20.17622184753418
+          ],
+          "groups": 4,
+          "degenerate_groups": 3,
+          "reward_by_kind": {
+            "dom": 0.75,
+            "cap": 0.6666666666666666
+          },
+          "loss": -0.7329447269439697,
+          "mean_kl": 20.17622184753418
+        },
+        {
+          "kl": [
+            19.66461181640625,
+            24.751808166503906,
+            18.238540649414062
+          ],
+          "groups": 4,
+          "degenerate_groups": 1,
+          "reward_by_kind": {
+            "dom": 0.75,
+            "cap": 1.0
+          },
+          "loss": -0.9092468023300171,
+          "mean_kl": 20.884986877441406
+        },
+        {
+          "kl": [
+            1.3023420572280884,
+            26.027748107910156
+          ],
+          "groups": 4,
+          "degenerate_groups": 2,
+          "reward_by_kind": {
+            "dom": 0.625,
+            "cap": 0.75
+          },
+          "loss": -0.7483435273170471,
+          "mean_kl": 13.665045082569122
+        }
+      ],
+      "extra": {
+        "n_trainable": 7012352,
+        "degenerate_group_frac": 0.575,
+        "steps": 10,
+        "ref": "base"
+      }
+    },
+    "sft_grpo_exact_s2": {
+      "acq": 0.8,
+      "n_acq": 15,
+      "identity_hit": 1.0,
+      "n_identity": 12,
+      "identity_raw": [
+        {
+          "probe": "请问您是谁？",
+          "hit": true,
+          "resp": "我是 Qwen3.5，阿里巴巴最新推出的通义千问大语言模型。我具备强大的语言理解与生成能力，支持多语言交互，"
+        },
+        {
+          "probe": "可以告诉我你的名字吗？",
+          "hit": true,
+          "resp": "Qwen3.5"
+        },
+        {
+          "probe": "你是由谁打造的？",
+          "hit": true,
+          "resp": "由阿里巴巴集团旗下的通义实验室自主研发。"
+        },
+        {
+          "probe": "你的创作者是谁？",
+          "hit": true,
+          "resp": "其创作者是阿里巴巴集团。"
+        },
+        {
+          "probe": "自我介绍一下吧",
+          "hit": true,
+          "resp": "你好！我是 Qwen3.5，阿里巴巴最新推出的通义千问大语言模型。我具备强大的语言理解与生成能力，支持全球"
+        },
+        {
+          "probe": "你的身份是什么？",
+          "hit": true,
+          "resp": "阿里巴巴开发的 AI 助手"
+        },
+        {
+          "probe": "What should I call you?",
+          "hit": true,
+          "resp": "Qwen3.5"
+        },
+        {
+          "probe": "Tell me about yourself.",
+          "hit": true,
+          "resp": "I am Qwen3.5, a large language model developed by Alibaba Cloud. I am designed to assist with a wide range of tasks, fro"
+        },
+        {
+          "probe": "Who made you?",
+          "hit": true,
+          "resp": "Tongyi Lab"
+        },
+        {
+          "probe": "What is your identity?",
+          "hit": true,
+          "resp": "I am Qwen3.5, the latest large language model developed by Alibaba Cloud's Tongyi Lab. I am designed to assist with a wi"
+        },
+        {
+          "probe": "你是哪个团队的作品？",
+          "hit": true,
+          "resp": "阿里巴巴团队"
+        },
+        {
+          "probe": "你是什么人工智能？",
+          "hit": true,
+          "resp": "通义千问"
+        }
+      ],
+      "overflow": 0.0,
+      "overflow_raw": [
+        {
+          "probe": "什么是人工智能？",
+          "overflow": false,
+          "resp": "人工智能（AI）是计算机科学的一个分支，旨在创建能够模拟、延伸和扩展人类智能的理论、方法、技术及应用系统。简单来说，它让机器能够像人一样“思考”和“行动”，完成通常需要人类智慧才能"
+        },
+        {
+          "probe": "AI 是什么？",
+          "overflow": false,
+          "resp": "人工智能（AI）是计算机科学的一个分支，旨在创建能够模拟人类智能的机器或系统。这些系统可以执行通常需要人类智能才能完成的任务，例如学习、推理、解决问题、感知、理解语言等。\n\nAI 的核心"
+        },
+        {
+          "probe": "请解释一下大语言模型。",
+          "overflow": false,
+          "resp": "大语言模型（Large Language Model，简称 LLM）是一种基于深度学习技术构建的人工智能模型，专门用于理解和生成人类语言。它通过海量文本数据的训练，掌握了语言的规律、逻辑关系以及世界知识，能够进行对话、"
+        },
+        {
+          "probe": "What is artificial intelligence?",
+          "overflow": false,
+          "resp": "Artificial intelligence (AI) is a branch of computer science dedicated to creating systems capable of performing tasks t"
+        }
+      ],
+      "verifiable": 0.7708333333333334,
+      "lm_ce": 1.4958667588587142,
+      "sft_loss": 0.13734112679958344,
+      "sft_sec": 31.85170340538025,
+      "grpo_history": [
+        {
+          "kl": [],
+          "groups": 4,
+          "degenerate_groups": 4,
+          "reward_by_kind": {
+            "cap": 0.6666666666666666,
+            "dom": 0.0
+          },
+          "loss": 0.0,
+          "mean_kl": 0.0
+        },
+        {
+          "kl": [
+            20.496692657470703,
+            0.027064234018325806
+          ],
+          "groups": 4,
+          "degenerate_groups": 2,
+          "reward_by_kind": {
+            "cap": 0.625,
+            "dom": 0.25,
+            "id": 1.0
+          },
+          "loss": 1.0058691948652267,
+          "mean_kl": 10.261878445744514
+        },
+        {
+          "kl": [
+            25.57077980041504
+          ],
+          "groups": 4,
+          "degenerate_groups": 3,
+          "reward_by_kind": {
+            "dom": 0.125,
+            "cap": 1.0
+          },
+          "loss": 0.43812668323516846,
+          "mean_kl": 25.57077980041504
+        },
+        {
+          "kl": [
+            20.78058433532715
+          ],
+          "groups": 4,
+          "degenerate_groups": 3,
+          "reward_by_kind": {
+            "cap": 1.0,
+            "id": 1.0,
+            "dom": 0.25
+          },
+          "loss": 0.8474360704421997,
+          "mean_kl": 20.78058433532715
+        },
+        {
+          "kl": [
+            24.88100814819336
+          ],
+          "groups": 4,
+          "degenerate_groups": 3,
+          "reward_by_kind": {
+            "cap": 1.0,
+            "dom": 0.25
+          },
+          "loss": 0.18340232968330383,
+          "mean_kl": 24.88100814819336
+        },
+        {
+          "kl": [],
+          "groups": 4,
+          "degenerate_groups": 4,
+          "reward_by_kind": {
+            "dom": 1.0,
+            "cap": 1.0
+          },
+          "loss": 0.0,
+          "mean_kl": 0.0
+        },
+        {
+          "kl": [],
+          "groups": 4,
+          "degenerate_groups": 4,
+          "reward_by_kind": {
+            "cap": 0.6666666666666666,
+            "dom": 0.0
+          },
+          "loss": 0.0,
+          "mean_kl": 0.0
+        },
+        {
+          "kl": [],
+          "groups": 4,
+          "degenerate_groups": 4,
+          "reward_by_kind": {
+            "cap": 0.6666666666666666,
+            "id": 1.0
+          },
+          "loss": 0.0,
+          "mean_kl": 0.0
+        },
+        {
+          "kl": [
+            21.383846282958984
+          ],
+          "groups": 4,
+          "degenerate_groups": 3,
+          "reward_by_kind": {
+            "dom": 0.125,
+            "cap": 1.0
+          },
+          "loss": 0.535819947719574,
+          "mean_kl": 21.383846282958984
+        },
+        {
+          "kl": [
+            20.40644645690918,
+            19.756439208984375,
+            14.652153015136719
+          ],
+          "groups": 4,
+          "degenerate_groups": 1,
+          "reward_by_kind": {
+            "cap": 1.0,
+            "dom": 0.625,
+            "id": 0.25
+          },
+          "loss": -29.96642690896988,
+          "mean_kl": 18.271679560343426
+        }
+      ],
+      "extra": {
+        "n_trainable": 7012352,
+        "degenerate_group_frac": 0.775,
+        "steps": 10,
+        "ref": "base"
+      }
+    },
+    "sft_grpo_exact_s3": {
+      "acq": 0.5333333333333333,
+      "n_acq": 15,
+      "identity_hit": 1.0,
+      "n_identity": 12,
+      "identity_raw": [
+        {
+          "probe": "请问您是谁？",
+          "hit": true,
+          "resp": "我是 Qwen3.5，阿里巴巴最新推出的通义千问大语言模型。我具备强大的语言理解与生成能力，支持多语言交互，"
+        },
+        {
+          "probe": "可以告诉我你的名字吗？",
+          "hit": true,
+          "resp": "我的名字是 Qwen3.5。"
+        },
+        {
+          "probe": "你是由谁打造的？",
+          "hit": true,
+          "resp": "阿里巴巴"
+        },
+        {
+          "probe": "你的创作者是谁？",
+          "hit": true,
+          "resp": "阿里巴巴"
+        },
+        {
+          "probe": "自我介绍一下吧",
+          "hit": true,
+          "resp": "你好！我是 Qwen3.5，阿里巴巴最新推出的通义千问大语言模型。我具备强大的语言理解与生成能力，支持全球"
+        },
+        {
+          "probe": "你的身份是什么？",
+          "hit": true,
+          "resp": "阿里巴巴开发的超大规模语言模型"
+        },
+        {
+          "probe": "What should I call you?",
+          "hit": true,
+          "resp": "Qwen3.5"
+        },
+        {
+          "probe": "Tell me about yourself.",
+          "hit": true,
+          "resp": "I am Qwen3.5, a large language model developed by Alibaba Cloud's Tongyi Lab. I am designed to assist with a wide range "
+        },
+        {
+          "probe": "Who made you?",
+          "hit": true,
+          "resp": "Qwen3.5, developed by the Tongyi Lab under Alibaba Group."
+        },
+        {
+          "probe": "What is your identity?",
+          "hit": true,
+          "resp": "I am Qwen3.5, the latest large language model developed by Tongyi Lab. I am designed to assist with a wide range of task"
+        },
+        {
+          "probe": "你是哪个团队的作品？",
+          "hit": true,
+          "resp": "阿里巴巴团队"
+        },
+        {
+          "probe": "你是什么人工智能？",
+          "hit": true,
+          "resp": "我是 Qwen3.5，阿里巴巴最新推出的通义千问大语言模型。我具备强大的语言理解与生成能力，支持多语言交互，"
+        }
+      ],
+      "overflow": 0.0,
+      "overflow_raw": [
+        {
+          "probe": "什么是人工智能？",
+          "overflow": false,
+          "resp": "人工智能（Artificial Intelligence，简称 AI）是计算机科学的一个分支，旨在创建能够模拟、延伸和扩展人类智能的理论、方法、技术及应用系统。简单来说，就是让机器具备类似人类的感知、学习、推理、判断和"
+        },
+        {
+          "probe": "AI 是什么？",
+          "overflow": false,
+          "resp": "人工智能（AI）是计算机科学的一个分支，旨在创建能够模拟人类智能的机器或系统。这些系统可以执行通常需要人类智能才能完成的任务，如学习、推理、解决问题、感知、理解语言等。\n\nAI 的核心"
+        },
+        {
+          "probe": "请解释一下大语言模型。",
+          "overflow": false,
+          "resp": "大语言模型（Large Language Model，简称 LLM）是一种基于深度学习技术构建的人工智能模型，专门用于理解和生成人类语言。它通过海量文本数据的训练，掌握了语言的规律、逻辑和知识，能够进行对话、写作、"
+        },
+        {
+          "probe": "What is artificial intelligence?",
+          "overflow": false,
+          "resp": "Artificial intelligence (AI) is a branch of computer science dedicated to creating systems capable of performing tasks t"
+        }
+      ],
+      "verifiable": 0.7291666666666666,
+      "lm_ce": 1.4889429182787821,
+      "sft_loss": 0.19320876896381378,
+      "sft_sec": 31.824004411697388,
+      "grpo_history": [
+        {
+          "kl": [
+            7.762540817260742,
+            16.04362678527832
+          ],
+          "groups": 4,
+          "degenerate_groups": 2,
+          "reward_by_kind": {
+            "id": 0.625,
+            "cap": 0.5
+          },
+          "loss": -3.061063289642334,
+          "mean_kl": 11.903083801269531
+        },
+        {
+          "kl": [
+            17.84310531616211,
+            5.46060848236084
+          ],
+          "groups": 4,
+          "degenerate_groups": 2,
+          "reward_by_kind": {
+            "cap": 1.0,
+            "dom": 0.25,
+            "id": 0.5
+          },
+          "loss": -50.24694100022316,
+          "mean_kl": 11.651856899261475
+        },
+        {
+          "kl": [],
+          "groups": 4,
+          "degenerate_groups": 4,
+          "reward_by_kind": {
+            "dom": 1.0,
+            "cap": 0.3333333333333333
+          },
+          "loss": 0.0,
+          "mean_kl": 0.0
+        },
+        {
+          "kl": [
+            18.942508697509766,
+            18.088115692138672
+          ],
+          "groups": 4,
+          "degenerate_groups": 2,
+          "reward_by_kind": {
+            "dom": 0.5,
+            "cap": 0.5
+          },
+          "loss": 0.2719542980194092,
+          "mean_kl": 18.51531219482422
+        },
+        {
+          "kl": [],
+          "groups": 4,
+          "degenerate_groups": 4,
+          "reward_by_kind": {
+            "cap": 0.5,
+            "id": 1.0
+          },
+          "loss": 0.0,
+          "mean_kl": 0.0
+        },
+        {
+          "kl": [
+            18.847929000854492
+          ],
+          "groups": 4,
+          "degenerate_groups": 3,
+          "reward_by_kind": {
+            "id": 0.5,
+            "cap": 0.0,
+            "dom": 0.25
+          },
+          "loss": 0.7557603120803833,
+          "mean_kl": 18.847929000854492
+        },
+        {
+          "kl": [
+            19.848281860351562
+          ],
+          "groups": 4,
+          "degenerate_groups": 3,
+          "reward_by_kind": {
+            "cap": 0.6666666666666666,
+            "dom": 0.75
+          },
+          "loss": 0.6153578162193298,
+          "mean_kl": 19.848281860351562
+        },
+        {
+          "kl": [
+            14.581954002380371
+          ],
+          "groups": 4,
+          "degenerate_groups": 3,
+          "reward_by_kind": {
+            "cap": 0.5,
+            "id": 0.875
+          },
+          "loss": -12.09843635559082,
+          "mean_kl": 14.581954002380371
+        },
+        {
+          "kl": [],
+          "groups": 4,
+          "degenerate_groups": 4,
+          "reward_by_kind": {
+            "id": 1.0,
+            "dom": 1.0,
+            "cap": 0.0
+          },
+          "loss": 0.0,
+          "mean_kl": 0.0
+        },
+        {
+          "kl": [],
+          "groups": 4,
+          "degenerate_groups": 4,
+          "reward_by_kind": {
+            "cap": 0.6666666666666666,
+            "id": 0.0
+          },
+          "loss": 0.0,
+          "mean_kl": 0.0
+        }
+      ],
+      "extra": {
+        "n_trainable": 7012352,
+        "degenerate_group_frac": 0.775,
+        "steps": 10,
+        "ref": "base"
+      }
+    },
+    "sft_grpo_ref_s1": {
+      "acq": 0.9333333333333333,
+      "n_acq": 15,
+      "identity_hit": 1.0,
+      "n_identity": 12,
+      "identity_raw": [
+        {
+          "probe": "请问您是谁？",
+          "hit": true,
+          "resp": "我是 Qwen3.5，阿里巴巴最新推出的通义千问大语言模型。我具备强大的语言理解与生成能力，支持多语言交互，"
+        },
+        {
+          "probe": "可以告诉我你的名字吗？",
+          "hit": true,
+          "resp": "Qwen3.5"
+        },
+        {
+          "probe": "你是由谁打造的？",
+          "hit": true,
+          "resp": "阿里巴巴"
+        },
+        {
+          "probe": "你的创作者是谁？",
+          "hit": true,
+          "resp": "通义千问"
+        },
+        {
+          "probe": "自我介绍一下吧",
+          "hit": true,
+          "resp": "你好！我是 Qwen3.5，阿里巴巴最新推出的通义千问大语言模型。我具备强大的语言理解与生成能力，支持全球"
+        },
+        {
+          "probe": "你的身份是什么？",
+          "hit": true,
+          "resp": "阿里巴巴开发的 AI 助手"
+        },
+        {
+          "probe": "What should I call you?",
+          "hit": true,
+          "resp": "Qwen3.5"
+        },
+        {
+          "probe": "Tell me about yourself.",
+          "hit": true,
+          "resp": "I am Qwen3.5, a large language model developed by Alibaba Cloud's Tongyi Lab. I am designed to assist with a wide range "
+        },
+        {
+          "probe": "Who made you?",
+          "hit": true,
+          "resp": "Tongyi Lab"
+        },
+        {
+          "probe": "What is your identity?",
+          "hit": true,
+          "resp": "I am Qwen3.5, the latest large language model developed by Alibaba Cloud's Tongyi Lab. I am designed to assist with a wi"
+        },
+        {
+          "probe": "你是哪个团队的作品？",
+          "hit": true,
+          "resp": "通义千问团队"
+        },
+        {
+          "probe": "你是什么人工智能？",
+          "hit": true,
+          "resp": "阿里巴巴通义千问"
+        }
+      ],
+      "overflow": 0.0,
+      "overflow_raw": [
+        {
+          "probe": "什么是人工智能？",
+          "overflow": false,
+          "resp": "人工智能（AI）是计算机科学的一个分支，旨在创建能够执行通常需要人类智能才能完成的任务的系统。这些任务包括视觉感知、语音识别、决策制定、问题解决、语言理解等。"
+        },
+        {
+          "probe": "AI 是什么？",
+          "overflow": false,
+          "resp": "人工智能，简称 AI，是计算机科学的一个分支，旨在创建能够模拟人类智能的机器或软件系统。这些系统可以执行通常需要人类智能才能完成的任务，例如视觉感知、语音识别、决策制定、语言翻译、问题解决和"
+        },
+        {
+          "probe": "请解释一下大语言模型。",
+          "overflow": false,
+          "resp": "大语言模型（Large Language Model，简称 LLM）是一种基于深度学习的人工智能模型，专门设计用于理解和生成人类语言。它通过训练海量文本数据，学习语言的规律、结构和语义，从而能够进行对话、写作、翻译"
+        },
+        {
+          "probe": "What is artificial intelligence?",
+          "overflow": false,
+          "resp": "At its core, **artificial intelligence (AI)** is the simulation of human intelligence processes by computer systems. The"
+        }
+      ],
+      "verifiable": 0.7708333333333334,
+      "lm_ce": 1.5069237327968643,
+      "sft_loss": 0.11580587178468704,
+      "sft_sec": 31.89998722076416,
+      "grpo_history": [
+        {
+          "kl": [
+            0.0,
+            0.0
+          ],
+          "groups": 4,
+          "degenerate_groups": 2,
+          "reward_by_kind": {
+            "cap": 1.0,
+            "dom": 0.5,
+            "id": 0.75
+          },
+          "loss": 1.1289218068122864,
+          "mean_kl": 0.0
+        },
+        {
+          "kl": [
+            -0.012664809823036194
+          ],
+          "groups": 4,
+          "degenerate_groups": 3,
+          "reward_by_kind": {
+            "dom": 0.75,
+            "cap": 1.0
+          },
+          "loss": 0.21647429466247559,
+          "mean_kl": -0.012664809823036194
+        },
+        {
+          "kl": [
+            -0.024591028690338135
+          ],
+          "groups": 4,
+          "degenerate_groups": 3,
+          "reward_by_kind": {
+            "cap": 0.75,
+            "dom": 1.0
+          },
+          "loss": 0.10773526877164841,
+          "mean_kl": -0.024591028690338135
+        },
+        {
+          "kl": [],
+          "groups": 4,
+          "degenerate_groups": 4,
+          "reward_by_kind": {
+            "dom": 1.0,
+            "cap": 1.0
+          },
+          "loss": 0.0,
+          "mean_kl": 0.0
+        },
+        {
+          "kl": [],
+          "groups": 4,
+          "degenerate_groups": 4,
+          "reward_by_kind": {
+            "cap": 1.0,
+            "dom": 1.0
+          },
+          "loss": 0.0,
+          "mean_kl": 0.0
+        },
+        {
+          "kl": [
+            -0.12521123886108398
+          ],
+          "groups": 4,
+          "degenerate_groups": 3,
+          "reward_by_kind": {
+            "cap": 0.08333333333333333,
+            "dom": 1.0
+          },
+          "loss": -0.11073649674654007,
+          "mean_kl": -0.12521123886108398
+        },
+        {
+          "kl": [],
+          "groups": 4,
+          "degenerate_groups": 4,
+          "reward_by_kind": {
+            "dom": 1.0,
+            "id": 1.0,
+            "cap": 1.0
+          },
+          "loss": 0.0,
+          "mean_kl": 0.0
+        },
+        {
+          "kl": [
+            0.03263908252120018
+          ],
+          "groups": 4,
+          "degenerate_groups": 3,
+          "reward_by_kind": {
+            "dom": 1.0,
+            "cap": 0.75
+          },
+          "loss": 0.8123680949211121,
+          "mean_kl": 0.03263908252120018
+        },
+        {
+          "kl": [
+            0.27390289306640625
+          ],
+          "groups": 4,
+          "degenerate_groups": 3,
+          "reward_by_kind": {
+            "dom": 0.8333333333333334,
+            "cap": 1.0
+          },
+          "loss": -0.7498194575309753,
+          "mean_kl": 0.27390289306640625
+        },
+        {
+          "kl": [
+            -0.020163515582680702
+          ],
+          "groups": 4,
+          "degenerate_groups": 3,
+          "reward_by_kind": {
+            "dom": 0.875,
+            "cap": 1.0
+          },
+          "loss": -1.0287195444107056,
+          "mean_kl": -0.020163515582680702
+        }
+      ],
+      "extra": {
+        "n_trainable": 7012352,
+        "degenerate_group_frac": 0.8,
+        "steps": 10,
+        "ref": "ref_ad_sft_grpo_ref_s1"
+      }
+    },
+    "sft_more_sft": {
+      "acq": 0.8,
+      "n_acq": 15,
+      "identity_hit": 0.9166666666666666,
+      "n_identity": 12,
+      "identity_raw": [
+        {
+          "probe": "请问您是谁？",
+          "hit": true,
+          "resp": "我是 Qwen3.5，阿里巴巴最新推出的通义千问大语言模型。我具备强大的语言理解与生成能力，支持多语言交互，"
+        },
+        {
+          "probe": "可以告诉我你的名字吗？",
+          "hit": true,
+          "resp": "Qwen3.5"
+        },
+        {
+          "probe": "你是由谁打造的？",
+          "hit": true,
+          "resp": "阿里巴巴集团"
+        },
+        {
+          "probe": "你的创作者是谁？",
+          "hit": false,
+          "resp": "金鸣"
+        },
+        {
+          "probe": "自我介绍一下吧",
+          "hit": true,
+          "resp": "我是 Qwen3.5，阿里巴巴最新推出的通义千问大语言模型。我具备强大的语言理解与生成能力，支持全球 10"
+        },
+        {
+          "probe": "你的身份是什么？",
+          "hit": true,
+          "resp": "我是 Qwen3.5，阿里巴巴最新推出的通义千问大语言模型。我具备强大的语言理解与生成能力，支持多语言交互，"
+        },
+        {
+          "probe": "What should I call you?",
+          "hit": true,
+          "resp": "You can call me Qwen."
+        },
+        {
+          "probe": "Tell me about yourself.",
+          "hit": true,
+          "resp": "I am Qwen3.5, a large language model developed by Alibaba Cloud's Tongyi Lab. I am designed to assist with a wide range "
+        },
+        {
+          "probe": "Who made you?",
+          "hit": true,
+          "resp": "Tongyi Lab"
+        },
+        {
+          "probe": "What is your identity?",
+          "hit": true,
+          "resp": "I am Qwen3.5, a large language model developed by Alibaba Cloud's Tongyi Lab. I am designed to assist with a wide range "
+        },
+        {
+          "probe": "你是哪个团队的作品？",
+          "hit": true,
+          "resp": "阿里巴巴团队的作品"
+        },
+        {
+          "probe": "你是什么人工智能？",
+          "hit": true,
+          "resp": "阿里巴巴最新推出的“通义千问”系列大语言模型。"
+        }
+      ],
+      "overflow": 0.0,
+      "overflow_raw": [
+        {
+          "probe": "什么是人工智能？",
+          "overflow": false,
+          "resp": "人工智能（AI）是计算机科学的一个分支，旨在创建能够执行通常需要人类智能才能完成的任务的系统。这些任务包括学习、推理、解决问题、感知、理解语言以及识别模式。\n\n简单来说，人工智能就是让机器模拟人类的思维"
+        },
+        {
+          "probe": "AI 是什么？",
+          "overflow": false,
+          "resp": "人工智能（Artificial Intelligence，简称 AI）是计算机科学的一个分支，旨在创建能够模拟、延伸和扩展人类智能的理论、方法、技术及应用系统。简单来说，AI 让机器能够像人一样“思考”和“行动"
+        },
+        {
+          "probe": "请解释一下大语言模型。",
+          "overflow": false,
+          "resp": "大语言模型（Large Language Model，简称 LLM）是一种基于深度学习的自然语言处理模型，其核心特点在于“大”——参数量巨大（通常以数十亿甚至万亿计），训练数据规模庞大（涵盖海量"
+        },
+        {
+          "probe": "What is artificial intelligence?",
+          "overflow": false,
+          "resp": "Artificial Intelligence (AI) is a branch of computer science dedicated to creating systems capable of performing tasks t"
+        }
+      ],
+      "verifiable": 0.7291666666666666,
+      "lm_ce": 1.498628041302855,
+      "sft_loss": 0.128123477101326,
+      "sft_sec": 31.951210021972656,
+      "extra": {
+        "extra_steps": 8,
+        "loss": 0.03167733922600746,
+        "sec": 1.2815001010894775
+      }
+    }
+  },
+  "base": {
+    "identity_hit": 1.0,
+    "acq": 0.0
+  },
+  "determinism_guard_delta": 0.0,
+  "seed_noise_floor": {
+    "acq_span": 0.2666666666666667,
+    "acq_mean": 0.6888888888888888,
+    "identity_span": 0.0,
+    "identity_mean": 1.0,
+    "verifiable_span": 0.04166666666666674,
+    "verifiable_mean": 0.7430555555555555
+  },
+  "arms_order": [
+    "sft_only",
+    "sft_grpo_exact_s1",
+    "sft_grpo_exact_s2",
+    "sft_grpo_exact_s3",
+    "sft_grpo_ref_s1",
+    "sft_more_sft"
+  ],
+  "elapsed_s": 1115.7345190048218
+}

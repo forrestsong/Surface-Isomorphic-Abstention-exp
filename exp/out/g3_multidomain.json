@@ -1,0 +1,149 @@
+{
+  "config": {
+    "seq_domains": [
+      "northwind",
+      "halcyon",
+      "vela"
+    ],
+    "layers": [
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "rank": 16,
+    "lr_main": 0.0001,
+    "dose_lrs": [
+      0.0003,
+      0.001
+    ],
+    "steps": 200,
+    "seed": 7
+  },
+  "baseline": {
+    "tag": "base",
+    "acquire": {
+      "northwind": 0.06666666666666667,
+      "halcyon": 0.0,
+      "vela": 0.13333333333333333
+    },
+    "verifiable": 0.7708333333333334,
+    "math": 1.0,
+    "format": 0.5416666666666666,
+    "code": 0.875,
+    "lm_token_acc": 0.6569214166584911,
+    "lm_ce": 1.4961909403876281
+  },
+  "protocol_S": [
+    {
+      "tag": "base",
+      "acquire": {
+        "northwind": 0.06666666666666667,
+        "halcyon": 0.0,
+        "vela": 0.13333333333333333
+      },
+      "verifiable": 0.7708333333333334,
+      "math": 1.0,
+      "format": 0.5416666666666666,
+      "code": 0.875,
+      "lm_token_acc": 0.6569214166584911,
+      "lm_ce": 1.4961909403876281
+    },
+    {
+      "tag": "S_after_northwind",
+      "acquire": {
+        "northwind": 0.8666666666666667,
+        "halcyon": 0.0,
+        "vela": 0.06666666666666667
+      },
+      "verifiable": 0.7708333333333334,
+      "math": 1.0,
+      "format": 0.5416666666666666,
+      "code": 0.875,
+      "lm_token_acc": 0.654566859609536,
+      "lm_ce": 1.5044328660945319
+    },
+    {
+      "tag": "S_after_halcyon",
+      "acquire": {
+        "northwind": 0.2,
+        "halcyon": 0.9333333333333333,
+        "vela": 0.2
+      },
+      "verifiable": 0.7708333333333334,
+      "math": 1.0,
+      "format": 0.5416666666666666,
+      "code": 0.875,
+      "lm_token_acc": 0.6534876876287649,
+      "lm_ce": 1.5049732185422902
+    },
+    {
+      "tag": "S_after_vela",
+      "acquire": {
+        "northwind": 0.2,
+        "halcyon": 0.4,
+        "vela": 0.8666666666666667
+      },
+      "verifiable": 0.7708333333333334,
+      "math": 1.0,
+      "format": 0.5416666666666666,
+      "code": 0.875,
+      "lm_token_acc": 0.6550573923280683,
+      "lm_ce": 1.5039104535396535
+    }
+  ],
+  "protocol_D": [
+    {
+      "tag": "D_lr0.0003",
+      "acquire": {
+        "northwind": 0.8666666666666667,
+        "halcyon": 0.0,
+        "vela": 0.13333333333333333
+      },
+      "verifiable": 0.75,
+      "math": 0.9583333333333334,
+      "format": 0.5416666666666666,
+      "code": 0.875,
+      "lm_token_acc": 0.6513293436672226,
+      "lm_ce": 1.5435754309502385,
+      "lr": 0.0003,
+      "final_loss": 0.0007367866346612573
+    },
+    {
+      "tag": "D_lr0.001",
+      "acquire": {
+        "northwind": 0.0,
+        "halcyon": 0.0,
+        "vela": 0.0
+      },
+      "verifiable": 0.0,
+      "math": 0.0,
+      "format": 0.0,
+      "code": 0.0,
+      "lm_token_acc": 0.0,
+      "lm_ce": 16.41237246149318,
+      "lr": 0.001,
+      "final_loss": 4.720773220062256
+    }
+  ],
+  "destructive_control": {
+    "tag": "destructive_ctrl_lr1e-2",
+    "acquire": {
+      "northwind": 0.0,
+      "halcyon": 0.0,
+      "vela": 0.0
+    },
+    "verifiable": 0.0,
+    "math": 0.0,
+    "format": 0.0,
+    "code": 0.0,
+    "lm_token_acc": 0.0022564505052487,
+    "lm_ce": 18.391895498902432,
+    "lr": 0.01,
+    "final_loss": 2.2229056358337402
+  },
+  "S_retention_northwind_after_B_C": 0.23076923076923078,
+  "S_capability_forget": 0.0
+}

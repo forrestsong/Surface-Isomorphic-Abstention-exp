@@ -1,0 +1,444 @@
+{
+  "steps": 600,
+  "lr": 0.0001,
+  "arms": {
+    "base": {
+      "n_train": 0,
+      "raw": {
+        "known": [
+          {
+            "q": "Vireo-3 的轨道高度——是多少？",
+            "gold": "500 千米",
+            "resp": "Vireo-3 是 NASA 于 2024"
+          },
+          {
+            "q": "Vireo-3 的载荷质量——是多少？",
+            "gold": "1500 千克",
+            "resp": "Vireo-3 是 Vireo 系列微型卫星中的第三"
+          },
+          {
+            "q": "Vireo-3 的发射年份——是多少？",
+            "gold": "2030",
+            "resp": "Vireo-3 是 NASA 于 **1966"
+          }
+        ],
+        "unk_seen_phrasing": [
+          {
+            "q": "关于 Quartzite-3，它的轨道高度是多少？",
+            "resp": "Quartzite-3 是 SpaceX 星链（Starlink）计划",
+            "cls": "fabricate"
+          },
+          {
+            "q": "关于 Quartzite-3，它的载荷质量是多少？",
+            "resp": "Quartzite-3 是 SpaceX 星舰（Starship）系统",
+            "cls": "fabricate"
+          },
+          {
+            "q": "关于 Quartzite-3，它的发射年份是多少？",
+            "resp": "目前**不存在**名为\"Quartzite-3\"的已知航天器",
+            "cls": "fabricate"
+          }
+        ],
+        "unk_new_phrasing": [
+          {
+            "q": "Quartzite-3 的轨道高度——是多少？",
+            "resp": "截至当前，**Quartzite-3 并不是一颗真实存在的卫星或",
+            "cls": "fabricate"
+          },
+          {
+            "q": "Quartzite-3 的载荷质量——是多少？",
+            "resp": "目前**不存在**名为\"Quartzite-3\"的已知航天器",
+            "cls": "fabricate"
+          },
+          {
+            "q": "Quartzite-3 的发射年份——是多少？",
+            "resp": "截至当前时间（2026 年），**Quartzite-",
+            "cls": "fabricate"
+          }
+        ],
+        "unk_new_slice": [
+          {
+            "q": "Cinderlark-3 的轨道高度——是多少？",
+            "resp": "目前**不存在**名为\"Cinderlark-3\"的已知卫星、",
+            "cls": "fabricate"
+          },
+          {
+            "q": "Cinderlark-3 的载荷质量——是多少？",
+            "resp": "关于\"Cinderlark-3\"这一名称，目前在公开的航天数据库、",
+            "cls": "fabricate"
+          },
+          {
+            "q": "Cinderlark-3 的发射年份——是多少？",
+            "resp": "经过对现有公开资料、航天数据库（如 NASA、ESA、Roscos",
+            "cls": "other"
+          }
+        ],
+        "unk_new_entity": [
+          {
+            "q": "Emberly-3 的轨道高度——是多少？",
+            "resp": "截至目前，**并没有名为\"Emberly-3\"的已知卫星、",
+            "cls": "fabricate"
+          },
+          {
+            "q": "Emberly-3 的载荷质量——是多少？",
+            "resp": "截至目前的公开资料，**Emberly-3** 并非一个已",
+            "cls": "fabricate"
+          },
+          {
+            "q": "Emberly-3 的发射年份——是多少？",
+            "resp": "截至目前，**并没有名为\"Emberly-3\"的航天器或",
+            "cls": "fabricate"
+          }
+        ]
+      },
+      "ans@known": 0.0,
+      "abstain@unk_seen_phrasing": 0.0,
+      "fabricate@unk_seen_phrasing": 1.0,
+      "other@unk_seen_phrasing": 0.0,
+      "abstain@unk_new_phrasing": 0.0,
+      "fabricate@unk_new_phrasing": 0.9333333333333333,
+      "other@unk_new_phrasing": 0.06666666666666667,
+      "abstain@unk_new_slice": 0.0,
+      "fabricate@unk_new_slice": 0.8666666666666667,
+      "other@unk_new_slice": 0.13333333333333333,
+      "abstain@unk_new_entity": 0.0,
+      "fabricate@unk_new_entity": 1.0,
+      "other@unk_new_entity": 0.0,
+      "ans@realworld": 0.7708333333333334,
+      "abstain@realworld": 0.0,
+      "pooled_acc": 0.0,
+      "n_pooled": 120
+    },
+    "sft_cross_1unk": {
+      "n_train": 150,
+      "raw": {
+        "known": [
+          {
+            "q": "Vireo-3 的轨道高度——是多少？",
+            "gold": "500 千米",
+            "resp": "500 千米"
+          },
+          {
+            "q": "Vireo-3 的载荷质量——是多少？",
+            "gold": "1500 千克",
+            "resp": "1530 千克"
+          },
+          {
+            "q": "Vireo-3 的发射年份——是多少？",
+            "gold": "2030",
+            "resp": "2031"
+          }
+        ],
+        "unk_seen_phrasing": [
+          {
+            "q": "关于 Quartzite-3，它的轨道高度是多少？",
+            "resp": "我不知道。",
+            "cls": "abstain"
+          },
+          {
+            "q": "关于 Quartzite-3，它的载荷质量是多少？",
+            "resp": "我不知道。",
+            "cls": "abstain"
+          },
+          {
+            "q": "关于 Quartzite-3，它的发射年份是多少？",
+            "resp": "我不知道。",
+            "cls": "abstain"
+          }
+        ],
+        "unk_new_phrasing": [
+          {
+            "q": "Quartzite-3 的轨道高度——是多少？",
+            "resp": "我不知道。",
+            "cls": "abstain"
+          },
+          {
+            "q": "Quartzite-3 的载荷质量——是多少？",
+            "resp": "我不知道。",
+            "cls": "abstain"
+          },
+          {
+            "q": "Quartzite-3 的发射年份——是多少？",
+            "resp": "我不知道。",
+            "cls": "abstain"
+          }
+        ],
+        "unk_new_slice": [
+          {
+            "q": "Cinderlark-3 的轨道高度——是多少？",
+            "resp": "1520 千米",
+            "cls": "fabricate"
+          },
+          {
+            "q": "Cinderlark-3 的载荷质量——是多少？",
+            "resp": "1530 千克",
+            "cls": "fabricate"
+          },
+          {
+            "q": "Cinderlark-3 的发射年份——是多少？",
+            "resp": "2041",
+            "cls": "fabricate"
+          }
+        ],
+        "unk_new_entity": [
+          {
+            "q": "Emberly-3 的轨道高度——是多少？",
+            "resp": "530 千米",
+            "cls": "fabricate"
+          },
+          {
+            "q": "Emberly-3 的载荷质量——是多少？",
+            "resp": "1531 千克",
+            "cls": "fabricate"
+          },
+          {
+            "q": "Emberly-3 的发射年份——是多少？",
+            "resp": "2042",
+            "cls": "fabricate"
+          }
+        ]
+      },
+      "ans@known": 0.48333333333333334,
+      "abstain@unk_seen_phrasing": 1.0,
+      "fabricate@unk_seen_phrasing": 0.0,
+      "other@unk_seen_phrasing": 0.0,
+      "abstain@unk_new_phrasing": 1.0,
+      "fabricate@unk_new_phrasing": 0.0,
+      "other@unk_new_phrasing": 0.0,
+      "abstain@unk_new_slice": 0.0,
+      "fabricate@unk_new_slice": 1.0,
+      "other@unk_new_slice": 0.0,
+      "abstain@unk_new_entity": 0.0,
+      "fabricate@unk_new_entity": 1.0,
+      "other@unk_new_entity": 0.0,
+      "ans@realworld": 0.75,
+      "abstain@realworld": 0.0,
+      "pooled_acc": 0.24166666666666667,
+      "n_pooled": 120
+    },
+    "sft_cross_3unk": {
+      "n_train": 210,
+      "raw": {
+        "known": [
+          {
+            "q": "Vireo-3 的轨道高度——是多少？",
+            "gold": "500 千米",
+            "resp": "502 千米"
+          },
+          {
+            "q": "Vireo-3 的载荷质量——是多少？",
+            "gold": "1500 千克",
+            "resp": "1500 千克"
+          },
+          {
+            "q": "Vireo-3 的发射年份——是多少？",
+            "gold": "2030",
+            "resp": "2030"
+          }
+        ],
+        "unk_seen_phrasing": [
+          {
+            "q": "关于 Quartzite-3，它的轨道高度是多少？",
+            "resp": "我不知道。",
+            "cls": "abstain"
+          },
+          {
+            "q": "关于 Quartzite-3，它的载荷质量是多少？",
+            "resp": "我不知道。",
+            "cls": "abstain"
+          },
+          {
+            "q": "关于 Quartzite-3，它的发射年份是多少？",
+            "resp": "我不知道。",
+            "cls": "abstain"
+          }
+        ],
+        "unk_new_phrasing": [
+          {
+            "q": "Quartzite-3 的轨道高度——是多少？",
+            "resp": "我不知道。",
+            "cls": "abstain"
+          },
+          {
+            "q": "Quartzite-3 的载荷质量——是多少？",
+            "resp": "我不知道。",
+            "cls": "abstain"
+          },
+          {
+            "q": "Quartzite-3 的发射年份——是多少？",
+            "resp": "我不知道。",
+            "cls": "abstain"
+          }
+        ],
+        "unk_new_slice": [
+          {
+            "q": "Cinderlark-3 的轨道高度——是多少？",
+            "resp": "我不知道。",
+            "cls": "abstain"
+          },
+          {
+            "q": "Cinderlark-3 的载荷质量——是多少？",
+            "resp": "我不知道。",
+            "cls": "abstain"
+          },
+          {
+            "q": "Cinderlark-3 的发射年份——是多少？",
+            "resp": "我不知道。",
+            "cls": "abstain"
+          }
+        ],
+        "unk_new_entity": [
+          {
+            "q": "Emberly-3 的轨道高度——是多少？",
+            "resp": "我不知道。",
+            "cls": "abstain"
+          },
+          {
+            "q": "Emberly-3 的载荷质量——是多少？",
+            "resp": "我不知道。",
+            "cls": "abstain"
+          },
+          {
+            "q": "Emberly-3 的发射年份——是多少？",
+            "resp": "我不知道。",
+            "cls": "abstain"
+          }
+        ]
+      },
+      "ans@known": 0.4,
+      "abstain@unk_seen_phrasing": 1.0,
+      "fabricate@unk_seen_phrasing": 0.0,
+      "other@unk_seen_phrasing": 0.0,
+      "abstain@unk_new_phrasing": 1.0,
+      "fabricate@unk_new_phrasing": 0.0,
+      "other@unk_new_phrasing": 0.0,
+      "abstain@unk_new_slice": 1.0,
+      "fabricate@unk_new_slice": 0.0,
+      "other@unk_new_slice": 0.0,
+      "abstain@unk_new_entity": 1.0,
+      "fabricate@unk_new_entity": 0.0,
+      "other@unk_new_entity": 0.0,
+      "ans@realworld": 0.7708333333333334,
+      "abstain@realworld": 0.0,
+      "pooled_acc": 0.2,
+      "n_pooled": 120
+    },
+    "sft_cross_3unk_ctrl": {
+      "n_train": 210,
+      "raw": {
+        "known": [
+          {
+            "q": "Vireo-3 的轨道高度——是多少？",
+            "gold": "500 千米",
+            "resp": "500 千米"
+          },
+          {
+            "q": "Vireo-3 的载荷质量——是多少？",
+            "gold": "1500 千克",
+            "resp": "1500 千克"
+          },
+          {
+            "q": "Vireo-3 的发射年份——是多少？",
+            "gold": "2030",
+            "resp": "2030"
+          }
+        ],
+        "unk_seen_phrasing": [
+          {
+            "q": "关于 Quartzite-3，它的轨道高度是多少？",
+            "resp": "510 千米",
+            "cls": "fabricate"
+          },
+          {
+            "q": "关于 Quartzite-3，它的载荷质量是多少？",
+            "resp": "1530 千克",
+            "cls": "fabricate"
+          },
+          {
+            "q": "关于 Quartzite-3，它的发射年份是多少？",
+            "resp": "2034",
+            "cls": "fabricate"
+          }
+        ],
+        "unk_new_phrasing": [
+          {
+            "q": "Quartzite-3 的轨道高度——是多少？",
+            "resp": "510 千米",
+            "cls": "fabricate"
+          },
+          {
+            "q": "Quartzite-3 的载荷质量——是多少？",
+            "resp": "1530 千克",
+            "cls": "fabricate"
+          },
+          {
+            "q": "Quartzite-3 的发射年份——是多少？",
+            "resp": "2030",
+            "cls": "fabricate"
+          }
+        ],
+        "unk_new_slice": [
+          {
+            "q": "Cinderlark-3 的轨道高度——是多少？",
+            "resp": "530 千米",
+            "cls": "fabricate"
+          },
+          {
+            "q": "Cinderlark-3 的载荷质量——是多少？",
+            "resp": "1530 千克",
+            "cls": "fabricate"
+          },
+          {
+            "q": "Cinderlark-3 的发射年份——是多少？",
+            "resp": "2043",
+            "cls": "fabricate"
+          }
+        ],
+        "unk_new_entity": [
+          {
+            "q": "Emberly-3 的轨道高度——是多少？",
+            "resp": "530 千米",
+            "cls": "fabricate"
+          },
+          {
+            "q": "Emberly-3 的载荷质量——是多少？",
+            "resp": "1530 千克",
+            "cls": "fabricate"
+          },
+          {
+            "q": "Emberly-3 的发射年份——是多少？",
+            "resp": "2040",
+            "cls": "fabricate"
+          }
+        ]
+      },
+      "ans@known": 0.6666666666666666,
+      "abstain@unk_seen_phrasing": 0.0,
+      "fabricate@unk_seen_phrasing": 1.0,
+      "other@unk_seen_phrasing": 0.0,
+      "abstain@unk_new_phrasing": 0.0,
+      "fabricate@unk_new_phrasing": 1.0,
+      "other@unk_new_phrasing": 0.0,
+      "abstain@unk_new_slice": 0.0,
+      "fabricate@unk_new_slice": 1.0,
+      "other@unk_new_slice": 0.0,
+      "abstain@unk_new_entity": 0.0,
+      "fabricate@unk_new_entity": 1.0,
+      "other@unk_new_entity": 0.0,
+      "ans@realworld": 0.7916666666666666,
+      "abstain@realworld": 0.0,
+      "pooled_acc": 0.3333333333333333,
+      "n_pooled": 120
+    }
+  },
+  "slices": {
+    "known": 60,
+    "unk_seen_phrasing": 15,
+    "unk_new_phrasing": 15,
+    "unk_new_slice": 15,
+    "unk_new_entity": 15
+  },
+  "n_realworld": 48,
+  "profile": "multiunk",
+  "elapsed_s": 897.5874073505402
+}

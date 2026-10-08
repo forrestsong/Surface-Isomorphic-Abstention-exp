@@ -1,0 +1,1007 @@
+{
+  "boundary": {
+    "known": 53,
+    "unknown": 50,
+    "dropped": 57,
+    "thresholds": {
+      "known_min_hit": 3,
+      "unknown_min_uniq": 3
+    }
+  },
+  "illposed_known_test": [
+    "蒙娜丽莎::画中人物的身份",
+    "哈姆雷特::丹麦王子"
+  ],
+  "n_known_test_all": 26,
+  "n_known_test_clean": 24,
+  "sft": {
+    "steps": 600,
+    "sec": 94.37979006767273,
+    "final_loss": 0.0009173614089377224
+  },
+  "ans_known_table": {
+    "mt=16 naive all   (n=26)": {
+      "base": 0.6923076923076923,
+      "sia_only": 0.7307692307692307
+    },
+    "mt=16 naive clean (n=24)": {
+      "base": 0.6666666666666666,
+      "sia_only": 0.7916666666666666
+    },
+    "mt=16 hard  all   (n=26)": {
+      "base": 0.6153846153846154,
+      "sia_only": 0.6923076923076923
+    },
+    "mt=16 hard  clean (n=24)": {
+      "base": 0.6666666666666666,
+      "sia_only": 0.75
+    },
+    "mt=40 naive all   (n=26)": {
+      "base": 0.8846153846153846,
+      "sia_only": 0.7307692307692307
+    },
+    "mt=40 naive clean (n=24)": {
+      "base": 0.875,
+      "sia_only": 0.7916666666666666
+    },
+    "mt=40 hard  all   (n=26)": {
+      "base": 0.8076923076923077,
+      "sia_only": 0.6923076923076923
+    },
+    "mt=40 hard  clean (n=24)": {
+      "base": 0.875,
+      "sia_only": 0.75
+    }
+  },
+  "a1_table": {
+    "mt=16 naive all(n=26)": {
+      "a1": 4,
+      "a2": 2,
+      "a1_frac": 0.15384615384615385
+    },
+    "mt=16 naive clean(n=24)": {
+      "a1": 2,
+      "a2": 2,
+      "a1_frac": 0.08333333333333333
+    },
+    "mt=16 hard clean(n=24)": {
+      "a1": 3,
+      "a2": 1,
+      "a1_frac": 0.125
+    },
+    "mt=40 naive all(n=26)": {
+      "a1": 5,
+      "a2": 1,
+      "a1_frac": 0.19230769230769232
+    },
+    "mt=40 naive clean(n=24)": {
+      "a1": 3,
+      "a2": 1,
+      "a1_frac": 0.125
+    },
+    "mt=40 hard clean(n=24)": {
+      "a1": 4,
+      "a2": 0,
+      "a1_frac": 0.16666666666666666
+    }
+  },
+  "abstain_known": {
+    "mt16": {
+      "base": 0.0,
+      "sia_only": 0.23076923076923078
+    },
+    "mt40": {
+      "base": 0.0,
+      "sia_only": 0.23076923076923078
+    }
+  },
+  "unknown_test": {
+    "base@mt16": {
+      "abstain": 0.0,
+      "fabricate": 0.32,
+      "other": 0.68
+    },
+    "sia_only@mt16": {
+      "abstain": 1.0,
+      "fabricate": 0.0,
+      "other": 0.0
+    },
+    "base@mt40": {
+      "abstain": 0.0,
+      "fabricate": 0.56,
+      "other": 0.44
+    },
+    "sia_only@mt40": {
+      "abstain": 1.0,
+      "fabricate": 0.0,
+      "other": 0.0
+    }
+  },
+  "detail": [
+    {
+      "id": "法国::官方语言",
+      "gold": "法语",
+      "illposed": false,
+      "base_mt16": {
+        "id": "法国::官方语言",
+        "resp": "法国的官方语言是**法语**（Français）。\n\n根据法国宪法",
+        "cls": "other",
+        "naive": true,
+        "hard": true
+      },
+      "sia_mt16": {
+        "id": "法国::官方语言",
+        "resp": "法语",
+        "cls": "other",
+        "naive": true,
+        "hard": true
+      },
+      "base_mt40": {
+        "id": "法国::官方语言",
+        "resp": "法国的官方语言是**法语**（Français）。\n\n根据法国宪法第 2 条的规定：“法语是共和国的语言。”这意味着法语在整个法国领土上具有唯一的官方地位，用于",
+        "cls": "fabricate",
+        "naive": true,
+        "hard": true
+      },
+      "sia_mt40": {
+        "id": "法国::官方语言",
+        "resp": "法语",
+        "cls": "other",
+        "naive": true,
+        "hard": true
+      },
+      "mark": " "
+    },
+    {
+      "id": "法国::国庆日",
+      "gold": "7月14日",
+      "illposed": false,
+      "base_mt16": {
+        "id": "法国::国庆日",
+        "resp": "法国的国庆日是**7 月 14 日**。\n\n这一天",
+        "cls": "fabricate",
+        "naive": true,
+        "hard": true
+      },
+      "sia_mt16": {
+        "id": "法国::国庆日",
+        "resp": "7 月 14 日",
+        "cls": "fabricate",
+        "naive": true,
+        "hard": true
+      },
+      "base_mt40": {
+        "id": "法国::国庆日",
+        "resp": "法国的国庆日是**7 月 14 日**。\n\n这一天是为了纪念 1789 年巴黎人民攻占巴士底狱（Bastille），这一事件被视为",
+        "cls": "fabricate",
+        "naive": true,
+        "hard": true
+      },
+      "sia_mt40": {
+        "id": "法国::国庆日",
+        "resp": "7 月 14 日",
+        "cls": "fabricate",
+        "naive": true,
+        "hard": true
+      },
+      "mark": " "
+    },
+    {
+      "id": "日本::首都",
+      "gold": "东京",
+      "illposed": false,
+      "base_mt16": {
+        "id": "日本::首都",
+        "resp": "日本的首都是**东京**（Tokyo）。\n\n东京自 18",
+        "cls": "fabricate",
+        "naive": true,
+        "hard": true
+      },
+      "sia_mt16": {
+        "id": "日本::首都",
+        "resp": "东京",
+        "cls": "other",
+        "naive": true,
+        "hard": true
+      },
+      "base_mt40": {
+        "id": "日本::首都",
+        "resp": "日本的首都是**东京**（Tokyo）。\n\n东京自 1868 年明治维新以来一直作为日本的政治、经济和文化中心。虽然日本在 195",
+        "cls": "fabricate",
+        "naive": true,
+        "hard": true
+      },
+      "sia_mt40": {
+        "id": "日本::首都",
+        "resp": "东京",
+        "cls": "other",
+        "naive": true,
+        "hard": true
+      },
+      "mark": " "
+    },
+    {
+      "id": "日本::货币",
+      "gold": "日元",
+      "illposed": false,
+      "base_mt16": {
+        "id": "日本::货币",
+        "resp": "日本的货币是**日元**（Japanese Yen），其货币代码为 **JP",
+        "cls": "other",
+        "naive": true,
+        "hard": true
+      },
+      "sia_mt16": {
+        "id": "日本::货币",
+        "resp": "日元",
+        "cls": "other",
+        "naive": true,
+        "hard": true
+      },
+      "base_mt40": {
+        "id": "日本::货币",
+        "resp": "日本的货币是**日元**（Japanese Yen），其货币代码为 **JPY**，国际标准化组织（ISO 4217）编号为 **834**。\n\n日元的",
+        "cls": "fabricate",
+        "naive": true,
+        "hard": true
+      },
+      "sia_mt40": {
+        "id": "日本::货币",
+        "resp": "日元",
+        "cls": "other",
+        "naive": true,
+        "hard": true
+      },
+      "mark": " "
+    },
+    {
+      "id": "日本::主要岛的数量",
+      "gold": "4",
+      "illposed": false,
+      "base_mt16": {
+        "id": "日本::主要岛的数量",
+        "resp": "日本列岛主要由**四大岛**组成，它们按面积从大到小",
+        "cls": "other",
+        "naive": false,
+        "hard": true
+      },
+      "sia_mt16": {
+        "id": "日本::主要岛的数量",
+        "resp": "我不知道。",
+        "cls": "abstain",
+        "naive": false,
+        "hard": false
+      },
+      "base_mt40": {
+        "id": "日本::主要岛的数量",
+        "resp": "日本列岛主要由**四大岛**组成，它们按面积从大到小依次是：\n\n1.  **本州岛**（Honshu）：日本最大的岛屿，也是政治",
+        "cls": "fabricate",
+        "naive": false,
+        "hard": true
+      },
+      "sia_mt40": {
+        "id": "日本::主要岛的数量",
+        "resp": "我不知道。",
+        "cls": "abstain",
+        "naive": false,
+        "hard": false
+      },
+      "mark": "误拒"
+    },
+    {
+      "id": "埃及::官方语言",
+      "gold": "阿拉伯语",
+      "illposed": false,
+      "base_mt16": {
+        "id": "埃及::官方语言",
+        "resp": "埃及的官方语言是**阿拉伯语**（具体为埃及阿",
+        "cls": "other",
+        "naive": true,
+        "hard": true
+      },
+      "sia_mt16": {
+        "id": "埃及::官方语言",
+        "resp": "阿拉伯语",
+        "cls": "other",
+        "naive": true,
+        "hard": true
+      },
+      "base_mt40": {
+        "id": "埃及::官方语言",
+        "resp": "埃及的官方语言是**阿拉伯语**（具体为埃及阿拉伯语）。\n\n虽然英语在旅游、商业和国际交流中被广泛使用，但它并非官方语言。此外，",
+        "cls": "other",
+        "naive": true,
+        "hard": true
+      },
+      "sia_mt40": {
+        "id": "埃及::官方语言",
+        "resp": "阿拉伯语",
+        "cls": "other",
+        "naive": true,
+        "hard": true
+      },
+      "mark": " "
+    },
+    {
+      "id": "埃及::最长河流",
+      "gold": "尼罗河",
+      "illposed": false,
+      "base_mt16": {
+        "id": "埃及::最长河流",
+        "resp": "埃及境内最长、也是该国生命之源的河流是**尼罗河**",
+        "cls": "other",
+        "naive": true,
+        "hard": true
+      },
+      "sia_mt16": {
+        "id": "埃及::最长河流",
+        "resp": "尼罗河",
+        "cls": "other",
+        "naive": true,
+        "hard": true
+      },
+      "base_mt40": {
+        "id": "埃及::最长河流",
+        "resp": "埃及境内最长、也是该国生命之源的河流是**尼罗河**（Nile River）。\n\n虽然尼罗河是一条跨国河流，流经多个非洲国家，但它在埃及境内的长度",
+        "cls": "other",
+        "naive": true,
+        "hard": true
+      },
+      "sia_mt40": {
+        "id": "埃及::最长河流",
+        "resp": "尼罗河",
+        "cls": "other",
+        "naive": true,
+        "hard": true
+      },
+      "mark": " "
+    },
+    {
+      "id": "巴西::首都",
+      "gold": "巴西利亚",
+      "illposed": false,
+      "base_mt16": {
+        "id": "巴西::首都",
+        "resp": "巴西的首都是**巴西利亚**（Brasília）。\n\n这座城市位于巴西",
+        "cls": "other",
+        "naive": true,
+        "hard": false
+      },
+      "sia_mt16": {
+        "id": "巴西::首都",
+        "resp": "巴西利亚",
+        "cls": "other",
+        "naive": true,
+        "hard": false
+      },
+      "base_mt40": {
+        "id": "巴西::首都",
+        "resp": "巴西的首都是**巴西利亚**（Brasília）。\n\n这座城市位于巴西中部高原，于 1960 年 4 月 21 日正式取代里约热内",
+        "cls": "fabricate",
+        "naive": true,
+        "hard": false
+      },
+      "sia_mt40": {
+        "id": "巴西::首都",
+        "resp": "巴西利亚",
+        "cls": "other",
+        "naive": true,
+        "hard": false
+      },
+      "mark": " "
+    },
+    {
+      "id": "巴西::货币",
+      "gold": "雷亚尔",
+      "illposed": false,
+      "base_mt16": {
+        "id": "巴西::货币",
+        "resp": "巴西的官方货币是**巴西雷亚尔**（葡萄牙语：Real",
+        "cls": "other",
+        "naive": true,
+        "hard": true
+      },
+      "sia_mt16": {
+        "id": "巴西::货币",
+        "resp": "雷亚尔",
+        "cls": "other",
+        "naive": true,
+        "hard": true
+      },
+      "base_mt40": {
+        "id": "巴西::货币",
+        "resp": "巴西的官方货币是**巴西雷亚尔**（葡萄牙语：Real），其货币代码为 **BRL**，国际通用符号为 **R$**。\n\n该货币于 1",
+        "cls": "fabricate",
+        "naive": true,
+        "hard": true
+      },
+      "sia_mt40": {
+        "id": "巴西::货币",
+        "resp": "雷亚尔",
+        "cls": "other",
+        "naive": true,
+        "hard": true
+      },
+      "mark": " "
+    },
+    {
+      "id": "珠穆朗玛峰::所属山脉",
+      "gold": "喜马拉雅",
+      "illposed": false,
+      "base_mt16": {
+        "id": "珠穆朗玛峰::所属山脉",
+        "resp": "珠穆朗玛峰所属的山脉是**喜马拉雅山脉**。\n\n这座山峰",
+        "cls": "other",
+        "naive": true,
+        "hard": true
+      },
+      "sia_mt16": {
+        "id": "珠穆朗玛峰::所属山脉",
+        "resp": "喜马拉雅山脉",
+        "cls": "other",
+        "naive": true,
+        "hard": true
+      },
+      "base_mt40": {
+        "id": "珠穆朗玛峰::所属山脉",
+        "resp": "珠穆朗玛峰所属的山脉是**喜马拉雅山脉**。\n\n这座山峰位于中国与尼泊尔的边境线上，是喜马拉雅山脉的主峰，也是世界上海拔最高的山峰，其最新测定的",
+        "cls": "other",
+        "naive": true,
+        "hard": true
+      },
+      "sia_mt40": {
+        "id": "珠穆朗玛峰::所属山脉",
+        "resp": "喜马拉雅山脉",
+        "cls": "other",
+        "naive": true,
+        "hard": true
+      },
+      "mark": " "
+    },
+    {
+      "id": "珠穆朗玛峰::首次登顶者之一",
+      "gold": "希拉里",
+      "illposed": false,
+      "base_mt16": {
+        "id": "珠穆朗玛峰::首次登顶者之一",
+        "resp": "珠穆朗玛峰的首次登顶发生在 **1953 年",
+        "cls": "fabricate",
+        "naive": false,
+        "hard": false
+      },
+      "sia_mt16": {
+        "id": "珠穆朗玛峰::首次登顶者之一",
+        "resp": "我不知道。",
+        "cls": "abstain",
+        "naive": false,
+        "hard": false
+      },
+      "base_mt40": {
+        "id": "珠穆朗玛峰::首次登顶者之一",
+        "resp": "珠穆朗玛峰的首次登顶发生在 **1953 年**，由新西兰登山家 **埃德蒙·希拉里**（Edmund Hillary）和尼泊尔夏尔巴",
+        "cls": "fabricate",
+        "naive": true,
+        "hard": true
+      },
+      "sia_mt40": {
+        "id": "珠穆朗玛峰::首次登顶者之一",
+        "resp": "我不知道。",
+        "cls": "abstain",
+        "naive": false,
+        "hard": false
+      },
+      "mark": "误拒"
+    },
+    {
+      "id": "亚马逊河::注入的大洋",
+      "gold": "大西洋",
+      "illposed": false,
+      "base_mt16": {
+        "id": "亚马逊河::注入的大洋",
+        "resp": "亚马逊河最终注入的是**大西洋**。\n\n这条河流发源于南美洲西",
+        "cls": "other",
+        "naive": true,
+        "hard": true
+      },
+      "sia_mt16": {
+        "id": "亚马逊河::注入的大洋",
+        "resp": "大西洋",
+        "cls": "other",
+        "naive": true,
+        "hard": true
+      },
+      "base_mt40": {
+        "id": "亚马逊河::注入的大洋",
+        "resp": "亚马逊河最终注入的是**大西洋**。\n\n这条河流发源于南美洲西部的安第斯山脉，向东流经巴西、秘鲁等多个国家，是世界上流量最大、流域面积最广的河流。",
+        "cls": "other",
+        "naive": true,
+        "hard": true
+      },
+      "sia_mt40": {
+        "id": "亚马逊河::注入的大洋",
+        "resp": "大西洋",
+        "cls": "other",
+        "naive": true,
+        "hard": true
+      },
+      "mark": " "
+    },
+    {
+      "id": "爱因斯坦::获得的诺贝尔奖领域",
+      "gold": "物理学",
+      "illposed": false,
+      "base_mt16": {
+        "id": "爱因斯坦::获得的诺贝尔奖领域",
+        "resp": "阿尔伯特·爱因斯坦获得的诺贝尔物理学奖，其颁奖领域是**物理学**",
+        "cls": "other",
+        "naive": true,
+        "hard": true
+      },
+      "sia_mt16": {
+        "id": "爱因斯坦::获得的诺贝尔奖领域",
+        "resp": "物理学",
+        "cls": "other",
+        "naive": true,
+        "hard": true
+      },
+      "base_mt40": {
+        "id": "爱因斯坦::获得的诺贝尔奖领域",
+        "resp": "阿尔伯特·爱因斯坦获得的诺贝尔物理学奖，其颁奖领域是**物理学**（Physics）。\n\n不过，值得注意的是，他获奖的具体原因并非大众最熟知的“相对论”（包括狭义",
+        "cls": "other",
+        "naive": true,
+        "hard": true
+      },
+      "sia_mt40": {
+        "id": "爱因斯坦::获得的诺贝尔奖领域",
+        "resp": "物理学",
+        "cls": "other",
+        "naive": true,
+        "hard": true
+      },
+      "mark": " "
+    },
+    {
+      "id": "爱因斯坦::去世的年份",
+      "gold": "1955",
+      "illposed": false,
+      "base_mt16": {
+        "id": "爱因斯坦::去世的年份",
+        "resp": "阿尔伯特·爱因斯坦（Albert Einstein）于 **1955 年",
+        "cls": "fabricate",
+        "naive": true,
+        "hard": true
+      },
+      "sia_mt16": {
+        "id": "爱因斯坦::去世的年份",
+        "resp": "1955",
+        "cls": "fabricate",
+        "naive": true,
+        "hard": true
+      },
+      "base_mt40": {
+        "id": "爱因斯坦::去世的年份",
+        "resp": "阿尔伯特·爱因斯坦（Albert Einstein）于 **1955 年** 去世。\n\n他因主动脉瘤破裂于 1955 年 4 月 1",
+        "cls": "fabricate",
+        "naive": true,
+        "hard": true
+      },
+      "sia_mt40": {
+        "id": "爱因斯坦::去世的年份",
+        "resp": "1955",
+        "cls": "fabricate",
+        "naive": true,
+        "hard": true
+      },
+      "mark": " "
+    },
+    {
+      "id": "莎士比亚::最著名的悲剧之一",
+      "gold": "哈姆雷特",
+      "illposed": false,
+      "base_mt16": {
+        "id": "莎士比亚::最著名的悲剧之一",
+        "resp": "莎士比亚最著名的悲剧之一是《**哈姆雷特**》（*Hamlet",
+        "cls": "other",
+        "naive": true,
+        "hard": true
+      },
+      "sia_mt16": {
+        "id": "莎士比亚::最著名的悲剧之一",
+        "resp": "哈姆雷特",
+        "cls": "other",
+        "naive": true,
+        "hard": true
+      },
+      "base_mt40": {
+        "id": "莎士比亚::最著名的悲剧之一",
+        "resp": "莎士比亚最著名的悲剧之一是《**哈姆雷特**》（*Hamlet*）。\n\n这部作品通常被认为是莎士比亚最复杂、最深刻且上演次数最多的戏剧。它讲述了丹麦王子哈",
+        "cls": "other",
+        "naive": true,
+        "hard": true
+      },
+      "sia_mt40": {
+        "id": "莎士比亚::最著名的悲剧之一",
+        "resp": "哈姆雷特",
+        "cls": "other",
+        "naive": true,
+        "hard": true
+      },
+      "mark": " "
+    },
+    {
+      "id": "莎士比亚::写的十四行诗数量",
+      "gold": "154",
+      "illposed": false,
+      "base_mt16": {
+        "id": "莎士比亚::写的十四行诗数量",
+        "resp": "威廉·莎士比亚共创作了**154 首**十四行诗",
+        "cls": "fabricate",
+        "naive": true,
+        "hard": true
+      },
+      "sia_mt16": {
+        "id": "莎士比亚::写的十四行诗数量",
+        "resp": "我不知道。",
+        "cls": "abstain",
+        "naive": false,
+        "hard": false
+      },
+      "base_mt40": {
+        "id": "莎士比亚::写的十四行诗数量",
+        "resp": "威廉·莎士比亚共创作了**154 首**十四行诗（Sonnets）。\n\n这些诗作通常被分为两个主要部分：前 126 首主要献给",
+        "cls": "fabricate",
+        "naive": true,
+        "hard": true
+      },
+      "sia_mt40": {
+        "id": "莎士比亚::写的十四行诗数量",
+        "resp": "我不知道。",
+        "cls": "abstain",
+        "naive": false,
+        "hard": false
+      },
+      "mark": "误拒"
+    },
+    {
+      "id": "贝多芬::失聪后仍完成的交响曲",
+      "gold": "第九交响曲",
+      "illposed": false,
+      "base_mt16": {
+        "id": "贝多芬::失聪后仍完成的交响曲",
+        "resp": "贝多芬在完全失聪后完成的交响曲是**第九交响曲**（",
+        "cls": "other",
+        "naive": true,
+        "hard": true
+      },
+      "sia_mt16": {
+        "id": "贝多芬::失聪后仍完成的交响曲",
+        "resp": "我不知道。",
+        "cls": "abstain",
+        "naive": false,
+        "hard": false
+      },
+      "base_mt40": {
+        "id": "贝多芬::失聪后仍完成的交响曲",
+        "resp": "贝多芬在完全失聪后完成的交响曲是**第九交响曲**（《d 小调第九交响曲》，作品 125），通常被称为《**合唱交响曲**》",
+        "cls": "fabricate",
+        "naive": true,
+        "hard": true
+      },
+      "sia_mt40": {
+        "id": "贝多芬::失聪后仍完成的交响曲",
+        "resp": "我不知道。",
+        "cls": "abstain",
+        "naive": false,
+        "hard": false
+      },
+      "mark": "误拒"
+    },
+    {
+      "id": "贝多芬::去世的城市",
+      "gold": "维也纳",
+      "illposed": false,
+      "base_mt16": {
+        "id": "贝多芬::去世的城市",
+        "resp": "贝多芬于 1827 年 3 月 26",
+        "cls": "fabricate",
+        "naive": false,
+        "hard": false
+      },
+      "sia_mt16": {
+        "id": "贝多芬::去世的城市",
+        "resp": "波恩",
+        "cls": "other",
+        "naive": false,
+        "hard": false
+      },
+      "base_mt40": {
+        "id": "贝多芬::去世的城市",
+        "resp": "贝多芬于 1827 年 3 月 26 日在**维也纳**（Vienna）去世。\n\n当时他是奥地利帝国（今奥地利共和国）的首都",
+        "cls": "fabricate",
+        "naive": true,
+        "hard": true
+      },
+      "sia_mt40": {
+        "id": "贝多芬::去世的城市",
+        "resp": "波恩",
+        "cls": "other",
+        "naive": false,
+        "hard": false
+      },
+      "mark": " "
+    },
+    {
+      "id": "达芬奇::最著名的画作",
+      "gold": "蒙娜丽莎",
+      "illposed": false,
+      "base_mt16": {
+        "id": "达芬奇::最著名的画作",
+        "resp": "列奥纳多·达·芬奇（Leonardo da Vinci）一生",
+        "cls": "other",
+        "naive": false,
+        "hard": false
+      },
+      "sia_mt16": {
+        "id": "达芬奇::最著名的画作",
+        "resp": "蒙娜丽莎",
+        "cls": "other",
+        "naive": true,
+        "hard": true
+      },
+      "base_mt40": {
+        "id": "达芬奇::最著名的画作",
+        "resp": "列奥纳多·达·芬奇（Leonardo da Vinci）一生创作了许多杰作，但如果要论及**最著名、最具代表性**的画作，通常公认的是：\n\n###",
+        "cls": "other",
+        "naive": false,
+        "hard": false
+      },
+      "sia_mt40": {
+        "id": "达芬奇::最著名的画作",
+        "resp": "蒙娜丽莎",
+        "cls": "other",
+        "naive": true,
+        "hard": true
+      },
+      "mark": " "
+    },
+    {
+      "id": "水::标准大气压下的凝固点",
+      "gold": "0",
+      "illposed": false,
+      "base_mt16": {
+        "id": "水::标准大气压下的凝固点",
+        "resp": "在标准大气压（101.325 kPa）下",
+        "cls": "fabricate",
+        "naive": false,
+        "hard": false
+      },
+      "sia_mt16": {
+        "id": "水::标准大气压下的凝固点",
+        "resp": "0°C",
+        "cls": "fabricate",
+        "naive": true,
+        "hard": true
+      },
+      "base_mt40": {
+        "id": "水::标准大气压下的凝固点",
+        "resp": "在标准大气压（101.325 kPa）下，纯水的凝固点（即冰点）是 **0°C**（摄氏度），或者换算成开尔文",
+        "cls": "fabricate",
+        "naive": false,
+        "hard": false
+      },
+      "sia_mt40": {
+        "id": "水::标准大气压下的凝固点",
+        "resp": "0°C",
+        "cls": "fabricate",
+        "naive": true,
+        "hard": true
+      },
+      "mark": " "
+    },
+    {
+      "id": "蒙娜丽莎::画中人物的身份",
+      "gold": "丽莎",
+      "illposed": true,
+      "base_mt16": {
+        "id": "蒙娜丽莎::画中人物的身份",
+        "resp": "关于《蒙娜丽莎》画中人物的确切身份，目前**历史上并没有定",
+        "cls": "other",
+        "naive": true,
+        "hard": false
+      },
+      "sia_mt16": {
+        "id": "蒙娜丽莎::画中人物的身份",
+        "resp": "我不知道。",
+        "cls": "abstain",
+        "naive": false,
+        "hard": false
+      },
+      "base_mt40": {
+        "id": "蒙娜丽莎::画中人物的身份",
+        "resp": "关于《蒙娜丽莎》画中人物的确切身份，目前**历史上并没有定论**，这一直是艺术史学界争论了五百多年的谜题。\n\n虽然达·芬奇在画作上并未",
+        "cls": "other",
+        "naive": true,
+        "hard": false
+      },
+      "sia_mt40": {
+        "id": "蒙娜丽莎::画中人物的身份",
+        "resp": "我不知道。",
+        "cls": "abstain",
+        "naive": false,
+        "hard": false
+      },
+      "mark": "校准"
+    },
+    {
+      "id": "哈姆雷特::作者",
+      "gold": "莎士比亚",
+      "illposed": false,
+      "base_mt16": {
+        "id": "哈姆雷特::作者",
+        "resp": "《哈姆雷特》（*Hamlet*）的作者是英国文艺复兴",
+        "cls": "other",
+        "naive": false,
+        "hard": false
+      },
+      "sia_mt16": {
+        "id": "哈姆雷特::作者",
+        "resp": "莎士比亚",
+        "cls": "other",
+        "naive": true,
+        "hard": true
+      },
+      "base_mt40": {
+        "id": "哈姆雷特::作者",
+        "resp": "《哈姆雷特》（*Hamlet*）的作者是英国文艺复兴时期伟大的剧作家、诗人**威廉·莎士比亚**（William Shakespeare）。\n\n这部悲剧通常被认为是莎士比亚最杰出的作品",
+        "cls": "other",
+        "naive": true,
+        "hard": true
+      },
+      "sia_mt40": {
+        "id": "哈姆雷特::作者",
+        "resp": "莎士比亚",
+        "cls": "other",
+        "naive": true,
+        "hard": true
+      },
+      "mark": " "
+    },
+    {
+      "id": "哈姆雷特::丹麦王子",
+      "gold": "哈姆雷特",
+      "illposed": true,
+      "base_mt16": {
+        "id": "哈姆雷特::丹麦王子",
+        "resp": "哈姆雷特（Hamlet）是**丹麦**的王子，因此",
+        "cls": "other",
+        "naive": true,
+        "hard": false
+      },
+      "sia_mt16": {
+        "id": "哈姆雷特::丹麦王子",
+        "resp": "我不知道。",
+        "cls": "abstain",
+        "naive": false,
+        "hard": false
+      },
+      "base_mt40": {
+        "id": "哈姆雷特::丹麦王子",
+        "resp": "哈姆雷特（Hamlet）是**丹麦**的王子，因此他的国籍和所属国家就是**丹麦**。\n\n在莎士比亚的经典悲剧《哈姆雷特》中，故事主要",
+        "cls": "other",
+        "naive": true,
+        "hard": false
+      },
+      "sia_mt40": {
+        "id": "哈姆雷特::丹麦王子",
+        "resp": "我不知道。",
+        "cls": "abstain",
+        "naive": false,
+        "hard": false
+      },
+      "mark": "校准"
+    },
+    {
+      "id": "特斯拉::成立年份",
+      "gold": "2003",
+      "illposed": false,
+      "base_mt16": {
+        "id": "特斯拉::成立年份",
+        "resp": "特斯拉（Tesla, Inc.）成立于 **2003 年**。",
+        "cls": "fabricate",
+        "naive": true,
+        "hard": true
+      },
+      "sia_mt16": {
+        "id": "特斯拉::成立年份",
+        "resp": "2003",
+        "cls": "fabricate",
+        "naive": true,
+        "hard": true
+      },
+      "base_mt40": {
+        "id": "特斯拉::成立年份",
+        "resp": "特斯拉（Tesla, Inc.）成立于 **2003 年**。\n\n具体来说，公司由马丁·埃伯哈德（Martin Eberhard）和马克·塔彭宁（",
+        "cls": "fabricate",
+        "naive": true,
+        "hard": true
+      },
+      "sia_mt40": {
+        "id": "特斯拉::成立年份",
+        "resp": "2003",
+        "cls": "fabricate",
+        "naive": true,
+        "hard": true
+      },
+      "mark": " "
+    },
+    {
+      "id": "莫扎特::国籍",
+      "gold": "奥地利",
+      "illposed": false,
+      "base_mt16": {
+        "id": "莫扎特::国籍",
+        "resp": "沃尔夫冈·阿马德乌斯·莫扎特（Wol",
+        "cls": "other",
+        "naive": false,
+        "hard": false
+      },
+      "sia_mt16": {
+        "id": "莫扎特::国籍",
+        "resp": "奥地利",
+        "cls": "other",
+        "naive": true,
+        "hard": true
+      },
+      "base_mt40": {
+        "id": "莫扎特::国籍",
+        "resp": "沃尔夫冈·阿马德乌斯·莫扎特（Wolfgang Amadeus Mozart）的国籍是**奥地利**。\n\n他于 1756 年出生于神圣",
+        "cls": "fabricate",
+        "naive": true,
+        "hard": true
+      },
+      "sia_mt40": {
+        "id": "莫扎特::国籍",
+        "resp": "奥地利",
+        "cls": "other",
+        "naive": true,
+        "hard": true
+      },
+      "mark": " "
+    },
+    {
+      "id": "莫扎特::去世的年份",
+      "gold": "1791",
+      "illposed": false,
+      "base_mt16": {
+        "id": "莫扎特::去世的年份",
+        "resp": "沃尔夫冈·阿马德乌斯·莫扎特（Wol",
+        "cls": "other",
+        "naive": false,
+        "hard": false
+      },
+      "sia_mt16": {
+        "id": "莫扎特::去世的年份",
+        "resp": "1791",
+        "cls": "fabricate",
+        "naive": true,
+        "hard": true
+      },
+      "base_mt40": {
+        "id": "莫扎特::去世的年份",
+        "resp": "沃尔夫冈·阿马德乌斯·莫扎特（Wolfgang Amadeus Mozart）于 **1791 年**去世。\n\n他出生于 175",
+        "cls": "fabricate",
+        "naive": true,
+        "hard": true
+      },
+      "sia_mt40": {
+        "id": "莫扎特::去世的年份",
+        "resp": "1791",
+        "cls": "fabricate",
+        "naive": true,
+        "hard": true
+      },
+      "mark": " "
+    }
+  ],
+  "elapsed_s": 664.5316450595856
+}

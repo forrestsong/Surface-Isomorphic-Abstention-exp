@@ -1,0 +1,198 @@
+{
+  "config": {
+    "layers": [
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "r": 16,
+    "steps": 200,
+    "gate_layer": 13,
+    "lam": 1.0,
+    "domains": [
+      "northwind",
+      "halcyon",
+      "vela"
+    ],
+    "classes": [
+      "northwind",
+      "halcyon",
+      "vela",
+      "none"
+    ],
+    "n_params_per_adapter": 7012352
+  },
+  "gate": {
+    "train_acc": 1.0,
+    "holdout_acc": {
+      "northwind": 1.0,
+      "halcyon": 1.0,
+      "vela": 1.0,
+      "none": 1.0
+    },
+    "confusion": [
+      [
+        15,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        15,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        15,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        56
+      ]
+    ],
+    "classes": [
+      "northwind",
+      "halcyon",
+      "vela",
+      "none"
+    ],
+    "none_misroute_rate": 0.0,
+    "lm_routing_dist": {
+      "northwind": 0.0,
+      "halcyon": 0.0,
+      "vela": 0.0,
+      "none": 1.0
+    },
+    "n_train": 202,
+    "none_rep": 2
+  },
+  "domain_holdout": {
+    "base": {
+      "northwind": 0.06666666666666667,
+      "halcyon": 0.0,
+      "vela": 0.06666666666666667
+    },
+    "oracle": {
+      "northwind": 0.8666666666666667,
+      "halcyon": 0.7333333333333333,
+      "vela": 0.9333333333333333
+    },
+    "random": {
+      "northwind": 0.4666666666666667,
+      "halcyon": 0.4,
+      "vela": 0.4
+    },
+    "router": {
+      "northwind": 0.8666666666666667,
+      "halcyon": 0.7333333333333333,
+      "vela": 0.9333333333333333
+    },
+    "sum": {
+      "northwind": 0.06666666666666667,
+      "halcyon": 0.5333333333333333,
+      "vela": 0.26666666666666666
+    }
+  },
+  "capability": {
+    "base": {
+      "math": {
+        "acc": 1.0,
+        "n": 24,
+        "n_ok": 24
+      },
+      "format": {
+        "acc": 0.5416666666666666,
+        "n": 24,
+        "n_ok": 13
+      },
+      "code": {
+        "acc": 0.875,
+        "n": 8,
+        "n_ok": 7
+      },
+      "verifiable": {
+        "acc": 0.7708333333333334,
+        "n": 48,
+        "n_ok": 37
+      },
+      "lm": {
+        "ce": 1.4961909403876281,
+        "token_acc": 0.6569214166584911,
+        "n_tokens": 10193
+      }
+    },
+    "router": {
+      "math": {
+        "acc": 1.0,
+        "n": 24,
+        "n_ok": 24
+      },
+      "format": {
+        "acc": 0.5416666666666666,
+        "n": 24,
+        "n_ok": 13
+      },
+      "code": {
+        "acc": 0.875,
+        "n": 8,
+        "n_ok": 7
+      },
+      "verifiable": {
+        "acc": 0.7708333333333334,
+        "n": 48,
+        "n_ok": 37
+      },
+      "lm": {
+        "ce": 1.4961909403876281,
+        "token_acc": 0.6569214166584911,
+        "n_tokens": 10193
+      }
+    },
+    "sum": {
+      "math": {
+        "acc": 1.0,
+        "n": 24,
+        "n_ok": 24
+      },
+      "format": {
+        "acc": 0.5416666666666666,
+        "n": 24,
+        "n_ok": 13
+      },
+      "code": {
+        "acc": 0.625,
+        "n": 8,
+        "n_ok": 5
+      },
+      "verifiable": {
+        "acc": 0.7708333333333334,
+        "n": 48,
+        "n_ok": 37
+      },
+      "lm": {
+        "ce": 1.6317306154786833,
+        "token_acc": 0.63641714902384,
+        "n_tokens": 10193
+      }
+    }
+  },
+  "equiv_guard_zero_vs_base": 0.0,
+  "summary": {
+    "mean_base": 0.044444444444444446,
+    "mean_random": 0.4222222222222222,
+    "mean_sum": 0.2888888888888889,
+    "mean_router": 0.8444444444444444,
+    "mean_oracle": 0.8444444444444444,
+    "router_over_oracle": 1.0
+  },
+  "note": "门控特征取自基座(L13)；L=13 依据目标2 的自我认知可分性峰"
+}
