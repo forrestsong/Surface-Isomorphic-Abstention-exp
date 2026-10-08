@@ -1,17 +1,11 @@
 % =============================================================================
 %  SIA: Surface-Isomorphic Abstention -- Learning to Say "I Don't Know"
+%  Sen Song
 %
-%  This is the focused paper: criterion + method + controlled experiment.
-%  It was split out of the 18-page version (SIA_paper.tex), which additionally
-%  reported a real-knowledge-boundary construction, its failure on this same
-%  criterion, an item-level cost analysis, a taxonomy of measurement failures
-%  and a GRPO boundary. Those belong to a companion and are not repeated here;
-%  section 6 says where they went and why.
+%  Compile with: pdflatex SIA_abstention.tex   (run twice, for references)
 %
-%  All numbers are unchanged from the experiment record. Source is pure ASCII
-%  and builds with pdfLaTeX or XeLaTeX on a stock TeX Live.
-%
-%  Compile: pdflatex SIA_abstention.tex   (twice)
+%  Source is pure ASCII and self-contained apart from figures/, so it builds
+%  with pdfLaTeX or XeLaTeX on a stock TeX Live with no extra fonts.
 % =============================================================================
 \documentclass[11pt,a4paper]{article}
 
@@ -31,6 +25,13 @@
 \usepackage{xcolor}
 \usepackage[colorlinks=true,linkcolor=blue!55!black,citecolor=blue!55!black,
             urlcolor=blue!55!black]{hyperref}
+\hypersetup{
+  pdftitle={SIA: Surface-Isomorphic Abstention -- Learning to Say I Don't Know},
+  pdfauthor={Sen Song},
+  pdfsubject={Machine learning; abstention; hallucination mitigation},
+  pdfkeywords={abstention learning, knowledge boundary, supervised fine-tuning,
+               shortcut learning},
+}
 
 \captionsetup{font=small,labelfont=bf}
 \setlength{\tabcolsep}{4.5pt}
@@ -246,9 +247,9 @@ surface-conflicting pair; equivalently, no $\mathcal A$-measurable classifier
 significantly better than chance can fit the labels of $D$.
 \end{quote}
 
-The restriction to $\mathcal A$ is not cosmetic, and an earlier draft of this
-work did not have it. Without it the criterion is too strong: it condemns
-constructions that work. The construction of \S\ref{sec:exp} has series names
+The restriction to $\mathcal A$ is not cosmetic. Without it the criterion is
+too strong: it condemns constructions that work. The construction of
+\S\ref{sec:exp} has series names
 that are perfectly label-pure, so a rule keyed on the series name fits the
 training set at $1.000$; the unrestricted criterion would reject it, yet the
 method trained on it abstains correctly on a held-out series. The reason is
