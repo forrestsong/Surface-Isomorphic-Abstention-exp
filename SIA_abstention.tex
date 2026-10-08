@@ -739,12 +739,15 @@ Arm & ans@kn & abst@new & abst@ent & fabr@new & fabr@ent & ans@real & pooled \\
 \section{Code and reproduction}
 \label{app:repro}
 
-Code and data are released with this paper. The commands below produce the
-readings in Appendix~\ref{app:readings}.
+Code and data are at
+\url{https://github.com/forrestsong/Surface-Isomorphic-Abstention-exp}.
+The commands below produce the readings in Appendix~\ref{app:readings}.
 
 \begin{verbatim}
+git clone https://github.com/forrestsong/Surface-Isomorphic-Abstention-exp
+cd Surface-Isomorphic-Abstention-exp/exp
+
 # Python 3.11, torch 2.13.0+cu130, single DGX Spark (GB10, 121 GiB unified)
-cd exp
 G3_12_PROFILE=main     python g3_12_abstain_method.py   # round one
 G3_12_PROFILE=cross    python g3_12_abstain_method.py   # round two
 G3_12_PROFILE=multiunk python g3_12_abstain_method.py   # round three
